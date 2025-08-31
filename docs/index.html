@@ -84,7 +84,7 @@
           dailyChart: 'Daily Temperature Variation',
           monthlyChart: 'Monthly Temperature Variation',
           meters: 'm',
-          month: '',
+          month: '-',
           day: '',
           monthAxis: 'Month',
           tempAxis: 'Temperature (°C)',
@@ -176,10 +176,10 @@
               time: {
                 unit: "month",
                 displayFormats: {
-                  month: `M${translations[currentLang].month}`,
-                  day: `M${translations[currentLang].month}d${translations[currentLang].day}`
+                  month: currentLang === 'zh' ? `M${translations[currentLang].month}` : `M`,
+                  day: currentLang === 'zh' ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
                 },
-                tooltipFormat: `M${translations[currentLang].month}d${translations[currentLang].day}`
+                tooltipFormat: currentLang === 'zh' ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
               },
               grid: {
                 color: '#eee'
@@ -261,7 +261,7 @@
                   y_prcp: parseFloat(row.PRCP_SUM) || 0,
                   month: month,
                   day: day,
-                  dateStr: month + translations[currentLang].month + day + translations[currentLang].day
+                  dateStr: currentLang === 'zh' ? month + translations[currentLang].month + day + translations[currentLang].day : month + '-' + day
                 };
               }).filter(point => !isNaN(point.y_max) && !isNaN(point.y_min));
 
@@ -343,7 +343,7 @@
                   y_min: parseFloat(row.TMIN_P10),
                   y_prcp: parseFloat(row.PRCP_SUM) || 0,
                   month: month,
-                  dateStr: month + translations[currentLang].month
+                  dateStr: currentLang === 'zh' ? month + translations[currentLang].month : month.toString()
                 };
               }).filter(point => !isNaN(point.y_max) && !isNaN(point.y_min));
 
