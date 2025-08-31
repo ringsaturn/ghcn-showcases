@@ -27,3 +27,9 @@ Data source: <https://registry.opendata.aws/noaa-ghcn/>
     ```
 
 - Run: `uv run process.py`
+
+|          |                 Daily                 |                 Monthly                 |
+| :------: | :-----------------------------------: | :-------------------------------------: |
+| Beijing  | ![](docs/imgs/CHM00054511-daily.webp) | ![](docs/imgs/CHM00054511-monthly.webp) |
+| Shanghai | ![](docs/imgs/CHM00058362-daily.webp) | ![](docs/imgs/CHM00058362-monthly.webp) |
+|  Tokyo   | ![](docs/imgs/JA000047662-daily.webp) | ![](docs/imgs/JA000047662-monthly.webp) |
