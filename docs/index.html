@@ -1216,6 +1216,37 @@
         `;
       }
 
+      // Function to parse URL query parameters
+      function getQueryParams() {
+        const params = {};
+        const queryString = window.location.search.substring(1);
+        const pairs = queryString.split('&');
+        
+        for (let i = 0; i < pairs.length; i++) {
+          const pair = pairs[i].split('=');
+          if (pair[0]) {
+            params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+          }
+        }
+        return params;
+      }
+
+      // Function to find and open station by ID
+      function findAndOpenStation(stationId) {
+        let found = false;
+        
+        window.stationsLayer.eachLayer(function(layer) {
+          const featureId = layer.feature.properties.ID;
+          if (featureId === stationId) {
+            found = true;
+            map.setView(layer.getLatLng(), 10);
+            layer.openPopup();
+          }
+        });
+        
+        return found;
+      }
+
       // Load station data
       fetch('./matched_stations.geojson')
         .then(response => response.json())
@@ -1238,6 +1269,15 @@
           
           // Initialize comparison functionality
           initComparisonFeature();
+          
+          // Check for station_id in URL and navigate to it
+          const params = getQueryParams();
+          if (params.station_id) {
+            const found = findAndOpenStation(params.station_id);
+            if (!found) {
+              console.warn("Station with ID " + params.station_id + " not found");
+            }
+          }
         });
     </script>
   </body>
