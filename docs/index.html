@@ -234,12 +234,21 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         font-size: 20px;
       }
+      /* Data source note adjustments */
+      #dataSourceNote a { color: #0654ba; text-decoration: none; }
+      @media (max-width: 480px) {
+        #dataSourceNote { font-size: 12px; padding: 6px 8px; }
+      }
     </style>
   </head>
   <body>
     <div id="map"></div>
     <div class="lang-switch" onclick="toggleLanguage()">
       <span id="langText">EN</span>
+    </div>
+    <!-- Data source note -->
+    <div id="dataSourceNote" style="position: fixed; left: 12px; bottom: 12px; z-index:1000; background: rgba(255,255,255,0.9); padding:8px 12px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); font-size:13px;">
+      <!-- Filled by JS -->
     </div>
     
     <!-- Compare Button -->
@@ -320,6 +329,9 @@
           clear: '清空选择',
           compareMonthly: '月度数据对比',
           noStationSelected: '请至少选择一个站点进行对比'
+        ,
+          // Data source text (HTML allowed)
+          dataSource: '数据来源：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN</a>'
         },
         en: {
           stationInfo: 'Weather Station Information',
@@ -352,6 +364,9 @@
           clear: 'Clear Selection',
           compareMonthly: 'Monthly Data Comparison',
           noStationSelected: 'Please select at least one station to compare'
+        ,
+          // Data source text (HTML allowed)
+          dataSource: 'Data source: <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN (Global Historical Climatology Network)</a>'
         },
         ja: {
           stationInfo: '気象観測所情報',
@@ -384,6 +399,9 @@
           clear: '選択をクリア',
           compareMonthly: '月間データ比較',
           noStationSelected: '比較するには少なくとも1つの観測所を選択してください'
+        ,
+          // Data source text (HTML allowed)
+          dataSource: 'データ出典：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN（Global Historical Climatology Network）</a>'
         }
       };
 
@@ -417,6 +435,11 @@
         }
         // Update HTML document language attribute
         document.documentElement.lang = currentLang;
+        // Update data source note
+        const dsEl = document.getElementById('dataSourceNote');
+        if (dsEl) {
+          dsEl.innerHTML = translations[currentLang].dataSource || '';
+        }
       }
 
       function toggleLanguage() {
