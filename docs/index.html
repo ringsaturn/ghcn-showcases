@@ -352,26 +352,85 @@
           clear: 'Clear Selection',
           compareMonthly: 'Monthly Data Comparison',
           noStationSelected: 'Please select at least one station to compare'
+        },
+        ja: {
+          stationInfo: '気象観測所情報',
+          stationId: '観測所ID',
+          name: '観測所名',
+          longitude: '経度',
+          latitude: '緯度',
+          elevation: '標高',
+          dailyChart: '日々の気温変動',
+          monthlyChart: '月間気温変動',
+          meters: 'm',
+          month: '月',
+          day: '日',
+          monthAxis: '月',
+          tempAxis: '気温 (°C)',
+          maxTemp: '90パーセンタイル最高気温',
+          minTemp: '10パーセンタイル最低気温',
+          precipAxis: '降水量 (mm)',
+          precip: '降水量',
+          compareBtn: 'この観測所を比較',
+          compareTitle: '観測所の比較',
+          compareStations: '選択された観測所',
+          comparePanel: '比較パネル',
+          compareLimit: '最大3つの観測所を選択できます',
+          compareChart: '比較チャート',
+          compareTemperature: '気温の比較',
+          comparePrecipitation: '降水量の比較',
+          close: '閉じる',
+          showComparison: '比較を表示',
+          clear: '選択をクリア',
+          compareMonthly: '月間データ比較',
+          noStationSelected: '比較するには少なくとも1つの観測所を選択してください'
         }
       };
 
       // Get browser language setting and set initial language
       function getInitialLanguage() {
         const browserLang = navigator.language.toLowerCase();
-        // If browser language starts with zh (like zh-CN, zh-TW, etc.), use Chinese, otherwise English
-        return browserLang.startsWith('zh') ? 'zh' : 'en';
+        // If browser language starts with zh, use Chinese; if ja, use Japanese; otherwise English
+        if (browserLang.startsWith('zh')) {
+          return 'zh';
+        } else if (browserLang.startsWith('ja')) {
+          return 'ja';
+        } else {
+          return 'en';
+        }
       }
 
       let currentLang = getInitialLanguage();
 
       // Set initial language display
       document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('langText').textContent = currentLang === 'zh' ? 'EN' : '中';
+        updateLanguageDisplay();
       });
+      
+      function updateLanguageDisplay() {
+        if (currentLang === 'zh') {
+          document.getElementById('langText').textContent = 'EN';
+        } else if (currentLang === 'en') {
+          document.getElementById('langText').textContent = 'JP';
+        } else {
+          document.getElementById('langText').textContent = '中';
+        }
+        // Update HTML document language attribute
+        document.documentElement.lang = currentLang;
+      }
 
       function toggleLanguage() {
-        currentLang = currentLang === 'zh' ? 'en' : 'zh';
-        document.getElementById('langText').textContent = currentLang === 'zh' ? 'EN' : '中';
+        // Rotate through languages: zh -> en -> ja -> zh
+        if (currentLang === 'zh') {
+          currentLang = 'en';
+        } else if (currentLang === 'en') {
+          currentLang = 'ja';
+        } else {
+          currentLang = 'zh';
+        }
+        
+        updateLanguageDisplay();
+        
         // Update map language
         updateMapLanguage();
         // Update popup content for all markers
@@ -436,10 +495,10 @@
               time: {
                 unit: "month",
                 displayFormats: {
-                  month: currentLang === 'zh' ? `M${translations[currentLang].month}` : `M`,
-                  day: currentLang === 'zh' ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
+                  month: (currentLang === 'zh' || currentLang === 'ja') ? `M${translations[currentLang].month}` : `M`,
+                  day: (currentLang === 'zh' || currentLang === 'ja') ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
                 },
-                tooltipFormat: currentLang === 'zh' ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
+                tooltipFormat: (currentLang === 'zh' || currentLang === 'ja') ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
               },
               grid: {
                 color: '#eee'
@@ -521,7 +580,7 @@
                   y_prcp: parseFloat(row.PRCP_SUM) || 0,
                   month: month,
                   day: day,
-                  dateStr: currentLang === 'zh' ? month + translations[currentLang].month + day + translations[currentLang].day : month + '-' + day
+                  dateStr: (currentLang === 'zh' || currentLang === 'ja') ? month + translations[currentLang].month + day + translations[currentLang].day : month + '-' + day
                 };
               }).filter(point => !isNaN(point.y_max) && !isNaN(point.y_min));
 
@@ -603,7 +662,7 @@
                   y_min: parseFloat(row.TMIN_P10),
                   y_prcp: parseFloat(row.PRCP_SUM) || 0,
                   month: month,
-                  dateStr: currentLang === 'zh' ? month + translations[currentLang].month : month.toString()
+                  dateStr: (currentLang === 'zh' || currentLang === 'ja') ? month + translations[currentLang].month : month.toString()
                 };
               }).filter(point => !isNaN(point.y_max) && !isNaN(point.y_min));
 
@@ -742,7 +801,7 @@
           flavor: "white",
           attribution:
             '© <a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
-          lang: currentLang === 'zh' ? 'zh' : 'en'
+          lang: currentLang === 'zh' ? 'zh' : (currentLang === 'ja' ? 'ja' : 'en')
         });
         window.baseLayer.addTo(map);
       }
