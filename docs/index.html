@@ -17,10 +17,18 @@
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       crossorigin=""
     ></script>
-    <script src="https://unpkg.com/protomaps-leaflet@5.0.1/dist/protomaps-leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script
+      src="https://unpkg.com/protomaps-leaflet@5.0.1/dist/protomaps-leaflet.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"
+    ></script>
 
     <style>
       body {
@@ -40,10 +48,10 @@
         background: white;
         padding: 5px 10px;
         border-radius: 4px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         cursor: pointer;
       }
-      
+
       /* Compare Panel Styles */
       #comparePanel {
         position: fixed;
@@ -53,13 +61,13 @@
         background: white;
         padding: 15px;
         border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         width: 280px;
         max-height: calc(100vh - 120px);
         overflow-y: auto;
         display: none;
       }
-      
+
       #comparePanel h3 {
         margin-top: 0;
         margin-bottom: 10px;
@@ -68,11 +76,11 @@
         justify-content: space-between;
         align-items: center;
       }
-      
+
       .compare-station-list {
         margin-bottom: 10px;
       }
-      
+
       .compare-station-item {
         display: flex;
         justify-content: space-between;
@@ -80,7 +88,7 @@
         padding: 8px 0;
         border-bottom: 1px solid #eee;
       }
-      
+
       .compare-station-name {
         flex: 1;
         font-size: 14px;
@@ -88,13 +96,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      
+
       .compare-buttons {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
       }
-      
+
       .compare-buttons button {
         padding: 8px 12px;
         border: none;
@@ -103,17 +111,17 @@
         font-size: 14px;
         font-weight: bold;
       }
-      
+
       .compare-view-btn {
-        background-color: #4CAF50;
+        background-color: #4caf50;
         color: white;
       }
-      
+
       .compare-clear-btn {
         background-color: #f5f5f5;
         color: #333;
       }
-      
+
       .remove-station-btn {
         background: none;
         border: none;
@@ -121,14 +129,14 @@
         cursor: pointer;
         font-weight: bold;
       }
-      
+
       .no-stations-message {
         color: #777;
         font-style: italic;
         text-align: center;
         padding: 10px 0;
       }
-      
+
       /* Compare Modal Styles */
       .compare-modal {
         display: none;
@@ -137,12 +145,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 2000;
         justify-content: center;
         align-items: center;
       }
-      
+
       .compare-modal-content {
         background-color: white;
         padding: 20px;
@@ -151,20 +159,20 @@
         max-width: 1000px;
         max-height: 90vh;
         overflow-y: auto;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       }
-      
+
       .compare-modal-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
       }
-      
+
       .compare-modal-header h3 {
         margin: 0;
       }
-      
+
       .compare-close-btn {
         background: none;
         border: none;
@@ -172,13 +180,13 @@
         cursor: pointer;
         color: #777;
       }
-      
+
       .compare-tabs {
         display: flex;
         margin-bottom: 15px;
         border-bottom: 1px solid #ddd;
       }
-      
+
       .compare-tab {
         padding: 10px 15px;
         background: #f5f5f5;
@@ -187,12 +195,12 @@
         margin-right: 5px;
         border-radius: 4px 4px 0 0;
       }
-      
+
       .compare-tab.active {
-        background: #4CAF50;
+        background: #4caf50;
         color: white;
       }
-      
+
       .compare-chart-container {
         width: 100%;
         height: 400px;
@@ -202,26 +210,26 @@
         border-radius: 4px;
         box-sizing: border-box;
       }
-      
+
       /* Add station button in popup */
       .add-to-compare {
         margin-top: 10px;
         padding: 8px 12px;
-        background-color: #4CAF50;
+        background-color: #4caf50;
         color: white;
         border: none;
         border-radius: 4px;
         cursor: pointer;
         font-weight: bold;
       }
-      
+
       /* Comparison toggle button */
       #toggleComparePanel {
         position: fixed;
         bottom: 20px;
         right: 20px;
         z-index: 999;
-        background: #4CAF50;
+        background: #4caf50;
         color: white;
         border: none;
         border-radius: 50%;
@@ -231,13 +239,19 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         font-size: 20px;
       }
       /* Data source note adjustments */
-      #dataSourceNote a { color: #0654ba; text-decoration: none; }
+      #dataSourceNote a {
+        color: #0654ba;
+        text-decoration: none;
+      }
       @media (max-width: 480px) {
-        #dataSourceNote { font-size: 12px; padding: 6px 8px; }
+        #dataSourceNote {
+          font-size: 12px;
+          padding: 6px 8px;
+        }
       }
     </style>
   </head>
@@ -247,36 +261,60 @@
       <span id="langText">EN</span>
     </div>
     <!-- Data source note -->
-    <div id="dataSourceNote" style="position: fixed; left: 12px; bottom: 12px; z-index:1000; background: rgba(255,255,255,0.9); padding:8px 12px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); font-size:13px;">
+    <div
+      id="dataSourceNote"
+      style="position: fixed; left: 12px; bottom: 12px; z-index: 1000; background: rgba(255, 255, 255, 0.9); padding: 8px 12px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); font-size: 13px"
+    >
       <!-- Filled by JS -->
     </div>
-    
+
     <!-- Compare Button -->
     <button id="toggleComparePanel" title="Toggle Comparison Panel">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
         <polyline points="22 12 18 8 14 12"></polyline>
         <path d="M18 8v8"></path>
         <polyline points="10 12 6 16 2 12"></polyline>
         <path d="M6 16V8"></path>
       </svg>
     </button>
-    
+
     <!-- Compare Panel -->
     <div id="comparePanel">
       <h3>
         <span id="comparePanelTitle">Station Comparison</span>
-        <button id="closeComparePanel" style="background: none; border: none; cursor: pointer; font-size: 18px;">×</button>
+        <button
+          id="closeComparePanel"
+          style="background: none; border: none; cursor: pointer; font-size: 18px"
+        >
+          ×
+        </button>
       </h3>
       <div id="compareLimit"></div>
       <div class="compare-station-list" id="compareStationList">
-        <div class="no-stations-message" id="noStationsMessage">No stations selected</div>
+        <div class="no-stations-message" id="noStationsMessage">
+          No stations selected
+        </div>
       </div>
       <div class="compare-buttons">
-        <button class="compare-view-btn" id="viewComparisonBtn">View Comparison</button>
-        <button class="compare-clear-btn" id="clearComparisonBtn">Clear All</button>
+        <button class="compare-view-btn" id="viewComparisonBtn">
+          View Comparison
+        </button>
+        <button class="compare-clear-btn" id="clearComparisonBtn">
+          Clear All
+        </button>
       </div>
     </div>
-    
+
     <!-- Comparison Modal -->
     <div id="comparisonModal" class="compare-modal">
       <div class="compare-modal-content">
@@ -285,8 +323,20 @@
           <button class="compare-close-btn" id="closeComparisonModal">×</button>
         </div>
         <div class="compare-tabs">
-          <button class="compare-tab active" id="temperatureTab" data-tab="temperature">Temperature</button>
-          <button class="compare-tab" id="precipitationTab" data-tab="precipitation">Precipitation</button>
+          <button
+            class="compare-tab active"
+            id="temperatureTab"
+            data-tab="temperature"
+          >
+            Temperature
+          </button>
+          <button
+            class="compare-tab"
+            id="precipitationTab"
+            data-tab="precipitation"
+          >
+            Precipitation
+          </button>
         </div>
         <div class="compare-chart-container">
           <canvas id="compareChart"></canvas>
@@ -294,170 +344,171 @@
       </div>
     </div>
 
-
     <script>
       // Language configuration
       const translations = {
         zh: {
-          stationInfo: '气象站点信息',
-          stationId: '站点编号',
-          name: '站点名称',
-          longitude: '经度',
-          latitude: '纬度',
-          elevation: '海拔高度',
-          dailyChart: '日温度变化',
-          monthlyChart: '月温度变化',
-          meters: '米',
-          month: '月',
-          day: '日',
-          monthAxis: '月份',
-          tempAxis: '温度 (°C)',
-          maxTemp: '90分位最高温度',
-          minTemp: '10分位最低温度',
-          precipAxis: '降水量 (mm)',
-          precip: '降水量',
-          compareBtn: '对比此站点',
-          compareTitle: '站点对比',
-          compareStations: '已选择站点',
-          comparePanel: '站点对比面板',
-          compareLimit: '最多可选择3个站点',
-          compareChart: '对比图表',
-          compareTemperature: '温度对比',
-          comparePrecipitation: '降水量对比',
-          close: '关闭',
-          showComparison: '查看对比',
-          clear: '清空选择',
-          compareMonthly: '月度数据对比',
-          noStationSelected: '请至少选择一个站点进行对比'
-        ,
+          stationInfo: "气象站点信息",
+          stationId: "站点编号",
+          name: "站点名称",
+          longitude: "经度",
+          latitude: "纬度",
+          elevation: "海拔高度",
+          dailyChart: "日温度变化",
+          monthlyChart: "月温度变化",
+          meters: "米",
+          month: "月",
+          day: "日",
+          monthAxis: "月份",
+          tempAxis: "温度 (°C)",
+          maxTemp: "90分位最高温度",
+          minTemp: "10分位最低温度",
+          precipAxis: "降水量 (mm)",
+          precip: "降水量",
+          compareBtn: "对比此站点",
+          compareTitle: "站点对比",
+          compareStations: "已选择站点",
+          comparePanel: "站点对比面板",
+          compareLimit: "最多可选择3个站点",
+          compareChart: "对比图表",
+          compareTemperature: "温度对比",
+          comparePrecipitation: "降水量对比",
+          close: "关闭",
+          showComparison: "查看对比",
+          clear: "清空选择",
+          compareMonthly: "月度数据对比",
+          noStationSelected: "请至少选择一个站点进行对比",
           // Data source text (HTML allowed)
-          dataSource: '数据来源：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN</a>'
+          dataSource:
+            '数据来源：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN</a>',
         },
         en: {
-          stationInfo: 'Weather Station Information',
-          stationId: 'Station ID',
-          name: 'Station Name',
-          longitude: 'Longitude',
-          latitude: 'Latitude',
-          elevation: 'Elevation',
-          dailyChart: 'Daily Temperature Variation',
-          monthlyChart: 'Monthly Temperature Variation',
-          meters: 'm',
-          month: '-',
-          day: '',
-          monthAxis: 'Month',
-          tempAxis: 'Temperature (°C)',
-          maxTemp: '90th Percentile Max Temperature',
-          minTemp: '10th Percentile Min Temperature',
-          precipAxis: 'Precipitation (mm)',
-          precip: 'Precipitation',
-          compareBtn: 'Compare This Station',
-          compareTitle: 'Station Comparison',
-          compareStations: 'Selected Stations',
-          comparePanel: 'Comparison Panel',
-          compareLimit: 'Maximum 3 stations can be selected',
-          compareChart: 'Comparison Chart',
-          compareTemperature: 'Temperature Comparison',
-          comparePrecipitation: 'Precipitation Comparison',
-          close: 'Close',
-          showComparison: 'View Comparison',
-          clear: 'Clear Selection',
-          compareMonthly: 'Monthly Data Comparison',
-          noStationSelected: 'Please select at least one station to compare'
-        ,
+          stationInfo: "Weather Station Information",
+          stationId: "Station ID",
+          name: "Station Name",
+          longitude: "Longitude",
+          latitude: "Latitude",
+          elevation: "Elevation",
+          dailyChart: "Daily Temperature Variation",
+          monthlyChart: "Monthly Temperature Variation",
+          meters: "m",
+          month: "-",
+          day: "",
+          monthAxis: "Month",
+          tempAxis: "Temperature (°C)",
+          maxTemp: "90th Percentile Max Temperature",
+          minTemp: "10th Percentile Min Temperature",
+          precipAxis: "Precipitation (mm)",
+          precip: "Precipitation",
+          compareBtn: "Compare This Station",
+          compareTitle: "Station Comparison",
+          compareStations: "Selected Stations",
+          comparePanel: "Comparison Panel",
+          compareLimit: "Maximum 3 stations can be selected",
+          compareChart: "Comparison Chart",
+          compareTemperature: "Temperature Comparison",
+          comparePrecipitation: "Precipitation Comparison",
+          close: "Close",
+          showComparison: "View Comparison",
+          clear: "Clear Selection",
+          compareMonthly: "Monthly Data Comparison",
+          noStationSelected:
+            "Please select at least one station to compare",
           // Data source text (HTML allowed)
-          dataSource: 'Data source: <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN (Global Historical Climatology Network)</a>'
+          dataSource:
+            'Data source: <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN (Global Historical Climatology Network)</a>',
         },
         ja: {
-          stationInfo: '気象観測所情報',
-          stationId: '観測所ID',
-          name: '観測所名',
-          longitude: '経度',
-          latitude: '緯度',
-          elevation: '標高',
-          dailyChart: '日々の気温変動',
-          monthlyChart: '月間気温変動',
-          meters: 'm',
-          month: '月',
-          day: '日',
-          monthAxis: '月',
-          tempAxis: '気温 (°C)',
-          maxTemp: '90パーセンタイル最高気温',
-          minTemp: '10パーセンタイル最低気温',
-          precipAxis: '降水量 (mm)',
-          precip: '降水量',
-          compareBtn: 'この観測所を比較',
-          compareTitle: '観測所の比較',
-          compareStations: '選択された観測所',
-          comparePanel: '比較パネル',
-          compareLimit: '最大3つの観測所を選択できます',
-          compareChart: '比較チャート',
-          compareTemperature: '気温の比較',
-          comparePrecipitation: '降水量の比較',
-          close: '閉じる',
-          showComparison: '比較を表示',
-          clear: '選択をクリア',
-          compareMonthly: '月間データ比較',
-          noStationSelected: '比較するには少なくとも1つの観測所を選択してください'
-        ,
+          stationInfo: "気象観測所情報",
+          stationId: "観測所ID",
+          name: "観測所名",
+          longitude: "経度",
+          latitude: "緯度",
+          elevation: "標高",
+          dailyChart: "日々の気温変動",
+          monthlyChart: "月間気温変動",
+          meters: "m",
+          month: "月",
+          day: "日",
+          monthAxis: "月",
+          tempAxis: "気温 (°C)",
+          maxTemp: "90パーセンタイル最高気温",
+          minTemp: "10パーセンタイル最低気温",
+          precipAxis: "降水量 (mm)",
+          precip: "降水量",
+          compareBtn: "この観測所を比較",
+          compareTitle: "観測所の比較",
+          compareStations: "選択された観測所",
+          comparePanel: "比較パネル",
+          compareLimit: "最大3つの観測所を選択できます",
+          compareChart: "比較チャート",
+          compareTemperature: "気温の比較",
+          comparePrecipitation: "降水量の比較",
+          close: "閉じる",
+          showComparison: "比較を表示",
+          clear: "選択をクリア",
+          compareMonthly: "月間データ比較",
+          noStationSelected:
+            "比較するには少なくとも1つの観測所を選択してください",
           // Data source text (HTML allowed)
-          dataSource: 'データ出典：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN（Global Historical Climatology Network）</a>'
-        }
+          dataSource:
+            'データ出典：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN（Global Historical Climatology Network）</a>',
+        },
       };
 
       // Get browser language setting and set initial language
       function getInitialLanguage() {
         const browserLang = navigator.language.toLowerCase();
         // If browser language starts with zh, use Chinese; if ja, use Japanese; otherwise English
-        if (browserLang.startsWith('zh')) {
-          return 'zh';
-        } else if (browserLang.startsWith('ja')) {
-          return 'ja';
+        if (browserLang.startsWith("zh")) {
+          return "zh";
+        } else if (browserLang.startsWith("ja")) {
+          return "ja";
         } else {
-          return 'en';
+          return "en";
         }
       }
 
       let currentLang = getInitialLanguage();
 
       // Set initial language display
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         updateLanguageDisplay();
       });
-      
+
       function updateLanguageDisplay() {
-        if (currentLang === 'zh') {
-          document.getElementById('langText').textContent = 'EN';
-        } else if (currentLang === 'en') {
-          document.getElementById('langText').textContent = 'JP';
+        if (currentLang === "zh") {
+          document.getElementById("langText").textContent = "EN";
+        } else if (currentLang === "en") {
+          document.getElementById("langText").textContent = "JP";
         } else {
-          document.getElementById('langText').textContent = '中';
+          document.getElementById("langText").textContent = "中";
         }
         // Update HTML document language attribute
         document.documentElement.lang = currentLang;
         // Update data source note
-        const dsEl = document.getElementById('dataSourceNote');
+        const dsEl = document.getElementById("dataSourceNote");
         if (dsEl) {
-          dsEl.innerHTML = translations[currentLang].dataSource || '';
+          dsEl.innerHTML = translations[currentLang].dataSource || "";
         }
       }
 
       function toggleLanguage() {
         // Rotate through languages: zh -> en -> ja -> zh
-        if (currentLang === 'zh') {
-          currentLang = 'en';
-        } else if (currentLang === 'en') {
-          currentLang = 'ja';
+        if (currentLang === "zh") {
+          currentLang = "en";
+        } else if (currentLang === "en") {
+          currentLang = "ja";
         } else {
-          currentLang = 'zh';
+          currentLang = "zh";
         }
-        
+
         updateLanguageDisplay();
-        
+
         // Update map language
         updateMapLanguage();
         // Update popup content for all markers
-        stationsLayer.eachLayer(function(layer) {
+        stationsLayer.eachLayer(function (layer) {
           // Update popup content
           layer.bindPopup(generatePopupContent(layer.feature));
           // If popup is currently open, refresh display and reload chart
@@ -475,8 +526,8 @@
           maintainAspectRatio: false,
           interaction: {
             intersect: false,
-            mode: 'nearest',
-            axis: 'x'
+            mode: "nearest",
+            axis: "x",
           },
           plugins: {
             legend: {
@@ -484,33 +535,42 @@
               labels: {
                 padding: 15,
                 usePointStyle: true,
-                pointStyle: 'circle'
-              }
+                pointStyle: "circle",
+              },
             },
             tooltip: {
               enabled: true,
-              backgroundColor: 'rgba(255, 255, 255, 0.9)',
-              titleColor: '#000',
-              bodyColor: '#000',
-              borderColor: '#ddd',
+              backgroundColor: "rgba(255, 255, 255, 0.9)",
+              titleColor: "#000",
+              bodyColor: "#000",
+              borderColor: "#ddd",
               borderWidth: 1,
               padding: 10,
               displayColors: true,
-              titleAlign: 'center',
+              titleAlign: "center",
               callbacks: {
-                title: function(tooltipItems) {
+                title: function (tooltipItems) {
                   const item = tooltipItems[0];
-                  if (!item || !item.raw) return '';
+                  if (!item || !item.raw) return "";
                   return item.raw.dateStr;
                 },
-                label: function(item) {
-                  if (item.dataset.label === translations[currentLang].precip) {
-                    return `${item.dataset.label}: ${item.parsed.y.toFixed(1)}mm`;
+                label: function (item) {
+                  if (
+                    item.dataset.label ===
+                      translations[currentLang].precip
+                  ) {
+                    return `${item.dataset.label}: ${
+                      item.parsed.y.toFixed(
+                        1,
+                      )
+                    }mm`;
                   }
-                  return `${item.dataset.label}: ${item.parsed.y.toFixed(1)}°C`;
-                }
-              }
-            }
+                  return `${item.dataset.label}: ${
+                    item.parsed.y.toFixed(1)
+                  }°C`;
+                },
+              },
+            },
           },
           scales: {
             x: {
@@ -518,260 +578,318 @@
               time: {
                 unit: "month",
                 displayFormats: {
-                  month: (currentLang === 'zh' || currentLang === 'ja') ? `M${translations[currentLang].month}` : `M`,
-                  day: (currentLang === 'zh' || currentLang === 'ja') ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
+                  month: currentLang === "zh" || currentLang === "ja"
+                    ? `M${translations[currentLang].month}`
+                    : `M`,
+                  day: currentLang === "zh" || currentLang === "ja"
+                    ? `M${translations[currentLang].month}d${
+                      translations[currentLang].day
+                    }`
+                    : `M-d`,
                 },
-                tooltipFormat: (currentLang === 'zh' || currentLang === 'ja') ? `M${translations[currentLang].month}d${translations[currentLang].day}` : `M-d`
+                tooltipFormat:
+                  currentLang === "zh" || currentLang === "ja"
+                    ? `M${translations[currentLang].month}d${
+                      translations[currentLang].day
+                    }`
+                    : `M-d`,
               },
               grid: {
-                color: '#eee'
+                color: "#eee",
               },
               title: {
                 display: true,
                 text: translations[currentLang].monthAxis,
-                padding: {top: 10, bottom: 10},
+                padding: { top: 10, bottom: 10 },
                 font: {
-                  size: 14
-                }
+                  size: 14,
+                },
               },
               ticks: {
                 maxRotation: 0,
                 font: {
-                  size: 12
-                }
-              }
+                  size: 12,
+                },
+              },
             },
             y: {
-              position: 'left',
+              position: "left",
               grid: {
-                color: '#eee'
+                color: "#eee",
               },
               title: {
                 display: true,
                 text: translations[currentLang].tempAxis,
-                padding: {top: 10, bottom: 10},
+                padding: { top: 10, bottom: 10 },
                 font: {
-                  size: 14
-                }
+                  size: 14,
+                },
               },
               ticks: {
                 font: {
-                  size: 12
-                }
-              }
+                  size: 12,
+                },
+              },
             },
             y1: {
-              position: 'right',
+              position: "right",
               grid: {
-                drawOnChartArea: false
+                drawOnChartArea: false,
               },
               title: {
                 display: true,
                 text: translations[currentLang].precipAxis,
-                padding: {top: 10, bottom: 10},
+                padding: { top: 10, bottom: 10 },
                 font: {
-                  size: 14
-                }
+                  size: 14,
+                },
               },
               ticks: {
                 font: {
-                  size: 12
-                }
-              }
-            }
-          }
+                  size: 12,
+                },
+              },
+            },
+          },
         };
 
         // Load and draw charts
         await Promise.all([
           fetch("plots/" + stationId + "-daily.csv")
-            .then(response => response.text())
-            .then(csvData => {
+            .then((response) => response.text())
+            .then((csvData) => {
               const results = Papa.parse(csvData, { header: true });
               const data = results.data;
-              
+
               // Construct date data
               // Set fixed year and ignore display
               const baseDate = new Date(2020, 0, 1);
-              const chartData = data.map(row => {
-                const month = parseInt(row.MONTH);
-                const day = parseInt(row.DAY_OF_MONTH);
-                return {
-                  x: new Date(baseDate.getFullYear(), month - 1, day),
-                  y_max: parseFloat(row.TMAX_P90),
-                  y_min: parseFloat(row.TMIN_P10),
-                  y_prcp: parseFloat(row.PRCP_SUM) || 0,
-                  month: month,
-                  day: day,
-                  dateStr: (currentLang === 'zh' || currentLang === 'ja') ? month + translations[currentLang].month + day + translations[currentLang].day : month + '-' + day
-                };
-              }).filter(point => !isNaN(point.y_max) && !isNaN(point.y_min));
+              const chartData = data
+                .map((row) => {
+                  const month = parseInt(row.MONTH);
+                  const day = parseInt(row.DAY_OF_MONTH);
+                  return {
+                    x: new Date(baseDate.getFullYear(), month - 1, day),
+                    y_max: parseFloat(row.TMAX_P90),
+                    y_min: parseFloat(row.TMIN_P10),
+                    y_prcp: parseFloat(row.PRCP_SUM) || 0,
+                    month: month,
+                    day: day,
+                    dateStr:
+                      currentLang === "zh" || currentLang === "ja"
+                        ? month +
+                          translations[currentLang].month +
+                          day +
+                          translations[currentLang].day
+                        : month + "-" + day,
+                  };
+                })
+                .filter((point) =>
+                  !isNaN(point.y_max) && !isNaN(point.y_min)
+                );
 
               // Calculate temperature range
-              const temperatures = chartData.flatMap(point => [point.y_max, point.y_min]);
+              const temperatures = chartData.flatMap((point) => [
+                point.y_max,
+                point.y_min,
+              ]);
               const minTemp = Math.floor(Math.min(...temperatures));
               const maxTemp = Math.ceil(Math.max(...temperatures));
-              
-              new Chart(document.getElementById("dailyChart-" + stationId), {
-                type: "line",
-                data: {
-                  datasets: [
-                    {
-                      label: translations[currentLang].maxTemp,
-                      data: chartData.map(point => ({x: point.x, y: point.y_max})),
-                      borderColor: "rgba(255, 99, 132, 0.8)",
-                      backgroundColor: "rgba(255, 99, 132, 0.1)",
-                      borderWidth: 1.5,
-                      pointRadius: 0,
-                      fill: false,
-                      tension: 0.2,
-                      yAxisID: 'y'
+
+              new Chart(
+                document.getElementById("dailyChart-" + stationId),
+                {
+                  type: "line",
+                  data: {
+                    datasets: [
+                      {
+                        label: translations[currentLang].maxTemp,
+                        data: chartData.map((point) => ({
+                          x: point.x,
+                          y: point.y_max,
+                        })),
+                        borderColor: "rgba(255, 99, 132, 0.8)",
+                        backgroundColor: "rgba(255, 99, 132, 0.1)",
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        fill: false,
+                        tension: 0.2,
+                        yAxisID: "y",
+                      },
+                      {
+                        label: translations[currentLang].minTemp,
+                        data: chartData.map((point) => ({
+                          x: point.x,
+                          y: point.y_min,
+                        })),
+                        borderColor: "rgba(54, 162, 235, 0.8)",
+                        backgroundColor: "rgba(54, 162, 235, 0.1)",
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        fill: false,
+                        tension: 0.2,
+                        yAxisID: "y",
+                      },
+                      {
+                        label: translations[currentLang].precip,
+                        data: chartData.map((point) => ({
+                          x: point.x,
+                          y: point.y_prcp,
+                        })),
+                        borderColor: "rgba(75, 192, 192, 0.8)",
+                        backgroundColor: "rgba(75, 192, 192, 0.2)",
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        fill: true,
+                        tension: 0.2,
+                        yAxisID: "y1",
+                      },
+                    ],
+                  },
+                  options: {
+                    ...chartDefaults,
+                    scales: {
+                      ...chartDefaults.scales,
+                      y: {
+                        ...chartDefaults.scales.y,
+                        min: minTemp - 2,
+                        max: maxTemp + 2,
+                        ticks: {
+                          stepSize: 5,
+                        },
+                      },
                     },
-                    {
-                      label: translations[currentLang].minTemp,
-                      data: chartData.map(point => ({x: point.x, y: point.y_min})),
-                      borderColor: "rgba(54, 162, 235, 0.8)",
-                      backgroundColor: "rgba(54, 162, 235, 0.1)",
-                      borderWidth: 1.5,
-                      pointRadius: 0,
-                      fill: false,
-                      tension: 0.2,
-                      yAxisID: 'y'
-                    },
-                    {
-                      label: translations[currentLang].precip,
-                      data: chartData.map(point => ({x: point.x, y: point.y_prcp})),
-                      borderColor: "rgba(75, 192, 192, 0.8)",
-                      backgroundColor: "rgba(75, 192, 192, 0.2)",
-                      borderWidth: 1.5,
-                      pointRadius: 0,
-                      fill: true,
-                      tension: 0.2,
-                      yAxisID: 'y1'
-                    }
-                  ]
+                  },
                 },
-                options: {
-                  ...chartDefaults,
-                  scales: {
-                    ...chartDefaults.scales,
-                    y: {
-                      ...chartDefaults.scales.y,
-                      min: minTemp - 2,
-                      max: maxTemp + 2,
-                      ticks: {
-                        stepSize: 5
-                      }
-                    }
-                  }
-                }
-              });
+              );
             }),
-          
+
           fetch("plots/" + stationId + "-monthly.csv")
-            .then(response => response.text())
-            .then(csvData => {
+            .then((response) => response.text())
+            .then((csvData) => {
               const results = Papa.parse(csvData, { header: true });
               const data = results.data;
-              
+
               // Construct monthly data
               // Set fixed year and ignore display
               const baseDate = new Date(2020, 0, 1);
-              const chartData = data.map(row => {
-                const month = parseInt(row.MONTH);
-                return {
-                  x: new Date(baseDate.getFullYear(), month - 1, 1),
-                  y_max: parseFloat(row.TMAX_P90),
-                  y_min: parseFloat(row.TMIN_P10),
-                  y_prcp: parseFloat(row.PRCP_SUM) || 0,
-                  month: month,
-                  dateStr: (currentLang === 'zh' || currentLang === 'ja') ? month + translations[currentLang].month : month.toString()
-                };
-              }).filter(point => !isNaN(point.y_max) && !isNaN(point.y_min));
+              const chartData = data
+                .map((row) => {
+                  const month = parseInt(row.MONTH);
+                  return {
+                    x: new Date(baseDate.getFullYear(), month - 1, 1),
+                    y_max: parseFloat(row.TMAX_P90),
+                    y_min: parseFloat(row.TMIN_P10),
+                    y_prcp: parseFloat(row.PRCP_SUM) || 0,
+                    month: month,
+                    dateStr:
+                      currentLang === "zh" || currentLang === "ja"
+                        ? month + translations[currentLang].month
+                        : month.toString(),
+                  };
+                })
+                .filter((point) =>
+                  !isNaN(point.y_max) && !isNaN(point.y_min)
+                );
 
               // Calculate temperature range
-              const temperatures = chartData.flatMap(point => [point.y_max, point.y_min]);
+              const temperatures = chartData.flatMap((point) => [
+                point.y_max,
+                point.y_min,
+              ]);
               const minTemp = Math.floor(Math.min(...temperatures));
               const maxTemp = Math.ceil(Math.max(...temperatures));
-              
-              new Chart(document.getElementById("monthlyChart-" + stationId), {
-                type: "line",
-                data: {
-                  datasets: [
-                    {
-                      label: translations[currentLang].maxTemp,
-                      data: chartData.map(point => ({x: point.x, y: point.y_max})),
-                      borderColor: "rgba(255, 99, 132, 0.8)",
-                      backgroundColor: "rgba(255, 99, 132, 0.1)",
-                      borderWidth: 2,
-                      pointRadius: 4,
-                      pointBackgroundColor: "rgba(255, 99, 132, 1)",
-                      fill: false,
-                      tension: 0.3,
-                      yAxisID: 'y'
+
+              new Chart(
+                document.getElementById("monthlyChart-" + stationId),
+                {
+                  type: "line",
+                  data: {
+                    datasets: [
+                      {
+                        label: translations[currentLang].maxTemp,
+                        data: chartData.map((point) => ({
+                          x: point.x,
+                          y: point.y_max,
+                        })),
+                        borderColor: "rgba(255, 99, 132, 0.8)",
+                        backgroundColor: "rgba(255, 99, 132, 0.1)",
+                        borderWidth: 2,
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgba(255, 99, 132, 1)",
+                        fill: false,
+                        tension: 0.3,
+                        yAxisID: "y",
+                      },
+                      {
+                        label: translations[currentLang].minTemp,
+                        data: chartData.map((point) => ({
+                          x: point.x,
+                          y: point.y_min,
+                        })),
+                        borderColor: "rgba(54, 162, 235, 0.8)",
+                        backgroundColor: "rgba(54, 162, 235, 0.1)",
+                        borderWidth: 2,
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgba(54, 162, 235, 1)",
+                        fill: false,
+                        tension: 0.3,
+                        yAxisID: "y",
+                      },
+                      {
+                        label: translations[currentLang].precip,
+                        data: chartData.map((point) => ({
+                          x: point.x,
+                          y: point.y_prcp,
+                        })),
+                        borderColor: "rgba(75, 192, 192, 0.8)",
+                        backgroundColor: "rgba(75, 192, 192, 0.2)",
+                        borderWidth: 2,
+                        pointRadius: 4,
+                        pointBackgroundColor: "rgba(75, 192, 192, 1)",
+                        fill: true,
+                        tension: 0.3,
+                        yAxisID: "y1",
+                      },
+                    ],
+                  },
+                  options: {
+                    ...chartDefaults,
+                    scales: {
+                      ...chartDefaults.scales,
+                      y: {
+                        ...chartDefaults.scales.y,
+                        position: "left",
+                        min: minTemp - 2,
+                        max: maxTemp + 2,
+                        ticks: {
+                          stepSize: 5,
+                        },
+                      },
+                      y1: {
+                        position: "right",
+                        grid: {
+                          drawOnChartArea: false,
+                        },
+                        title: {
+                          display: true,
+                          text: translations[currentLang].precipAxis,
+                          padding: { top: 10, bottom: 10 },
+                          font: {
+                            size: 14,
+                          },
+                        },
+                        ticks: {
+                          font: {
+                            size: 12,
+                          },
+                        },
+                      },
                     },
-                    {
-                      label: translations[currentLang].minTemp,
-                      data: chartData.map(point => ({x: point.x, y: point.y_min})),
-                      borderColor: "rgba(54, 162, 235, 0.8)",
-                      backgroundColor: "rgba(54, 162, 235, 0.1)",
-                      borderWidth: 2,
-                      pointRadius: 4,
-                      pointBackgroundColor: "rgba(54, 162, 235, 1)",
-                      fill: false,
-                      tension: 0.3,
-                      yAxisID: 'y'
-                    },
-                    {
-                      label: translations[currentLang].precip,
-                      data: chartData.map(point => ({x: point.x, y: point.y_prcp})),
-                      borderColor: "rgba(75, 192, 192, 0.8)",
-                      backgroundColor: "rgba(75, 192, 192, 0.2)",
-                      borderWidth: 2,
-                      pointRadius: 4,
-                      pointBackgroundColor: "rgba(75, 192, 192, 1)",
-                      fill: true,
-                      tension: 0.3,
-                      yAxisID: 'y1'
-                    }
-                  ]
+                  },
                 },
-                options: {
-                  ...chartDefaults,
-                  scales: {
-                    ...chartDefaults.scales,
-                    y: {
-                      ...chartDefaults.scales.y,
-                      position: 'left',
-                      min: minTemp - 2,
-                      max: maxTemp + 2,
-                      ticks: {
-                        stepSize: 5
-                      }
-                    },
-                    y1: {
-                      position: 'right',
-                      grid: {
-                        drawOnChartArea: false
-                      },
-                      title: {
-                        display: true,
-                        text: translations[currentLang].precipAxis,
-                        padding: {top: 10, bottom: 10},
-                        font: {
-                          size: 14
-                        }
-                      },
-                      ticks: {
-                        font: {
-                          size: 12
-                        }
-                      }
-                    }
-                  }
-                }
-              });
-            })
+              );
+            }),
         ]);
       }
 
@@ -780,15 +898,19 @@
         const properties = feature.properties;
         const coordinates = feature.geometry.coordinates;
         const stationId = properties.ID;
-        
+
         return `
           <div style="width: 80vw; max-width: 800px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); box-sizing: border-box;">
             <h3 style="margin-top: 0; margin-bottom: 10px;">${t.stationInfo}</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px">
               <p style="margin: 5px 0"><strong>${t.stationId}:</strong> ${properties.ID}</p>
               <p style="margin: 5px 0"><strong>${t.name}:</strong> ${properties.NAME}</p>
-              <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${coordinates[0].toFixed(2)}°</p>
-              <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${coordinates[1].toFixed(2)}°</p>
+              <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${
+          coordinates[0].toFixed(2)
+        }°</p>
+              <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${
+          coordinates[1].toFixed(2)
+        }°</p>
               <p style="margin: 5px 0"><strong>${t.elevation}:</strong> ${properties.ELEVATION}${t.meters}</p>
             </div>
             <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 20px;">
@@ -817,14 +939,19 @@
         if (window.baseLayer) {
           map.removeLayer(window.baseLayer);
         }
-        
+
         // Create new map layer
         window.baseLayer = protomapsL.leafletLayer({
-          url: "https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=019532177fa38e19",
+          url:
+            "https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=019532177fa38e19",
           flavor: "white",
           attribution:
             '© <a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',
-          lang: currentLang === 'zh' ? 'zh' : (currentLang === 'ja' ? 'ja' : 'en')
+          lang: currentLang === "zh"
+            ? "zh"
+            : currentLang === "ja"
+            ? "ja"
+            : "en",
         });
         window.baseLayer.addTo(map);
       }
@@ -836,102 +963,132 @@
       let selectedStations = [];
       let compareChart = null;
       let allStationData = {};
-      let activeCompareTab = 'temperature';
-      
+      let activeCompareTab = "temperature";
+
       // Initialize comparison functionality
       function initComparisonFeature() {
         // Update translations for UI elements
         updateComparisonTranslations();
-        
+
         // Setup event handlers
-        document.getElementById('toggleComparePanel').addEventListener('click', toggleComparePanel);
-        document.getElementById('closeComparePanel').addEventListener('click', toggleComparePanel);
-        document.getElementById('viewComparisonBtn').addEventListener('click', showComparisonModal);
-        document.getElementById('clearComparisonBtn').addEventListener('click', clearSelectedStations);
-        document.getElementById('closeComparisonModal').addEventListener('click', hideComparisonModal);
-        
+        document
+          .getElementById("toggleComparePanel")
+          .addEventListener("click", toggleComparePanel);
+        document
+          .getElementById("closeComparePanel")
+          .addEventListener("click", toggleComparePanel);
+        document
+          .getElementById("viewComparisonBtn")
+          .addEventListener("click", showComparisonModal);
+        document
+          .getElementById("clearComparisonBtn")
+          .addEventListener("click", clearSelectedStations);
+        document
+          .getElementById("closeComparisonModal")
+          .addEventListener("click", hideComparisonModal);
+
         // Set up tab switching
-        document.getElementById('temperatureTab').addEventListener('click', function() {
-          switchComparisonTab('temperature');
-        });
-        document.getElementById('precipitationTab').addEventListener('click', function() {
-          switchComparisonTab('precipitation');
-        });
+        document
+          .getElementById("temperatureTab")
+          .addEventListener("click", function () {
+            switchComparisonTab("temperature");
+          });
+        document
+          .getElementById("precipitationTab")
+          .addEventListener("click", function () {
+            switchComparisonTab("precipitation");
+          });
       }
-      
+
       // Update comparison UI translations
       function updateComparisonTranslations() {
         const t = translations[currentLang];
-        document.getElementById('comparePanelTitle').textContent = t.comparePanel;
-        document.getElementById('compareLimit').textContent = t.compareLimit;
-        document.getElementById('viewComparisonBtn').textContent = t.showComparison;
-        document.getElementById('clearComparisonBtn').textContent = t.clear;
-        document.getElementById('compareModalTitle').textContent = t.compareMonthly;
-        document.getElementById('temperatureTab').textContent = t.compareTemperature;
-        document.getElementById('precipitationTab').textContent = t.comparePrecipitation;
-        document.getElementById('noStationsMessage').textContent = t.noStationSelected;
+        document.getElementById("comparePanelTitle").textContent =
+          t.comparePanel;
+        document.getElementById("compareLimit").textContent =
+          t.compareLimit;
+        document.getElementById("viewComparisonBtn").textContent =
+          t.showComparison;
+        document.getElementById("clearComparisonBtn").textContent =
+          t.clear;
+        document.getElementById("compareModalTitle").textContent =
+          t.compareMonthly;
+        document.getElementById("temperatureTab").textContent =
+          t.compareTemperature;
+        document.getElementById("precipitationTab").textContent =
+          t.comparePrecipitation;
+        document.getElementById("noStationsMessage").textContent =
+          t.noStationSelected;
       }
-      
+
       // Toggle comparison panel visibility
       function toggleComparePanel() {
-        const panel = document.getElementById('comparePanel');
-        const button = document.getElementById('toggleComparePanel');
-        
-        if (panel.style.display === 'none' || !panel.style.display) {
-          panel.style.display = 'block';
-          button.style.display = 'none';
+        const panel = document.getElementById("comparePanel");
+        const button = document.getElementById("toggleComparePanel");
+
+        if (panel.style.display === "none" || !panel.style.display) {
+          panel.style.display = "block";
+          button.style.display = "none";
         } else {
-          panel.style.display = 'none';
-          button.style.display = 'flex';
+          panel.style.display = "none";
+          button.style.display = "flex";
         }
       }
-      
+
       // Add station to comparison
       function addStationToCompare(stationId, stationName) {
-        if (selectedStations.some(station => station.id === stationId)) {
+        if (
+          selectedStations.some((station) => station.id === stationId)
+        ) {
           return; // Station already in the list
         }
-        
+
         if (selectedStations.length >= 3) {
           alert(translations[currentLang].compareLimit);
           return;
         }
-        
+
         selectedStations.push({
           id: stationId,
-          name: stationName
+          name: stationName,
         });
-        
+
         updateCompareStationsList();
-        
+
         // Fetch the station data for comparison if we don't have it yet
         if (!allStationData[stationId]) {
           fetchStationDataForComparison(stationId);
         }
       }
-      
+
       // Remove station from comparison
       function removeStationFromCompare(stationId) {
-        selectedStations = selectedStations.filter(station => station.id !== stationId);
+        selectedStations = selectedStations.filter(
+          (station) => station.id !== stationId,
+        );
         updateCompareStationsList();
       }
-      
+
       // Clear all selected stations
       function clearSelectedStations() {
         selectedStations = [];
         updateCompareStationsList();
       }
-      
+
       // Update the stations list in the comparison panel
       function updateCompareStationsList() {
-        const listContainer = document.getElementById('compareStationList');
-        const noStationsMessage = document.getElementById('noStationsMessage');
-        
+        const listContainer = document.getElementById(
+          "compareStationList",
+        );
+        const noStationsMessage = document.getElementById(
+          "noStationsMessage",
+        );
+
         // Clear the current list
         while (listContainer.firstChild) {
           listContainer.removeChild(listContainer.firstChild);
         }
-        
+
         if (selectedStations.length === 0) {
           listContainer.appendChild(noStationsMessage);
           return;
@@ -940,39 +1097,46 @@
             listContainer.removeChild(noStationsMessage);
           }
         }
-        
+
         // Add each station to the list
-        selectedStations.forEach(station => {
-          const stationItem = document.createElement('div');
-          stationItem.className = 'compare-station-item';
-          
-          const stationName = document.createElement('div');
-          stationName.className = 'compare-station-name';
+        selectedStations.forEach((station) => {
+          const stationItem = document.createElement("div");
+          stationItem.className = "compare-station-item";
+
+          const stationName = document.createElement("div");
+          stationName.className = "compare-station-name";
           stationName.textContent = `${station.name} (${station.id})`;
           stationItem.appendChild(stationName);
-          
-          const removeButton = document.createElement('button');
-          removeButton.className = 'remove-station-btn';
-          removeButton.textContent = '×';
-          removeButton.addEventListener('click', () => removeStationFromCompare(station.id));
+
+          const removeButton = document.createElement("button");
+          removeButton.className = "remove-station-btn";
+          removeButton.textContent = "×";
+          removeButton.addEventListener(
+            "click",
+            () => removeStationFromCompare(station.id),
+          );
           stationItem.appendChild(removeButton);
-          
+
           listContainer.appendChild(stationItem);
         });
       }
-      
+
       // Fetch station data for comparison
       async function fetchStationDataForComparison(stationId) {
         try {
-          const monthlyResponse = await fetch("plots/" + stationId + "-monthly.csv");
+          const monthlyResponse = await fetch(
+            "plots/" + stationId + "-monthly.csv",
+          );
           const monthlyText = await monthlyResponse.text();
-          const monthlyResults = Papa.parse(monthlyText, { header: true });
-          
+          const monthlyResults = Papa.parse(monthlyText, {
+            header: true,
+          });
+
           // Construct monthly data
           const baseDate = new Date(2020, 0, 1);
           const monthlyData = monthlyResults.data
-            .filter(row => row.MONTH) // Ensure we have valid rows
-            .map(row => {
+            .filter((row) => row.MONTH) // Ensure we have valid rows
+            .map((row) => {
               const month = parseInt(row.MONTH);
               return {
                 month: month,
@@ -982,144 +1146,155 @@
                 prcp_sum: parseFloat(row.PRCP_SUM) || 0,
               };
             })
-            .filter(point => !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
-          
+            .filter(
+              (point) =>
+                !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10),
+            );
+
           // Store data
           allStationData[stationId] = {
-            monthly: monthlyData
+            monthly: monthlyData,
           };
         } catch (error) {
-          console.error("Error fetching data for station:", stationId, error);
+          console.error(
+            "Error fetching data for station:",
+            stationId,
+            error,
+          );
         }
       }
-      
+
       // Show comparison modal
       async function showComparisonModal() {
         if (selectedStations.length === 0) {
           alert(translations[currentLang].noStationSelected);
           return;
         }
-        
-        document.getElementById('comparisonModal').style.display = 'flex';
-        
+
+        document.getElementById("comparisonModal").style.display =
+          "flex";
+
         // Wait for all data to be fetched
         for (const station of selectedStations) {
           if (!allStationData[station.id]) {
             await fetchStationDataForComparison(station.id);
           }
         }
-        
+
         // Show comparison chart
         renderComparisonChart();
       }
-      
+
       // Hide comparison modal
       function hideComparisonModal() {
-        document.getElementById('comparisonModal').style.display = 'none';
+        document.getElementById("comparisonModal").style.display =
+          "none";
         if (compareChart) {
           compareChart.destroy();
           compareChart = null;
         }
       }
-      
+
       // Switch between temperature and precipitation tabs
       function switchComparisonTab(tab) {
         activeCompareTab = tab;
-        
+
         // Update active tab styling
-        document.querySelectorAll('.compare-tab').forEach(el => {
-          el.classList.remove('active');
+        document.querySelectorAll(".compare-tab").forEach((el) => {
+          el.classList.remove("active");
         });
-        document.getElementById(tab + 'Tab').classList.add('active');
-        
+        document.getElementById(tab + "Tab").classList.add("active");
+
         // Re-render the chart
         if (compareChart) {
           compareChart.destroy();
           compareChart = null;
         }
-        
+
         renderComparisonChart();
       }
-      
+
       // Render comparison chart
       function renderComparisonChart() {
-        const ctx = document.getElementById('compareChart').getContext('2d');
+        const ctx = document.getElementById("compareChart").getContext(
+          "2d",
+        );
         const t = translations[currentLang];
-        
+
         if (compareChart) {
           compareChart.destroy();
         }
-        
+
         const datasets = [];
-        const colors = ['#FF6384', '#36A2EB', '#4BC0C0']; // Colors for the stations
-        
+        const colors = ["#FF6384", "#36A2EB", "#4BC0C0"]; // Colors for the stations
+
         selectedStations.forEach((station, index) => {
           const stationData = allStationData[station.id];
           if (!stationData) return;
-          
+
           const color = colors[index % colors.length];
-          
-          if (activeCompareTab === 'temperature') {
+
+          if (activeCompareTab === "temperature") {
             // Add max temperature dataset
             datasets.push({
               label: `${station.name} - ${t.maxTemp}`,
-              data: stationData.monthly.map(point => ({
+              data: stationData.monthly.map((point) => ({
                 x: point.x,
-                y: point.tmax_p90
+                y: point.tmax_p90,
               })),
               borderColor: color,
-              backgroundColor: color + '33', // Add transparency
+              backgroundColor: color + "33", // Add transparency
               borderWidth: 2,
               pointRadius: 5,
               fill: false,
-              tension: 0.3
+              tension: 0.3,
             });
-            
+
             // Add min temperature dataset
             datasets.push({
               label: `${station.name} - ${t.minTemp}`,
-              data: stationData.monthly.map(point => ({
+              data: stationData.monthly.map((point) => ({
                 x: point.x,
-                y: point.tmin_p10
+                y: point.tmin_p10,
               })),
               borderColor: color,
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
               borderWidth: 2,
               pointRadius: 5,
               borderDash: [5, 5], // Dashed line for min temperature
               fill: false,
-              tension: 0.3
+              tension: 0.3,
             });
           } else {
             // Add precipitation dataset
             datasets.push({
               label: `${station.name} - ${t.precip}`,
-              data: stationData.monthly.map(point => ({
+              data: stationData.monthly.map((point) => ({
                 x: point.x,
-                y: point.prcp_sum
+                y: point.prcp_sum,
               })),
               borderColor: color,
-              backgroundColor: color + '33', // Add transparency
+              backgroundColor: color + "33", // Add transparency
               borderWidth: 2,
               pointRadius: 5,
               fill: true,
-              tension: 0.3
+              tension: 0.3,
             });
           }
         });
-        
+
         compareChart = new Chart(ctx, {
-          type: 'line',
+          type: "line",
           data: {
-            datasets: datasets
+            datasets: datasets,
           },
           options: {
             responsive: true,
             maintainAspectRatio: false,
             interaction: {
               intersect: false,
-              mode: 'nearest',
-              axis: 'x'
+              mode: "nearest",
+              axis: "x",
             },
             plugins: {
               legend: {
@@ -1127,30 +1302,30 @@
                 labels: {
                   padding: 15,
                   usePointStyle: true,
-                  pointStyle: 'circle'
-                }
+                  pointStyle: "circle",
+                },
               },
               tooltip: {
                 enabled: true,
-                backgroundColor: 'rgba(255, 255, 255, 0.9)',
-                titleColor: '#000',
-                bodyColor: '#000',
-                borderColor: '#ddd',
+                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                titleColor: "#000",
+                bodyColor: "#000",
+                borderColor: "#ddd",
                 borderWidth: 1,
                 padding: 10,
                 displayColors: true,
-                titleAlign: 'center',
+                titleAlign: "center",
                 callbacks: {
-                  title: function(tooltipItems) {
-                    if (!tooltipItems.length) return '';
+                  title: function (tooltipItems) {
+                    if (!tooltipItems.length) return "";
                     const date = tooltipItems[0].raw.x;
                     const month = date.getMonth() + 1;
-                    return currentLang === 'zh' ? 
-                      month + translations[currentLang].month : 
-                      month.toString();
-                  }
-                }
-              }
+                    return currentLang === "zh"
+                      ? month + translations[currentLang].month
+                      : month.toString();
+                  },
+                },
+              },
             },
             scales: {
               x: {
@@ -1158,66 +1333,72 @@
                 time: {
                   unit: "month",
                   displayFormats: {
-                    month: currentLang === 'zh' ? `M${translations[currentLang].month}` : `M`,
+                    month: currentLang === "zh"
+                      ? `M${translations[currentLang].month}`
+                      : `M`,
                   },
                 },
                 grid: {
-                  color: '#eee'
+                  color: "#eee",
                 },
                 title: {
                   display: true,
                   text: translations[currentLang].monthAxis,
-                  padding: {top: 10, bottom: 10},
+                  padding: { top: 10, bottom: 10 },
                   font: {
-                    size: 14
-                  }
+                    size: 14,
+                  },
                 },
                 ticks: {
                   maxRotation: 0,
                   font: {
-                    size: 12
-                  }
-                }
+                    size: 12,
+                  },
+                },
               },
               y: {
                 grid: {
-                  color: '#eee'
+                  color: "#eee",
                 },
                 title: {
                   display: true,
-                  text: activeCompareTab === 'temperature' ? 
-                    translations[currentLang].tempAxis : 
-                    translations[currentLang].precipAxis,
-                  padding: {top: 10, bottom: 10},
+                  text: activeCompareTab === "temperature"
+                    ? translations[currentLang].tempAxis
+                    : translations[currentLang].precipAxis,
+                  padding: { top: 10, bottom: 10 },
                   font: {
-                    size: 14
-                  }
+                    size: 14,
+                  },
                 },
                 ticks: {
                   font: {
-                    size: 12
-                  }
-                }
-              }
-            }
-          }
+                    size: 12,
+                  },
+                },
+              },
+            },
+          },
         });
       }
-      
+
       function generatePopupContent(feature) {
         const t = translations[currentLang];
         const properties = feature.properties;
         const coordinates = feature.geometry.coordinates;
         const stationId = properties.ID;
-        
+
         return `
           <div style="width: 80vw; max-width: 800px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); box-sizing: border-box;">
             <h3 style="margin-top: 0; margin-bottom: 10px;">${t.stationInfo}</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px">
               <p style="margin: 5px 0"><strong>${t.stationId}:</strong> ${properties.ID}</p>
               <p style="margin: 5px 0"><strong>${t.name}:</strong> ${properties.NAME}</p>
-              <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${coordinates[0].toFixed(2)}°</p>
-              <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${coordinates[1].toFixed(2)}°</p>
+              <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${
+          coordinates[0].toFixed(2)
+        }°</p>
+              <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${
+          coordinates[1].toFixed(2)
+        }°</p>
               <p style="margin: 5px 0"><strong>${t.elevation}:</strong> ${properties.ELEVATION}${t.meters}</p>
             </div>
             <button class="add-to-compare" onclick="addStationToCompare('${stationId}', '${properties.NAME}')">${t.compareBtn}</button>
@@ -1243,12 +1424,14 @@
       function getQueryParams() {
         const params = {};
         const queryString = window.location.search.substring(1);
-        const pairs = queryString.split('&');
-        
+        const pairs = queryString.split("&");
+
         for (let i = 0; i < pairs.length; i++) {
-          const pair = pairs[i].split('=');
+          const pair = pairs[i].split("=");
           if (pair[0]) {
-            params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+            params[decodeURIComponent(pair[0])] = decodeURIComponent(
+              pair[1] || "",
+            );
           }
         }
         return params;
@@ -1257,8 +1440,8 @@
       // Function to find and open station by ID
       function findAndOpenStation(stationId) {
         let found = false;
-        
-        window.stationsLayer.eachLayer(function(layer) {
+
+        window.stationsLayer.eachLayer(function (layer) {
           const featureId = layer.feature.properties.ID;
           if (featureId === stationId) {
             found = true;
@@ -1266,39 +1449,43 @@
             layer.openPopup();
           }
         });
-        
+
         return found;
       }
 
       // Load station data
-      fetch('./matched_stations.geojson')
-        .then(response => response.json())
-        .then(data => {
+      fetch("./matched_stations.geojson")
+        .then((response) => response.json())
+        .then((data) => {
           // Create station layer
           window.stationsLayer = L.geoJSON(data, {
-            pointToLayer: function(feature, latlng) {
+            pointToLayer: function (feature, latlng) {
               return L.marker(latlng);
             },
-            onEachFeature: function(feature, layer) {
-              const popup = L.popup().setContent(generatePopupContent(feature));
+            onEachFeature: function (feature, layer) {
+              const popup = L.popup().setContent(
+                generatePopupContent(feature),
+              );
               layer.bindPopup(popup);
-              
+
               // Load data only when popup opens
-              layer.on('popupopen', function() {
+              layer.on("popupopen", function () {
                 loadChartData(feature.properties.ID);
               });
-            }
+            },
           }).addTo(map);
-          
+
           // Initialize comparison functionality
           initComparisonFeature();
-          
+
           // Check for station_id in URL and navigate to it
           const params = getQueryParams();
           if (params.station_id) {
             const found = findAndOpenStation(params.station_id);
             if (!found) {
-              console.warn("Station with ID " + params.station_id + " not found");
+              console.warn(
+                "Station with ID " + params.station_id + " not found",
+              );
             }
           }
         });
