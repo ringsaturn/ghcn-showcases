@@ -10982,6 +10982,2058 @@
         "HCN_CRN_FLAG": "",
         "WMO_ID": "47184"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3667,
+          53.7667
+        ]
+      },
+      "properties": {
+        "ID": "UKE00100808",
+        "NAME": "HULL",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9908,
+          51.5017
+        ]
+      },
+      "properties": {
+        "ID": "UKE00102158",
+        "NAME": "LYNEHAM",
+        "STATE": "",
+        "ELEVATION": 145.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1031,
+          52.245
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105003",
+        "NAME": "CAMBRIDGE NIAB",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9,
+          58.95
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105630",
+        "NAME": "KIRKWALL",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.57,
+          57.65
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105636",
+        "NAME": "KINLOSS",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.07,
+          56.45
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105642",
+        "NAME": "MYLNEFIELD",
+        "STATE": "",
+        "ELEVATION": 31.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1317,
+          52.1931
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105648",
+        "NAME": "CAMBRIDGE (B. GDNS)",
+        "STATE": "",
+        "ELEVATION": 13.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.17,
+          53.92
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105651",
+        "NAME": "ASKHAM BRYAN",
+        "STATE": "",
+        "ELEVATION": 32.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.46,
+          51.08
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105657",
+        "NAME": "GOUDHURST",
+        "STATE": "",
+        "ELEVATION": 85.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.4297,
+          55.85
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105660",
+        "NAME": "PAISLEY",
+        "STATE": "",
+        "ELEVATION": 32.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.82,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105669",
+        "NAME": "CWMYSTWYTH",
+        "STATE": "",
+        "ELEVATION": 301.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.15,
+          51.7
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105672",
+        "NAME": "DALE FORT",
+        "STATE": "",
+        "ELEVATION": 33.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.67,
+          51.43
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105675",
+        "NAME": "LONG ASHTON",
+        "STATE": "",
+        "ELEVATION": 51.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.22,
+          54.65
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105681",
+        "NAME": "ALDERGROVE",
+        "STATE": "",
+        "ELEVATION": 81.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5658,
+          55.4767
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105856",
+        "NAME": "AUCHINCRUIVE",
+        "STATE": "",
+        "ELEVATION": 48.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1858,
+          55.0989
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105857",
+        "NAME": "GLENLEE",
+        "STATE": "",
+        "ELEVATION": 55.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.95,
+          54.925
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105858",
+        "NAME": "THREAVE",
+        "STATE": "",
+        "ELEVATION": 73.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7858,
+          54.67
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105860",
+        "NAME": "NEWTON RIGG",
+        "STATE": "",
+        "ELEVATION": 169.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.02,
+          54.3381
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105861",
+        "NAME": "GRIZEDALE",
+        "STATE": "",
+        "ELEVATION": 91.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7031,
+          53.7739
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105862",
+        "NAME": "PRESTON: MOOR PARK",
+        "STATE": "",
+        "ELEVATION": 33.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0281,
+          53.2167
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105863",
+        "NAME": "HAWARDEN BRIDGE",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1958,
+          53.15
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105864",
+        "NAME": "LOGGERHEADS: COLOMENDY CENTRE",
+        "STATE": "",
+        "ELEVATION": 210.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.2231,
+          57.4867
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105865",
+        "NAME": "INVERNESS",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5717,
+          52.1389
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105866",
+        "NAME": "ABERPORTH",
+        "STATE": "",
+        "ELEVATION": 133.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0197,
+          52.4317
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105867",
+        "NAME": "GOGERDDAN",
+        "STATE": "",
+        "ELEVATION": 31.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9581,
+          50.6139
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105869",
+        "NAME": "SWANAGE",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1208,
+          50.3539
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105870",
+        "NAME": "PLYMOUTH: MOUNTBATTEN",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6508,
+          50.2917
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105871",
+        "NAME": "SLAPTON",
+        "STATE": "",
+        "ELEVATION": 32.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9989,
+          50.4367
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105872",
+        "NAME": "ST MAWGAN",
+        "STATE": "",
+        "ELEVATION": 103.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.5458,
+          50.8281
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105873",
+        "NAME": "BUDE",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3967,
+          57.0058
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105874",
+        "NAME": "BRAEMAR",
+        "STATE": "",
+        "ELEVATION": 339.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.22,
+          57.0367
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105875",
+        "NAME": "BALMORAL",
+        "STATE": "",
+        "ELEVATION": 283.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.07,
+          54.4517
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105876",
+        "NAME": "HILLSBOROUGH",
+        "STATE": "",
+        "ELEVATION": 116.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8289,
+          54.6031
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105877",
+        "NAME": "STORMONT CASTLE",
+        "STATE": "",
+        "ELEVATION": 56.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9031,
+          54.4389
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105878",
+        "NAME": "LOUGH NAVAR FOREST",
+        "STATE": "",
+        "ELEVATION": 126.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2,
+          49.2167
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105880",
+        "NAME": "JERSEY: AIRPORT",
+        "STATE": "",
+        "ELEVATION": 84.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2039,
+          57.205
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105881",
+        "NAME": "DYCE",
+        "STATE": "",
+        "ELEVATION": 65.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.5539,
+          53.0608
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105882",
+        "NAME": "ALWEN",
+        "STATE": "",
+        "ELEVATION": 345.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.1108,
+          56.5289
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105884",
+        "NAME": "ARDTALNAIG",
+        "STATE": "",
+        "ELEVATION": 130.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7689,
+          56.7181
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105885",
+        "NAME": "FASKALLY",
+        "STATE": "",
+        "ELEVATION": 94.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8617,
+          56.3767
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105886",
+        "NAME": "LEUCHARS",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.2258,
+          55.8239
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105887",
+        "NAME": "PENICUIK",
+        "STATE": "",
+        "ELEVATION": 185.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.21,
+          55.9667
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105888",
+        "NAME": "EDINBURGH: ROYAL BOTANIC GARDE",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5258,
+          56.0039
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105889",
+        "NAME": "DUNBAR",
+        "STATE": "",
+        "ELEVATION": 23.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3667,
+          55.7031
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105890",
+        "NAME": "BLYTH BRIDGE",
+        "STATE": "",
+        "ELEVATION": 253.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.905,
+          55.5408
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105891",
+        "NAME": "BOWHILL",
+        "STATE": "",
+        "ELEVATION": 168.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.5789,
+          55.2339
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105892",
+        "NAME": "KIELDER CASTLE",
+        "STATE": "",
+        "ELEVATION": 201.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6858,
+          55.215
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105893",
+        "NAME": "MORPETH: COCKLE PARK",
+        "STATE": "",
+        "ELEVATION": 95.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6417,
+          54.105
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105894",
+        "NAME": "HIGH MOWTHORPE",
+        "STATE": "",
+        "ELEVATION": 175.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3489,
+          53.1467
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105895",
+        "NAME": "SKEGNESS",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0267,
+          51.9589
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105897",
+        "NAME": "EAST BERGHOLT",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9617,
+          52.1231
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105898",
+        "NAME": "WATTISHAM",
+        "STATE": "",
+        "ELEVATION": 89.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.75,
+          52.4889
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105899",
+        "NAME": "LOWESTOFT",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3581,
+          51.8067
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105900",
+        "NAME": "ROTHAMSTED",
+        "STATE": "",
+        "ELEVATION": 128.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4308,
+          51.7317
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105901",
+        "NAME": "WRITTLE",
+        "STATE": "",
+        "ELEVATION": 32.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1617,
+          54.1
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105902",
+        "NAME": "MALHAM TARN",
+        "STATE": "",
+        "ELEVATION": 381.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7739,
+          53.8131
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105903",
+        "NAME": "BRADFORD",
+        "STATE": "",
+        "ELEVATION": 134.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.49,
+          53.3808
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105904",
+        "NAME": "SHEFFIELD",
+        "STATE": "",
+        "ELEVATION": 131.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9131,
+          53.2567
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105905",
+        "NAME": "BUXTON",
+        "STATE": "",
+        "ELEVATION": 307.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.25,
+          53.005
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105906",
+        "NAME": "NOTTINGHAM: WATNALL",
+        "STATE": "",
+        "ELEVATION": 117.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.115,
+          53.2231
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105907",
+        "NAME": "WARSOP",
+        "STATE": "",
+        "ELEVATION": 46.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2158,
+          52.68
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105908",
+        "NAME": "NEWTOWN LINFORD",
+        "STATE": "",
+        "ELEVATION": 119.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6031,
+          52.2058
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105909",
+        "NAME": "WELLESBOURNE",
+        "STATE": "",
+        "ELEVATION": 47.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.27,
+          52.9981
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105910",
+        "NAME": "KEELE",
+        "STATE": "",
+        "ELEVATION": 179.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3067,
+          52.1117
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105911",
+        "NAME": "MALVERN",
+        "STATE": "",
+        "ELEVATION": 62.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.075,
+          52.4367
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105912",
+        "NAME": "HALESOWEN",
+        "STATE": "",
+        "ELEVATION": 153.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.31,
+          57.6131
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105913",
+        "NAME": "KINLOCHEWE",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9681,
+          52.2117
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105914",
+        "NAME": "LYONSHALL",
+        "STATE": "",
+        "ELEVATION": 155.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1789,
+          51.5608
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105915",
+        "NAME": "HAMPSTEAD",
+        "STATE": "",
+        "ELEVATION": 137.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9481,
+          51.185
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105917",
+        "NAME": "WYE",
+        "STATE": "",
+        "ELEVATION": 56.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.34,
+          51.3458
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105918",
+        "NAME": "MANSTON",
+        "STATE": "",
+        "ELEVATION": 49.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.6758,
+          50.7808
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105919",
+        "NAME": "BOGNOR REGIS",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.285,
+          50.7589
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105920",
+        "NAME": "EASTBOURNE",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5717,
+          50.855
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105921",
+        "NAME": "HASTINGS",
+        "STATE": "",
+        "ELEVATION": 45.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1081,
+          51.6031
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105922",
+        "NAME": "WALLINGFORD",
+        "STATE": "",
+        "ELEVATION": 48.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.8339,
+          50.7789
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105923",
+        "NAME": "HURN",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5739,
+          50.7417
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105924",
+        "NAME": "EVERTON",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4381,
+          51.1231
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105925",
+        "NAME": "LECKFORD",
+        "STATE": "",
+        "ELEVATION": 117.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.9839,
+          50.7839
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105926",
+        "NAME": "HAYLING ISLAND",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.8481,
+          51.1767
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105927",
+        "NAME": "ALICE HOLT LODGE",
+        "STATE": "",
+        "ELEVATION": 115.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2867,
+          57.0139
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105929",
+        "NAME": "RHUM: KINLOCH",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9858,
+          56.0281
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105930",
+        "NAME": "BENMORE: YOUNGER BOTANIC GARDE",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0639,
+          55.8389
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105931",
+        "NAME": "BUTE: ROTHESAY",
+        "STATE": "",
+        "ELEVATION": 43.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7589,
+          55.4167
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105932",
+        "NAME": "LEADHILLS",
+        "STATE": "",
+        "ELEVATION": 393.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6331,
+          55.7
+        ]
+      },
+      "properties": {
+        "ID": "UKE00105933",
+        "NAME": "CARNWATH",
+        "STATE": "",
+        "ELEVATION": 208.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.8867,
+          56.4967
+        ]
+      },
+      "properties": {
+        "ID": "UKE00107640",
+        "NAME": "TIREE",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4489,
+          51.4789
+        ]
+      },
+      "properties": {
+        "ID": "UKE00107650",
+        "NAME": "HEATHROW",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6,
+          49.4331
+        ]
+      },
+      "properties": {
+        "ID": "UKE00107663",
+        "NAME": "GUERNSEY: AIRPORT",
+        "STATE": "",
+        "ELEVATION": 101.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.64,
+          51.0058
+        ]
+      },
+      "properties": {
+        "ID": "UKE00107962",
+        "NAME": "YEOVILTON",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.6331,
+          54.085
+        ]
+      },
+      "properties": {
+        "ID": "UKE00108854",
+        "NAME": "RONALDSWAY",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.29,
+          52.745
+        ]
+      },
+      "properties": {
+        "ID": "UKE00108855",
+        "NAME": "TERRINGTON ST CLEMENT",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3958,
+          57.0108
+        ]
+      },
+      "properties": {
+        "ID": "UKE00115807",
+        "NAME": "BRAEMAR-1",
+        "STATE": "",
+        "ELEVATION": 327.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7308,
+          52.4831
+        ]
+      },
+      "properties": {
+        "ID": "UKE00115811",
+        "NAME": "LOWESTOFT MONKTON AVENUE",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0381,
+          53.7742
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156832",
+        "NAME": "BLACKPOOL SQUIRES GATE",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7531,
+          51.1614
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156836",
+        "NAME": "BOSCOMBE DOWN",
+        "STATE": "",
+        "ELEVATION": 126.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9619,
+          54.9342
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156840",
+        "NAME": "CARLISLE",
+        "STATE": "",
+        "ELEVATION": 28.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.1467,
+          53.8275
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156844",
+        "NAME": "CAWOOD",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5017,
+          53.0306
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156848",
+        "NAME": "CRANWELL",
+        "STATE": "",
+        "ELEVATION": 63.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5842,
+          54.7678
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156852",
+        "NAME": "DURHAM",
+        "STATE": "",
+        "ELEVATION": 102.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.1131,
+          51.4306
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156856",
+        "NAME": "LACOCK",
+        "STATE": "",
+        "ELEVATION": 49.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.3217,
+          57.7117
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156860",
+        "NAME": "LOSSIEMOUTH",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2353,
+          52.4008
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156864",
+        "NAME": "MONKS WOOD",
+        "STATE": "",
+        "ELEVATION": 41.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8581,
+          54.0758
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156868",
+        "NAME": "MORECAMBE NO 2",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0583,
+          52.0994
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156872",
+        "NAME": "PERSHORE COLLEGE",
+        "STATE": "",
+        "ELEVATION": 37.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2494,
+          52.8358
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156876",
+        "NAME": "SUTTON BONINGTON",
+        "STATE": "",
+        "ELEVATION": 43.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2956,
+          50.575
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156880",
+        "NAME": "WIGHT ST CATHERINES POINT",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.4744,
+          51.3103
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156884",
+        "NAME": "WISLEY",
+        "STATE": "",
+        "ELEVATION": 38.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.5942,
+          52.0142
+        ]
+      },
+      "properties": {
+        "ID": "UKE00156888",
+        "NAME": "WOBURN",
+        "STATE": "",
+        "ELEVATION": 89.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
     }
   ]
 }

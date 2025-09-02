@@ -61,6 +61,7 @@ matched = df.filter(
     | pl.col("ID").str.starts_with("KSM")
     | pl.col("ID").str.starts_with("FRE")
     | pl.col("ID").str.starts_with("GMM")
+    | pl.col("ID").str.starts_with("UKE")
 )
 
 
