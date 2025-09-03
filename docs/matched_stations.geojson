@@ -12641,6 +12641,1507 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -115.1833,
+          32.4
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076040",
+        "NAME": "EJIDO NUEVO LEON (OBS)",
+        "STATE": "",
+        "ELEVATION": 11.3,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76040"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.633,
+          31.85
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076050",
+        "NAME": "ENSENADA",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76050"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.85,
+          31.033
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076055",
+        "NAME": "SAN FELIPE  BCN",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76055"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.55,
+          31.3
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076061",
+        "NAME": "PUERTO PENASCO  SON.",
+        "STATE": "",
+        "ELEVATION": 62.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76061"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.8333,
+          30.7167
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076113",
+        "NAME": "ALTAR (OBS)",
+        "STATE": "",
+        "ELEVATION": 420.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76113"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.6833,
+          30.3667
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076118",
+        "NAME": "NACOZARI (SMN)",
+        "STATE": "",
+        "ELEVATION": 1099.7,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76118"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.95,
+          30.367
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076122",
+        "NAME": "NUEVA CASAS GRANDES",
+        "STATE": "",
+        "ELEVATION": 1487.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76122"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.048,
+          29.096
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076160",
+        "NAME": "GENERAL IGNACIO P GARCIA INTL",
+        "STATE": "",
+        "ELEVATION": 191.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76160"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.817,
+          28.95
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076220",
+        "NAME": "TEMOSACHIC",
+        "STATE": "",
+        "ELEVATION": 1932.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76220"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.0833,
+          28.6333
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076225",
+        "NAME": "CHIHUAHUA",
+        "STATE": "",
+        "ELEVATION": 1428.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76225"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.5167,
+          28.7
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076243",
+        "NAME": "PIEDRAS NEGRAS (OBS)",
+        "STATE": "",
+        "ELEVATION": 249.6,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76256"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.833,
+          27.393
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076253",
+        "NAME": "CIUDAD OBREGON INTL",
+        "STATE": "",
+        "ELEVATION": 62.5,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76253"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.767,
+          27.95
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076256",
+        "NAME": "EMPALME  SON.",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76256"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.933,
+          27.367
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076258",
+        "NAME": "CIUDAD OBREGON  SON.",
+        "STATE": "",
+        "ELEVATION": 40.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76258"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.333,
+          26.017
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076305",
+        "NAME": "LORETO",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76305"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -108.3167,
+          26.7167
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076311",
+        "NAME": "CHOIX",
+        "STATE": "",
+        "ELEVATION": 237.7,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76311"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.667,
+          26.933
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076323",
+        "NAME": "HIDALGO DEL PARRAL   CHIH.",
+        "STATE": "",
+        "ELEVATION": 1661.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76323"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.433,
+          26.883
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076342",
+        "NAME": "MONCLOVA",
+        "STATE": "",
+        "ELEVATION": 615.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76342"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.411,
+          25.568
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076382",
+        "NAME": "TORREON INTL",
+        "STATE": "",
+        "ELEVATION": 1124.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76382"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.017,
+          25.367
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076390",
+        "NAME": "SALTILLO",
+        "STATE": "",
+        "ELEVATION": 1790.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76390"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.3,
+          25.733
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076393",
+        "NAME": "MONTERREY (CITY)",
+        "STATE": "",
+        "ELEVATION": 515.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76393"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.7,
+          24.95
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076402",
+        "NAME": "CIUDAD CONSTITUCION",
+        "STATE": "",
+        "ELEVATION": 48.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76402"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.3,
+          24.167
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076405",
+        "NAME": "LA PAZ (CITY)",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76405"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.475,
+          24.765
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076412",
+        "NAME": "CULIACAN INTL",
+        "STATE": "",
+        "ELEVATION": 32.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76412"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.6,
+          24.05
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076423",
+        "NAME": "DURANGO  DGO.",
+        "STATE": "",
+        "ELEVATION": 1872.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76423"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.417,
+          23.2
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076458",
+        "NAME": "COLONIA JUAN CARRAS",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76458"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.65,
+          23.633
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076471",
+        "NAME": "SOMBRERETE  ZAC.",
+        "STATE": "",
+        "ELEVATION": 2351.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76471"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.133,
+          23.733
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076491",
+        "NAME": "CIUDAD VICTORIA",
+        "STATE": "",
+        "ELEVATION": 355.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76491"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.2,
+          23.7667
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076499",
+        "NAME": "SOTO LA MARINA (OBS)",
+        "STATE": "",
+        "ELEVATION": 20.7,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76499"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.267,
+          22.1
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076519",
+        "NAME": "COLOTLAN  JAL.",
+        "STATE": "",
+        "ELEVATION": 1673.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76519"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.567,
+          22.783
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076525",
+        "NAME": "ZACATECAS  ZAC. (LA BUFA  ZAC",
+        "STATE": "",
+        "ELEVATION": 2612.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.931,
+          22.254
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076539",
+        "NAME": "PONCIANO ARRIAGA INTL",
+        "STATE": "",
+        "ELEVATION": 1839.5,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76539"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.767,
+          22.0
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076543",
+        "NAME": "TAMUIN  S.L.P.",
+        "STATE": "",
+        "ELEVATION": 104.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76543"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.85,
+          22.2
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076548",
+        "NAME": "TAMPICO  TAMPS",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76548"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.8833,
+          21.4833
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076556",
+        "NAME": "TEPIC (OBS)",
+        "STATE": "",
+        "ELEVATION": 962.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76556"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.318,
+          21.705
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076571",
+        "NAME": "JESUS TERAN INTL",
+        "STATE": "",
+        "ELEVATION": 1862.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76571"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.917,
+          21.35
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076573",
+        "NAME": "LAGOS DE MORENO  JAL.",
+        "STATE": "",
+        "ELEVATION": 1942.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76573"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.283,
+          21.0
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076577",
+        "NAME": "GUANAJUATO",
+        "STATE": "",
+        "ELEVATION": 1999.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76577"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.983,
+          21.933
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076581",
+        "NAME": "RIO VERDE  S.L.P.",
+        "STATE": "",
+        "ELEVATION": 983.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76581"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.817,
+          21.317
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076585",
+        "NAME": "MATLAPA  S.L.P.",
+        "STATE": "",
+        "ELEVATION": 132.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76585"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.65,
+          21.2833
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076593",
+        "NAME": "PROGRESO",
+        "STATE": "",
+        "ELEVATION": 2.4,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76593"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.38,
+          20.72
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076612",
+        "NAME": "GUADALAJARA",
+        "STATE": "",
+        "ELEVATION": 1583.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76612"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.186,
+          20.617
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076625",
+        "NAME": "QUERETARO INTERCONTINENTAL",
+        "STATE": "",
+        "ELEVATION": 1919.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76625"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.75,
+          20.133
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076632",
+        "NAME": "PACHUCA  HGO.",
+        "STATE": "",
+        "ELEVATION": 2435.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76632"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.367,
+          20.083
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076634",
+        "NAME": "TULANCINGO  HGO.",
+        "STATE": "",
+        "ELEVATION": 2181.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76634"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.4,
+          20.95
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076640",
+        "NAME": "TUXPAN.VER.",
+        "STATE": "",
+        "ELEVATION": 28.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76640"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.65,
+          20.983
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076644",
+        "NAME": "AEROP.INTERNACIONAL",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76644"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2,
+          20.683
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076647",
+        "NAME": "VALLADOLID  YUC.",
+        "STATE": "",
+        "ELEVATION": 27.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76647"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.317,
+          19.05
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076654",
+        "NAME": "MANZANILLO",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76654"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.467,
+          19.717
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076656",
+        "NAME": "CIUDAD GUZMAN  JAL.",
+        "STATE": "",
+        "ELEVATION": 1515.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76656"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.577,
+          19.277
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076658",
+        "NAME": "COLIMA",
+        "STATE": "",
+        "ELEVATION": 751.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76658"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.28,
+          20.0
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076662",
+        "NAME": "ZAMORA",
+        "STATE": "",
+        "ELEVATION": 1540.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76662"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.183,
+          19.7
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076665",
+        "NAME": "MORELIA  MICH.",
+        "STATE": "",
+        "ELEVATION": 1913.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76665"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.7,
+          19.2833
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076675",
+        "NAME": "TOLUCA (OBS)",
+        "STATE": "",
+        "ELEVATION": 2725.8,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76675"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.183,
+          19.4
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076680",
+        "NAME": "MEXICO CITY",
+        "STATE": "",
+        "ELEVATION": 2303.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76680"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.183,
+          19.317
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076681",
+        "NAME": "GEOGRAFIA UNAM",
+        "STATE": "",
+        "ELEVATION": 2278.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76681"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.2333,
+          19.3167
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076683",
+        "NAME": "TLAXCALA DE XICONTECATL (DGE)",
+        "STATE": "",
+        "ELEVATION": 2229.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76683"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.371,
+          19.158
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076685",
+        "NAME": "HERMANOS SERDAN INTL",
+        "STATE": "",
+        "ELEVATION": 2243.6,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76685"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.917,
+          19.55
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076687",
+        "NAME": "JALAPA  VER.",
+        "STATE": "",
+        "ELEVATION": 1389.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76687"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.117,
+          19.15
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076692",
+        "NAME": "HACIENDA YLANG YLANG VERACRUZ",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76692"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5,
+          19.817
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076695",
+        "NAME": "INGENIERO ALBERTO ACUNA ONGAY",
+        "STATE": "",
+        "ELEVATION": 10.4,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76695"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.05,
+          19.5667
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076698",
+        "NAME": "FELIPE CARRILLO PUERTO (OBS)",
+        "STATE": "",
+        "ELEVATION": 9.8,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76698"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.95,
+          18.717
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076723",
+        "NAME": "ISLA SOCORRO  COL.",
+        "STATE": "",
+        "ELEVATION": 35.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76723"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.233,
+          18.883
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076726",
+        "NAME": "CUERNAVACA",
+        "STATE": "",
+        "ELEVATION": 1618.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76726"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1,
+          18.85
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076737",
+        "NAME": "ORIZABA",
+        "STATE": "",
+        "ELEVATION": 1259.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76737"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.417,
+          18.133
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076741",
+        "NAME": "COATZACOALCOS  VER.",
+        "STATE": "",
+        "ELEVATION": 22.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.933,
+          17.983
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076743",
+        "NAME": "VILLAHERMOSA  TAB.",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76743"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.327,
+          18.505
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076750",
+        "NAME": "CHETUMAL INTL",
+        "STATE": "",
+        "ELEVATION": 11.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76750"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.5,
+          17.55
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076762",
+        "NAME": "CHILPANCINGO  RO.",
+        "STATE": "",
+        "ELEVATION": 1265.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76762"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7667,
+          17.8
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076773",
+        "NAME": "HUAJUAPAN DE LEON (DGE)",
+        "STATE": "",
+        "ELEVATION": 1583.7,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76773"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.717,
+          17.05
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076775",
+        "NAME": "OAXACA  OAX.",
+        "STATE": "",
+        "ELEVATION": 1518.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76775"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.933,
+          16.833
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076805",
+        "NAME": "ACAPULCO  GRO.",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76805"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.2,
+          16.1667
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076833",
+        "NAME": "SALINA CRUZ",
+        "STATE": "",
+        "ELEVATION": 9.8,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76833"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.8167,
+          28.95
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076840",
+        "NAME": "TEMOSACHI (OBS)",
+        "STATE": "",
+        "ELEVATION": 1931.8,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76840"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.341,
+          16.77
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076843",
+        "NAME": "FRANCISCO SARABIA",
+        "STATE": "",
+        "ELEVATION": 1051.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76843"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.633,
+          16.75
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076845",
+        "NAME": "SN. CRISTOBAL LAS CASAS  CHIS",
+        "STATE": "",
+        "ELEVATION": 2116.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76845"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.133,
+          16.25
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076848",
+        "NAME": "COMITAN  CHIS.",
+        "STATE": "",
+        "ELEVATION": 1646.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76848"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.483,
+          15.683
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076855",
+        "NAME": "PUERTO ANGEL  OAX.",
+        "STATE": "",
+        "ELEVATION": 46.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76855"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.25,
+          14.917
+        ]
+      },
+      "properties": {
+        "ID": "MXM00076903",
+        "NAME": "TAPACHULA  CHIS",
+        "STATE": "",
+        "ELEVATION": 118.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "76903"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           0.3667,
           53.7667
         ]
