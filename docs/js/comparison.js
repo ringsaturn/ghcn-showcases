@@ -36,7 +36,10 @@ class ComparisonManager {
       .addEventListener("click", () => this.switchComparisonTab("temperature"));
     document
       .getElementById("precipitationTab")
-      .addEventListener("click", () => this.switchComparisonTab("precipitation"));
+      .addEventListener(
+        "click",
+        () => this.switchComparisonTab("precipitation"),
+      );
   }
 
   updateTranslations() {
@@ -46,9 +49,12 @@ class ComparisonManager {
     document.getElementById("viewComparisonBtn").textContent = t.showComparison;
     document.getElementById("clearComparisonBtn").textContent = t.clear;
     document.getElementById("compareModalTitle").textContent = t.compareMonthly;
-    document.getElementById("temperatureTab").textContent = t.compareTemperature;
-    document.getElementById("precipitationTab").textContent = t.comparePrecipitation;
-    document.getElementById("noStationsMessage").textContent = t.noStationSelected;
+    document.getElementById("temperatureTab").textContent =
+      t.compareTemperature;
+    document.getElementById("precipitationTab").textContent =
+      t.comparePrecipitation;
+    document.getElementById("noStationsMessage").textContent =
+      t.noStationSelected;
   }
 
   toggleComparePanel() {
@@ -131,8 +137,9 @@ class ComparisonManager {
       const removeButton = document.createElement("button");
       removeButton.className = "remove-station-btn";
       removeButton.textContent = "×";
-      removeButton.addEventListener("click", () =>
-        this.removeStationFromCompare(station.id),
+      removeButton.addEventListener(
+        "click",
+        () => this.removeStationFromCompare(station.id),
       );
       stationItem.appendChild(removeButton);
 
@@ -363,10 +370,9 @@ class ComparisonManager {
             },
             title: {
               display: true,
-              text:
-                this.activeCompareTab === "temperature"
-                  ? t.tempAxis
-                  : t.precipAxis,
+              text: this.activeCompareTab === "temperature"
+                ? t.tempAxis
+                : t.precipAxis,
               padding: { top: 10, bottom: 10 },
               font: {
                 size: 14,

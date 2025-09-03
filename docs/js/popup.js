@@ -12,8 +12,12 @@ class PopupManager {
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px">
           <p style="margin: 5px 0"><strong>${t.stationId}:</strong> ${properties.ID}</p>
           <p style="margin: 5px 0"><strong>${t.name}:</strong> ${properties.NAME}</p>
-          <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${coordinates[0].toFixed(2)}°</p>
-          <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${coordinates[1].toFixed(2)}°</p>
+          <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${
+      coordinates[0].toFixed(2)
+    }°</p>
+          <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${
+      coordinates[1].toFixed(2)
+    }°</p>
           <p style="margin: 5px 0"><strong>${t.elevation}:</strong> ${properties.ELEVATION}${t.meters}</p>
         </div>
         <div style="margin-bottom: 15px; display: flex; gap: 10px;">
@@ -44,14 +48,15 @@ window.popupManager = new PopupManager();
 
 // Copy station link function
 function copyStationLink(stationId) {
-  const url = `${window.location.origin}${window.location.pathname}?station_id=${stationId}`;
-  
+  const url =
+    `${window.location.origin}${window.location.pathname}?station_id=${stationId}`;
+
   if (navigator.clipboard && window.isSecureContext) {
     // Modern clipboard API
     navigator.clipboard.writeText(url).then(() => {
       showCopySuccess();
-    }).catch(err => {
-      console.error('Failed to copy link: ', err);
+    }).catch((err) => {
+      console.error("Failed to copy link: ", err);
       fallbackCopyToClipboard(url);
     });
   } else {
@@ -62,31 +67,31 @@ function copyStationLink(stationId) {
 
 // Fallback copy method for older browsers
 function fallbackCopyToClipboard(text) {
-  const textArea = document.createElement('textarea');
+  const textArea = document.createElement("textarea");
   textArea.value = text;
-  textArea.style.position = 'fixed';
-  textArea.style.left = '-999999px';
-  textArea.style.top = '-999999px';
+  textArea.style.position = "fixed";
+  textArea.style.left = "-999999px";
+  textArea.style.top = "-999999px";
   document.body.appendChild(textArea);
   textArea.focus();
   textArea.select();
-  
+
   try {
-    document.execCommand('copy');
+    document.execCommand("copy");
     showCopySuccess();
   } catch (err) {
-    console.error('Fallback: Could not copy text: ', err);
+    console.error("Fallback: Could not copy text: ", err);
   }
-  
+
   document.body.removeChild(textArea);
 }
 
 // Show copy success message
 function showCopySuccess() {
   const t = window.languageManager.getTranslations();
-  
+
   // Create toast notification
-  const toast = document.createElement('div');
+  const toast = document.createElement("div");
   toast.textContent = t.copyLinkSuccess;
   toast.style.cssText = `
     position: fixed;
@@ -102,11 +107,11 @@ function showCopySuccess() {
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     animation: slideIn 0.3s ease-out;
   `;
-  
+
   // Add animation keyframes if not already added
-  if (!document.getElementById('toast-animation-style')) {
-    const style = document.createElement('style');
-    style.id = 'toast-animation-style';
+  if (!document.getElementById("toast-animation-style")) {
+    const style = document.createElement("style");
+    style.id = "toast-animation-style";
     style.textContent = `
       @keyframes slideIn {
         from { transform: translateX(100%); opacity: 0; }
@@ -119,12 +124,12 @@ function showCopySuccess() {
     `;
     document.head.appendChild(style);
   }
-  
+
   document.body.appendChild(toast);
-  
+
   // Remove toast after 3 seconds
   setTimeout(() => {
-    toast.style.animation = 'slideOut 0.3s ease-in';
+    toast.style.animation = "slideOut 0.3s ease-in";
     setTimeout(() => {
       if (toast.parentNode) {
         document.body.removeChild(toast);

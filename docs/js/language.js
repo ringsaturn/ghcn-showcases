@@ -24,7 +24,8 @@ class LanguageManager {
     // Update data source note
     const dsEl = document.getElementById("dataSourceNote");
     if (dsEl) {
-      dsEl.innerHTML = window.GHCNConfig.translations[this.currentLang].dataSource || "";
+      dsEl.innerHTML =
+        window.GHCNConfig.translations[this.currentLang].dataSource || "";
     }
   }
 
@@ -44,13 +45,15 @@ class LanguageManager {
     if (window.mapManager) {
       window.mapManager.updateMapLanguage();
     }
-    
+
     // Update popup content for all markers
     if (window.stationsLayer) {
       window.stationsLayer.eachLayer((layer) => {
         // Update popup content
         if (window.popupManager) {
-          layer.bindPopup(window.popupManager.generatePopupContent(layer.feature));
+          layer.bindPopup(
+            window.popupManager.generatePopupContent(layer.feature),
+          );
         }
         // If popup is currently open, refresh display and reload chart
         if (layer.getPopup() && layer.getPopup().isOpen()) {

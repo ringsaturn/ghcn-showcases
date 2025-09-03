@@ -69,8 +69,7 @@ const translations = {
     showComparison: "View Comparison",
     clear: "Clear Selection",
     compareMonthly: "Monthly Data Comparison",
-    noStationSelected:
-      "Please select at least one station to compare",
+    noStationSelected: "Please select at least one station to compare",
     // Data source text (HTML allowed)
     dataSource:
       'Data source: <a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN (Global Historical Climatology Network)</a>',
@@ -107,8 +106,7 @@ const translations = {
     showComparison: "比較を表示",
     clear: "選択をクリア",
     compareMonthly: "月間データ比較",
-    noStationSelected:
-      "比較するには少なくとも1つの観測所を選択してください",
+    noStationSelected: "比較するには少なくとも1つの観測所を選択してください",
     // Data source text (HTML allowed)
     dataSource:
       'データ出典：<a href="https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily" target="_blank" rel="noopener">GHCN（Global Historical Climatology Network）</a>',
@@ -131,5 +129,5 @@ function getInitialLanguage() {
 // Export configuration
 window.GHCNConfig = {
   translations,
-  getInitialLanguage
+  getInitialLanguage,
 };

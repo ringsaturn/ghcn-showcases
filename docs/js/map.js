@@ -14,7 +14,7 @@ class MapManager {
 
   updateMapLanguage() {
     const currentLang = window.languageManager.getCurrentLang();
-    
+
     // If map layer already exists, remove it
     if (this.baseLayer) {
       this.map.removeLayer(this.baseLayer);
@@ -22,7 +22,8 @@ class MapManager {
 
     // Create new map layer
     this.baseLayer = protomapsL.leafletLayer({
-      url: "https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=019532177fa38e19",
+      url:
+        "https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt?key=019532177fa38e19",
       flavor: "white",
       attribution:
         '© <a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>',

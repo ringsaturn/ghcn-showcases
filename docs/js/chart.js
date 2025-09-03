@@ -64,10 +64,9 @@ class ChartManager {
                 ? `M${t.month}d${t.day}`
                 : `M-d`,
             },
-            tooltipFormat:
-              currentLang === "zh" || currentLang === "ja"
-                ? `M${t.month}d${t.day}`
-                : `M-d`,
+            tooltipFormat: currentLang === "zh" || currentLang === "ja"
+              ? `M${t.month}d${t.day}`
+              : `M-d`,
           },
           grid: {
             color: "#eee",
@@ -140,7 +139,7 @@ class ChartManager {
 
   async loadChartData(stationId) {
     this.updateChartDefaults(); // Update chart defaults to adapt to current language
-    
+
     const currentLang = window.languageManager.getCurrentLang();
     const t = window.languageManager.getTranslations();
 
@@ -166,10 +165,9 @@ class ChartManager {
                 y_prcp: parseFloat(row.PRCP_SUM) || 0,
                 month: month,
                 day: day,
-                dateStr:
-                  currentLang === "zh" || currentLang === "ja"
-                    ? month + t.month + day + t.day
-                    : month + "-" + day,
+                dateStr: currentLang === "zh" || currentLang === "ja"
+                  ? month + t.month + day + t.day
+                  : month + "-" + day,
               };
             })
             .filter((point) => !isNaN(point.y_max) && !isNaN(point.y_min));
@@ -265,10 +263,9 @@ class ChartManager {
                 y_min: parseFloat(row.TMIN_P10),
                 y_prcp: parseFloat(row.PRCP_SUM) || 0,
                 month: month,
-                dateStr:
-                  currentLang === "zh" || currentLang === "ja"
-                    ? month + t.month
-                    : month.toString(),
+                dateStr: currentLang === "zh" || currentLang === "ja"
+                  ? month + t.month
+                  : month.toString(),
               };
             })
             .filter((point) => !isNaN(point.y_max) && !isNaN(point.y_min));
