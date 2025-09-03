@@ -78,11 +78,16 @@ def process_data(input_df: pl.DataFrame) -> None:
 def process_plot(input_df: pl.DataFrame) -> None:
     p = Pool(8)
     for station_id in input_df["ID"]:
+        prefix = station_id[:3]
+        if prefix.endswith("0"):
+            prefix = prefix[:-1]
+        output_dir = Path(f"docs/plots/{prefix}/{station_id}")
+        output_dir.mkdir(parents=True, exist_ok=True)
         p.apply_async(
-            plot_station_monthly_data, args=(station_id, Path("docs/plots"), False)
+            plot_station_monthly_data, args=(station_id, output_dir, False)
         )
         p.apply_async(
-            plot_station_daily_data, args=(station_id, Path("docs/plots"), False)
+            plot_station_daily_data, args=(station_id, output_dir, False)
         )
 
     p.close()
