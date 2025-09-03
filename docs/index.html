@@ -29,6 +29,9 @@
     <script
       src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"
     ></script>
+    <script
+      src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"
+    ></script>
 
     <style>
       body {
@@ -1439,41 +1442,124 @@
 
       // Function to find and open station by ID
       function findAndOpenStation(stationId) {
-        let found = false;
-
-        window.stationsLayer.eachLayer(function (layer) {
-          const featureId = layer.feature.properties.ID;
-          if (featureId === stationId) {
-            found = true;
-            map.setView(layer.getLatLng(), 10);
-            layer.openPopup();
-          }
-        });
-
-        return found;
+        const feature = window.stationFeatures.find(f => f.properties.ID === stationId);
+        if (feature) {
+          const coords = feature.geometry.coordinates;
+          map.setView([coords[1], coords[0]], 10);
+          
+          // Wait for the next moveend event to ensure the marker is created
+          setTimeout(() => {
+            const marker = window.markersMap.get(stationId);
+            if (marker) {
+              marker.openPopup();
+            }
+          }, 100);
+          
+          return true;
+        }
+        return false;
       }
+
+      // Initialize layers for markers and heatmap
+      window.stationsLayer = L.layerGroup();
+      window.heatmapLayer = null;
+      window.stationFeatures = [];
+      window.markersMap = new Map(); // Store markers by their ID
+
+      // Function to check if a point is within the current map bounds
+      function isPointInBounds(coords, bounds) {
+        return bounds.contains(L.latLng(coords[1], coords[0]));
+      }
+
+      // Function to update visible markers based on bounds and zoom
+      function updateVisibleMarkers() {
+        const zoomLevel = map.getZoom();
+        const bounds = map.getBounds();
+        
+        if (zoomLevel >= 10) {
+          // Show markers in view, hide heatmap
+          if (window.heatmapLayer) {
+            map.removeLayer(window.heatmapLayer);
+          }
+
+          // Don't clear all layers, instead manage them individually
+          const markersToShow = new Set();
+
+          // Add only markers in current view
+          window.stationFeatures.forEach(feature => {
+            const coords = feature.geometry.coordinates;
+            if (isPointInBounds(coords, bounds)) {
+              markersToShow.add(feature.properties.ID);
+              let marker = window.markersMap.get(feature.properties.ID);
+              
+              if (!marker) {
+                // Create marker if it doesn't exist
+                marker = L.marker([coords[1], coords[0]]);
+                marker.feature = feature;
+                
+                marker.bindPopup(generatePopupContent(feature), {
+                  closeButton: true,
+                  autoPan: true,
+                  keepInView: true,
+                  maxWidth: 800
+                });
+                
+                marker.on('popupopen', () => {
+                  setTimeout(() => loadChartData(feature.properties.ID), 200);
+                });
+                
+                window.markersMap.set(feature.properties.ID, marker);
+              }
+              
+              // Only add if not already in layer
+              if (!stationsLayer.hasLayer(marker)) {
+                stationsLayer.addLayer(marker);
+              }
+            }
+          });
+
+          // Remove markers that are no longer in view
+          stationsLayer.eachLayer((layer) => {
+            if (layer.feature && !markersToShow.has(layer.feature.properties.ID)) {
+              stationsLayer.removeLayer(layer);
+            }
+          });
+
+          stationsLayer.addTo(map);
+        } else {
+          // Show heatmap, hide markers
+          if (!window.heatmapLayer) {
+            const heatData = window.stationFeatures.map(feature => {
+              const coords = feature.geometry.coordinates;
+              return [coords[1], coords[0], 1]; // lat, lng, intensity
+            });
+            window.heatmapLayer = L.heatLayer(heatData, {
+              radius: 10,           // 减小热力点的半径
+              blur: 10,            // 增加模糊效果
+              maxZoom: 10,
+              minOpacity: 0.3,     // 设置最小不透明度
+              max: 2.0,            // 增加最大值以减少红色区域
+              gradient: {0.2: 'blue', 0.4: 'cyan', 0.6: 'lime', 0.8: 'yellow', 1: 'red'}  // 使用更多的颜色过渡
+            }).addTo(map);
+          } else {
+            window.heatmapLayer.addTo(map);
+          }
+          map.removeLayer(stationsLayer);
+        }
+      }
+
+      // Add event listeners for map movement and zoom
+      map.on('moveend', updateVisibleMarkers);
+      map.on('zoomend', updateVisibleMarkers);
 
       // Load station data
       fetch("./matched_stations.geojson")
         .then((response) => response.json())
         .then((data) => {
-          // Create station layer
-          window.stationsLayer = L.geoJSON(data, {
-            pointToLayer: function (feature, latlng) {
-              return L.marker(latlng);
-            },
-            onEachFeature: function (feature, layer) {
-              const popup = L.popup().setContent(
-                generatePopupContent(feature),
-              );
-              layer.bindPopup(popup);
-
-              // Load data only when popup opens
-              layer.on("popupopen", function () {
-                loadChartData(feature.properties.ID);
-              });
-            },
-          }).addTo(map);
+          window.stationFeatures = data.features;
+          
+          // Initial visualization based on current view
+          updateVisibleMarkers();
 
           // Initialize comparison functionality
           initComparisonFeature();
