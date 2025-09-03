@@ -522,6 +522,15 @@
         });
       }
 
+      // Function to generate CSV file path based on station ID
+      function getStationCsvPath(stationId, type) {
+        let prefix = stationId.substring(0, 3);
+        if (prefix.endsWith("0")) {
+          prefix = prefix.slice(0, -1);
+        }
+        return `plots/${prefix}/${stationId}/${stationId}-${type}.csv`;
+      }
+
       async function loadChartData(stationId) {
         // Define chartDefaults inside the function so it can access currentLang
         const chartDefaults = {
@@ -658,7 +667,7 @@
 
         // Load and draw charts
         await Promise.all([
-          fetch("plots/" + stationId + "-daily.csv")
+          fetch(getStationCsvPath(stationId, "daily"))
             .then((response) => response.text())
             .then((csvData) => {
               const results = Papa.parse(csvData, { header: true });
@@ -767,7 +776,7 @@
               );
             }),
 
-          fetch("plots/" + stationId + "-monthly.csv")
+          fetch(getStationCsvPath(stationId, "monthly"))
             .then((response) => response.text())
             .then((csvData) => {
               const results = Papa.parse(csvData, { header: true });
@@ -1128,7 +1137,7 @@
       async function fetchStationDataForComparison(stationId) {
         try {
           const monthlyResponse = await fetch(
-            "plots/" + stationId + "-monthly.csv",
+            getStationCsvPath(stationId, "monthly"),
           );
           const monthlyText = await monthlyResponse.text();
           const monthlyResults = Papa.parse(monthlyText, {
