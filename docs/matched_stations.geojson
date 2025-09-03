@@ -14142,6 +14142,7245 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          5.2167,
+          53.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100496",
+        "NAME": "WEST TERSCHELLING",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6,
+          53.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100499",
+        "NAME": "GRONINGEN-1",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0667,
+          52.8831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100500",
+        "NAME": "TER APEL",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0667,
+          52.65
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100501",
+        "NAME": "HOORN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05,
+          52.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100502",
+        "NAME": "HEERDE",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7,
+          52.3167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100503",
+        "NAME": "HOOFDDORP",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7,
+          51.9831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100505",
+        "NAME": "WINTERSWIJK",
+        "STATE": "",
+        "ELEVATION": 34.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8667,
+          51.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100506",
+        "NAME": "KERKWERVE",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8667,
+          51.2167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100507",
+        "NAME": "WESTDORPE-1",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9167,
+          51.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100508",
+        "NAME": "AXEL",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5331,
+          51.5667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100509",
+        "NAME": "OUDENBOSCH",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9667,
+          51.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100510",
+        "NAME": "ROERMOND",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7469,
+          52.9614
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100514",
+        "NAME": "DEN HELDER",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.55,
+          53.2167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100526",
+        "NAME": "GRONINGEN",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6831,
+          50.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00100542",
+        "NAME": "MAASTRICHT-1",
+        "STATE": "",
+        "ELEVATION": 49.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.65,
+          52.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101879",
+        "NAME": "PETTEN",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8667,
+          53.1667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101881",
+        "NAME": "DE COCKSDORPS",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7667,
+          53.1
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101883",
+        "NAME": "DE KOOG",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4167,
+          53.0667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101889",
+        "NAME": "MAKKUM",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6667,
+          53.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101891",
+        "NAME": "ST. ANNA PAROCHIE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.35,
+          52.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101893",
+        "NAME": "APPELSCHA",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0,
+          53.0667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101895",
+        "NAME": "NIJBEETS",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9831,
+          53.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101897",
+        "NAME": "BERGUMERDAM",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9831,
+          53.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101899",
+        "NAME": "TERNAARD",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9331,
+          53.3167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101902",
+        "NAME": "DELFZIJL",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5667,
+          53.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101904",
+        "NAME": "WARFFUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3,
+          53.3331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101906",
+        "NAME": "ZOUTKAMP",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7331,
+          53.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101908",
+        "NAME": "EEXT",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1167,
+          53.0331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101910",
+        "NAME": "VLAGTWEDDE",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4331,
+          53.15
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101912",
+        "NAME": "RODEN",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.75,
+          53.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101914",
+        "NAME": "ZEERIJP",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6667,
+          52.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101916",
+        "NAME": "BEVERWIJK",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3,
+          52.7
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101917",
+        "NAME": "ENKHUIZEN",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9667,
+          52.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101920",
+        "NAME": "SCHELLINGWOUDE",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8331,
+          52.8667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101922",
+        "NAME": "ANNA PAULOWNA",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5167,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101924",
+        "NAME": "ZANDVOORT",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8,
+          52.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101926",
+        "NAME": "ZAANDIJK",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1,
+          52.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101928",
+        "NAME": "MEDEMBLIK",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0331,
+          52.9167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101930",
+        "NAME": "DEN OEVER",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1,
+          52.4667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101932",
+        "NAME": "MARKEN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4667,
+          52.7167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101933",
+        "NAME": "HOOGEVEEN-1",
+        "STATE": "",
+        "ELEVATION": 11.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.95,
+          52.5667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101942",
+        "NAME": "IJSSELMUIDEN",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7,
+          52.9
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101944",
+        "NAME": "SCHOONLOO",
+        "STATE": "",
+        "ELEVATION": 21.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7331,
+          52.8
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101946",
+        "NAME": "ZWEELO",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6331,
+          52.6667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101948",
+        "NAME": "TOLLEBEEK",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7831,
+          52.7167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101949",
+        "NAME": "EMMELOORD",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0,
+          52.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101951",
+        "NAME": "KLAZIENAVEEN",
+        "STATE": "",
+        "ELEVATION": 17.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8331,
+          52.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101953",
+        "NAME": "ELBURG",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.45,
+          52.6
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101955",
+        "NAME": "DEDEMSVAART",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7167,
+          52.8331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101957",
+        "NAME": "LEMMER (GEMAAL BUMA)",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.65,
+          52.5831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101959",
+        "NAME": "SWIFTERBANT",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2167,
+          52.4167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101960",
+        "NAME": "OOSTVAARDERSDIEP",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8167,
+          51.9331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101961",
+        "NAME": "GROOT AMMERS",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6167,
+          52.2167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101963",
+        "NAME": "ROELOFARENDSVEEN",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3,
+          52.1167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101965",
+        "NAME": "SCHEVENINGEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4167,
+          51.7331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101967",
+        "NAME": "NUMANSDORP",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.55,
+          51.8831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101969",
+        "NAME": "IJSSELMONDE",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0997,
+          51.9167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101971",
+        "NAME": "OOSTVOORNE",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0831,
+          51.75
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101973",
+        "NAME": "DIRKSLAND",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7,
+          51.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101975",
+        "NAME": "OUD ALBLAS",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4,
+          51.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101977",
+        "NAME": "POORTUGAAL",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8667,
+          51.8167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101979",
+        "NAME": "OUDDORP",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4167,
+          52.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101981",
+        "NAME": "VALKENBURG-1",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4292,
+          52.1703
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101982",
+        "NAME": "VALKENBURG",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8667,
+          51.8167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101989",
+        "NAME": "NIJMEGEN",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6167,
+          52.25
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101991",
+        "NAME": "PUTTEN (GLD)",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9667,
+          52.2331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101993",
+        "NAME": "APELDOORN",
+        "STATE": "",
+        "ELEVATION": 13.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.45,
+          52.0831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101995",
+        "NAME": "WOUDENBERG",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0331,
+          52.2167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101997",
+        "NAME": "LOENEN AAN DE VECHT",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2331,
+          51.95
+        ]
+      },
+      "properties": {
+        "ID": "NLE00101999",
+        "NAME": "CULEMBORG",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4331,
+          51.9167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102005",
+        "NAME": "TIEL",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0331,
+          52.3
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102007",
+        "NAME": "WEESP",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5831,
+          52.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102009",
+        "NAME": "BARNEVELD",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8831,
+          52.0667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102011",
+        "NAME": "DEELEN-1",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2831,
+          51.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102020",
+        "NAME": "DOETINCHEM",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102022",
+        "NAME": "TWENTHE-1",
+        "STATE": "",
+        "ELEVATION": 35.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.85,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102030",
+        "NAME": "WEERSELO",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3,
+          52.15
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102032",
+        "NAME": "ALMEN",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2667,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102034",
+        "NAME": "LETTELE",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5,
+          52.2331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102036",
+        "NAME": "MARKELO",
+        "STATE": "",
+        "ELEVATION": 17.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6331,
+          52.0167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102038",
+        "NAME": "LIEVELDE",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9,
+          51.5331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102044",
+        "NAME": "WILHELMINADORP-1",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7,
+          51.7
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102051",
+        "NAME": "HAAMSTEDE",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8167,
+          51.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102053",
+        "NAME": "OVEZANDE",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.2167,
+          51.5331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102055",
+        "NAME": "THOLEN-1",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.75,
+          51.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102057",
+        "NAME": "PHILIPPINE",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.55,
+          51.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102059",
+        "NAME": "SCHOONDIJKE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0667,
+          51.25
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102061",
+        "NAME": "KAPELLEBRUG",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6667,
+          51.4667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102063",
+        "NAME": "ZUNDERT",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.15,
+          51.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102065",
+        "NAME": "ESBEEK",
+        "STATE": "",
+        "ELEVATION": 22.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8331,
+          51.6331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102067",
+        "NAME": "OOSTERHOUT",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8831,
+          51.5167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102069",
+        "NAME": "CHAAM",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.05,
+          51.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102071",
+        "NAME": "ANDEL",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3167,
+          51.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102073",
+        "NAME": "HOOGERHEIDE",
+        "STATE": "",
+        "ELEVATION": 19.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5331,
+          51.6667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102075",
+        "NAME": "KLUNDERT",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0167,
+          51.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102077",
+        "NAME": "SEVENUM",
+        "STATE": "",
+        "ELEVATION": 29.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6167,
+          51.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102079",
+        "NAME": "HELMOND",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1831,
+          51.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102081",
+        "NAME": "VENLO",
+        "STATE": "",
+        "ELEVATION": 30.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4167,
+          51.7167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102083",
+        "NAME": "NULAND",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7,
+          51.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102085",
+        "NAME": "SOMEREN",
+        "STATE": "",
+        "ELEVATION": 23.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4831,
+          51.65
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102087",
+        "NAME": "DINTHER",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4167,
+          51.45
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102089",
+        "NAME": "EINDHOVEN (VB)",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7167,
+          50.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102096",
+        "NAME": "EIJSDEN",
+        "STATE": "",
+        "ELEVATION": 54.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8331,
+          50.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102098",
+        "NAME": "VALKENBURG (L)",
+        "STATE": "",
+        "ELEVATION": 80.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0167,
+          50.9
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102100",
+        "NAME": "SCHAESBERG",
+        "STATE": "",
+        "ELEVATION": 140.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0331,
+          51.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102107",
+        "NAME": "BEESEL",
+        "STATE": "",
+        "ELEVATION": 27.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9167,
+          51.0831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102109",
+        "NAME": "ECHT",
+        "STATE": "",
+        "ELEVATION": 34.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9206,
+          53.24
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102445",
+        "NAME": "VLIELAND",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3417,
+          51.4478
+        ]
+      },
+      "properties": {
+        "ID": "NLE00102462",
+        "NAME": "WOENSDRECHT",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7667,
+          51.4667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108958",
+        "NAME": "'S HEERENHOEK",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7667,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108960",
+        "NAME": "AALSMEER",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5667,
+          51.9167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108962",
+        "NAME": "AALTEN",
+        "STATE": "",
+        "ELEVATION": 22.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9831,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108964",
+        "NAME": "ABCOUDE",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8167,
+          53.05
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108966",
+        "NAME": "AKKRUM",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6667,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108968",
+        "NAME": "ALMELO",
+        "STATE": "",
+        "ELEVATION": 11.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4667,
+          52.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108970",
+        "NAME": "AMERONGEN",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2167,
+          51.75
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108972",
+        "NAME": "AMMERZODEN",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9167,
+          52.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108974",
+        "NAME": "AMSTERDAM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1331,
+          53.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108976",
+        "NAME": "ANJUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1331,
+          51.6331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108978",
+        "NAME": "ANNA JACOBA POLDER",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9331,
+          52.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108980",
+        "NAME": "ARNHEM",
+        "STATE": "",
+        "ELEVATION": 85.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6,
+          53.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108982",
+        "NAME": "ASSEN",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7331,
+          52.4667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108984",
+        "NAME": "ASSENDELFT",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5331,
+          51.8667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108986",
+        "NAME": "BARENDRECHT",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9667,
+          52.1667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108990",
+        "NAME": "BEEKBERGEN",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9331,
+          52.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108992",
+        "NAME": "BENSCHOP",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6831,
+          52.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108994",
+        "NAME": "BERGEN (NH)",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.25,
+          51.5
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108996",
+        "NAME": "BERGEN OP ZOOM",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5,
+          51.9831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00108998",
+        "NAME": "BERGSCHENHOEK",
+        "STATE": "",
+        "ELEVATION": -6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6831,
+          52.45
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109000",
+        "NAME": "BIDDINGHUIZEN",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6831,
+          51.3331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109002",
+        "NAME": "BIERVLIET",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.95,
+          52.7331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109004",
+        "NAME": "BLOKZIJL",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5331,
+          52.1
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109006",
+        "NAME": "BORCULO",
+        "STATE": "",
+        "ELEVATION": 17.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6831,
+          52.0831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109008",
+        "NAME": "BOSKOOP",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3331,
+          51.5831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109010",
+        "NAME": "BOXTEL",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.55,
+          51.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109012",
+        "NAME": "BRESKENS",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.15,
+          51.9
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109014",
+        "NAME": "BRIELLE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8831,
+          51.7331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109016",
+        "NAME": "BROUWERSHAVEN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8,
+          51.05
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109018",
+        "NAME": "BUCHTEN",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4,
+          51.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109020",
+        "NAME": "CADZAND",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7,
+          52.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109022",
+        "NAME": "CALLANTSOOG",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9831,
+          51.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109024",
+        "NAME": "CAPELLE (NB)",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.65,
+          52.55
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109026",
+        "NAME": "CASTRICUM",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9331,
+          52.8831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109028",
+        "NAME": "DE HAUKES",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3667,
+          52.0167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109030",
+        "NAME": "DELFT",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3,
+          51.7167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109032",
+        "NAME": "DEN BOMMEL",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8,
+          53.05
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109034",
+        "NAME": "DEN BURG",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0331,
+          52.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109036",
+        "NAME": "DENEKAMP",
+        "STATE": "",
+        "ELEVATION": 24.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7667,
+          51.45
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109038",
+        "NAME": "DEURNE",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2167,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109040",
+        "NAME": "DEVENTER",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9831,
+          53.3167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109042",
+        "NAME": "DOKKUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3331,
+          52.05
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109044",
+        "NAME": "DOORN",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1,
+          53.1167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109046",
+        "NAME": "DRACHTEN",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.85,
+          52.55
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109048",
+        "NAME": "DRONTEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0167,
+          51.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109050",
+        "NAME": "DUIVEN",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4167,
+          52.8167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109052",
+        "NAME": "DWINGELO",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.05,
+          52.5167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109054",
+        "NAME": "EDAM",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2831,
+          52.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109056",
+        "NAME": "EEMNES",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4667,
+          53.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109058",
+        "NAME": "EENRUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0667,
+          52.1167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109060",
+        "NAME": "EERBEEK",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.95,
+          53.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109062",
+        "NAME": "EERNEWOUDE",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.25,
+          51.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109064",
+        "NAME": "EERSEL",
+        "STATE": "",
+        "ELEVATION": 30.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7831,
+          52.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109066",
+        "NAME": "ELSPEET",
+        "STATE": "",
+        "ELEVATION": 34.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8831,
+          52.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109068",
+        "NAME": "EMMEN",
+        "STATE": "",
+        "ELEVATION": 24.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9167,
+          52.2
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109070",
+        "NAME": "ENSCHEDE",
+        "STATE": "",
+        "ELEVATION": 46.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109072",
+        "NAME": "EPE",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9,
+          50.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109074",
+        "NAME": "EPEN (L)",
+        "STATE": "",
+        "ELEVATION": 155.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.45,
+          53.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109076",
+        "NAME": "EZINGE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.15,
+          53.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109078",
+        "NAME": "EZUMAZIJL",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1,
+          53.2
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109080",
+        "NAME": "FINSTERWOLDE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3,
+          53.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109082",
+        "NAME": "FORMERUM",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2,
+          52.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109084",
+        "NAME": "FREDERIKSOORD",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2667,
+          51.8667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109086",
+        "NAME": "GELDERMALSEN",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6831,
+          51.55
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109088",
+        "NAME": "GEMERT",
+        "STATE": "",
+        "ELEVATION": 13.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.35,
+          51.8667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109090",
+        "NAME": "GENDRINGEN",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.15,
+          51.65
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109092",
+        "NAME": "GIERSBERGEN",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.85,
+          53.0331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109094",
+        "NAME": "GIETERVEEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0667,
+          52.7167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109096",
+        "NAME": "GIETHOORN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.75,
+          51.55
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109098",
+        "NAME": "GINNEKEN",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9667,
+          51.8167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109100",
+        "NAME": "GOEDEREEDE",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9831,
+          51.8331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109102",
+        "NAME": "GORINCHEM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0667,
+          53.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109104",
+        "NAME": "GORREDIJK",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7167,
+          52.0167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109106",
+        "NAME": "GOUDA",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4167,
+          52.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109108",
+        "NAME": "HAMERSVELD",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6167,
+          52.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109110",
+        "NAME": "HARDERWIJK",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4331,
+          53.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109112",
+        "NAME": "HARLINGEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7331,
+          52.15
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109114",
+        "NAME": "HARSKAMP",
+        "STATE": "",
+        "ELEVATION": 19.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6,
+          52.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109116",
+        "NAME": "HEEG",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6331,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109118",
+        "NAME": "HEEMSTEDE",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9,
+          51.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109120",
+        "NAME": "HEIBLOEM (L)",
+        "STATE": "",
+        "ELEVATION": 29.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7331,
+          52.6
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109122",
+        "NAME": "HEILOO",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.45,
+          52.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109124",
+        "NAME": "HELLENDOORN",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.65,
+          51.8331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109126",
+        "NAME": "HENDRIK IDO AMBACHT",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3,
+          52.0667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109128",
+        "NAME": "HENGELO",
+        "STATE": "",
+        "ELEVATION": 11.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7667,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109130",
+        "NAME": "HENGELO (O)",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5,
+          53.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109132",
+        "NAME": "HERBAYUM",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1,
+          51.8831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109134",
+        "NAME": "HERWEN",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8331,
+          51.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109136",
+        "NAME": "HEUMEN",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6331,
+          53.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109138",
+        "NAME": "HOLLUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4667,
+          52.3
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109140",
+        "NAME": "HOLTEN",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.25,
+          52.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109142",
+        "NAME": "HONSELERSDIJK",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1667,
+          52.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109144",
+        "NAME": "HOOGKARSPEL",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9667,
+          52.7331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109146",
+        "NAME": "HOOGWOUD",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7,
+          52.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109148",
+        "NAME": "HULSHORST",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8831,
+          51.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109152",
+        "NAME": "IJSSELSTEYN (L)",
+        "STATE": "",
+        "ELEVATION": 31.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8167,
+          52.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109154",
+        "NAME": "JOURE",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.95,
+          51.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109156",
+        "NAME": "KAPELLE",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0331,
+          51.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109160",
+        "NAME": "KLOOSTERZANDE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9,
+          52.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109163",
+        "NAME": "KOLHORN",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1331,
+          53.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109164",
+        "NAME": "KOLLUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8331,
+          52.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109166",
+        "NAME": "KOOTWIJK",
+        "STATE": "",
+        "ELEVATION": 39.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3331,
+          53.0667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109168",
+        "NAME": "KORNWERDERZAND",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8331,
+          51.5667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109170",
+        "NAME": "KORTGENE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0997,
+          51.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109172",
+        "NAME": "KRABBENDIJKE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1,
+          52.8667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109174",
+        "NAME": "KREILEROORD",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.85,
+          52.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109176",
+        "NAME": "KUINRE",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5331,
+          52.9167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109178",
+        "NAME": "LAAGHALEN",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2,
+          52.25
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109180",
+        "NAME": "LAREN",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5331,
+          51.3331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109182",
+        "NAME": "LEENDE",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4831,
+          52.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109184",
+        "NAME": "LEIDEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5667,
+          52.0
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109186",
+        "NAME": "LICHTENVOORDE",
+        "STATE": "",
+        "ELEVATION": 19.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.75,
+          52.35
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109190",
+        "NAME": "LIJNDEN (NH)",
+        "STATE": "",
+        "ELEVATION": -5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.55,
+          52.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109192",
+        "NAME": "LISSE",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3831,
+          52.15
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109194",
+        "NAME": "LOCHEM",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6,
+          52.0831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109196",
+        "NAME": "LUNTEREN",
+        "STATE": "",
+        "ELEVATION": 13.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5831,
+          51.3
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109198",
+        "NAME": "MAARHEEZE",
+        "STATE": "",
+        "ELEVATION": 28.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.25,
+          51.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109200",
+        "NAME": "MAASLAND",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2831,
+          53.15
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109202",
+        "NAME": "MARUM",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5667,
+          51.8167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109204",
+        "NAME": "MEGEN",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6,
+          51.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109206",
+        "NAME": "MIDDELBURG",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6167,
+          53.3167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109208",
+        "NAME": "MIDDELSTUM",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8,
+          51.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109210",
+        "NAME": "MILL",
+        "STATE": "",
+        "ELEVATION": 17.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7167,
+          52.6167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109212",
+        "NAME": "NAGELE",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7667,
+          53.45
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109214",
+        "NAME": "NES (AMELAND)",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.35,
+          53.2167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109216",
+        "NAME": "NIEKERK",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.95,
+          52.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109218",
+        "NAME": "NIEUW BUINEN",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1167,
+          51.8331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109220",
+        "NAME": "NIEUW HELVOET",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9331,
+          51.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109222",
+        "NAME": "NIEUWENDIJK (NB)",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9831,
+          53.25
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109224",
+        "NAME": "NIEUWOLDA",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4667,
+          52.2331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109226",
+        "NAME": "NIJKERK",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8167,
+          50.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109228",
+        "NAME": "NOORBEEK",
+        "STATE": "",
+        "ELEVATION": 160.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.9667,
+          51.7
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109230",
+        "NAME": "NOORDGOUWE",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8831,
+          52.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109232",
+        "NAME": "OBDAM",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3331,
+          51.5
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109234",
+        "NAME": "OIRSCHOT",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9167,
+          52.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109236",
+        "NAME": "OLDEBROEK",
+        "STATE": "",
+        "ELEVATION": 60.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05,
+          52.9
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109238",
+        "NAME": "OLDEHOLTPADE",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6667,
+          53.15
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109240",
+        "NAME": "ONNEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7167,
+          50.8
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109242",
+        "NAME": "OOST MAARLAND",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0831,
+          53.3
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109244",
+        "NAME": "OOST VLIELAND",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8331,
+          52.0167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109246",
+        "NAME": "OOSTERBEEK",
+        "STATE": "",
+        "ELEVATION": 21.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5331,
+          51.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109248",
+        "NAME": "OSS",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5,
+          52.8667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109250",
+        "NAME": "OUDEMIRDUM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6,
+          52.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109252",
+        "NAME": "OVERVEEN",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.95,
+          52.5167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109255",
+        "NAME": "PURMEREND",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7167,
+          52.0831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109256",
+        "NAME": "REKKEN",
+        "STATE": "",
+        "ELEVATION": 27.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0831,
+          51.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109258",
+        "NAME": "REUVER",
+        "STATE": "",
+        "ELEVATION": 27.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5667,
+          52.5667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109260",
+        "NAME": "RHEEZERVEEN",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1831,
+          51.4167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109262",
+        "NAME": "RILLAND",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6167,
+          51.4667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109264",
+        "NAME": "RITTHEM",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7831,
+          53.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109266",
+        "NAME": "ROODESCHOOL",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1831,
+          52.6167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109268",
+        "NAME": "ROUVEEN",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2331,
+          52.7167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109270",
+        "NAME": "RUINERWOLD",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7331,
+          53.1667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109272",
+        "NAME": "SAPPEMEER",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8,
+          52.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109274",
+        "NAME": "SCHAGEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1831,
+          53.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109276",
+        "NAME": "SCHIERMONNIKOOG",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8667,
+          50.9331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109278",
+        "NAME": "SCHINNEN",
+        "STATE": "",
+        "ELEVATION": 80.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9831,
+          50.9831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109280",
+        "NAME": "SCHINVELD",
+        "STATE": "",
+        "ELEVATION": 55.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9,
+          52.6831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109283",
+        "NAME": "SCHOONEBEEK",
+        "STATE": "",
+        "ELEVATION": 13.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0831,
+          51.65
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109284",
+        "NAME": "SIEBENGEWALD",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.65,
+          53.1167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109286",
+        "NAME": "SKRINS",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6331,
+          53.0331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109288",
+        "NAME": "SNEEK",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3167,
+          52.1667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109290",
+        "NAME": "SOEST",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4,
+          52.25
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109292",
+        "NAME": "SPAKENBURG",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8831,
+          51.6331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109294",
+        "NAME": "ST ANTHONIS",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5,
+          51.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109296",
+        "NAME": "ST KRUIS",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0167,
+          51.5831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109300",
+        "NAME": "STAVENISSE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3331,
+          51.5831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109302",
+        "NAME": "STEENBERGEN (NB)",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6831,
+          52.6667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109304",
+        "NAME": "STEENWIJKSMOER",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.75,
+          50.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109306",
+        "NAME": "STEIN (L)",
+        "STATE": "",
+        "ELEVATION": 22.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7167,
+          51.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109308",
+        "NAME": "STRAMPROY",
+        "STATE": "",
+        "ELEVATION": 31.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5831,
+          51.7667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109310",
+        "NAME": "STRIJEN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8667,
+          51.3
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109312",
+        "NAME": "TERNEUZEN",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1331,
+          51.5667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109316",
+        "NAME": "TILBURG",
+        "STATE": "",
+        "ELEVATION": 11.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7831,
+          52.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109318",
+        "NAME": "TUBBERGEN",
+        "STATE": "",
+        "ELEVATION": 27.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9167,
+          50.85
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109320",
+        "NAME": "UBACHSBERG",
+        "STATE": "",
+        "ELEVATION": 175.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6667,
+          53.4
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109322",
+        "NAME": "UITHUIZEN",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0,
+          50.7831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109324",
+        "NAME": "VAALS",
+        "STATE": "",
+        "ELEVATION": 180.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9667,
+          52.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109326",
+        "NAME": "VAASSEN",
+        "STATE": "",
+        "ELEVATION": 13.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8331,
+          53.1
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109328",
+        "NAME": "VEENDAM",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6,
+          52.0331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109330",
+        "NAME": "VEENENDAAL",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4,
+          53.05
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109332",
+        "NAME": "VEENHUIZEN (D)",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0,
+          51.5167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109334",
+        "NAME": "VENRAY",
+        "STATE": "",
+        "ELEVATION": 22.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.35,
+          52.5331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109336",
+        "NAME": "VILSTEREN",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0,
+          52.0831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109338",
+        "NAME": "VLEUTEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4331,
+          52.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109340",
+        "NAME": "VOORSCHOTEN",
+        "STATE": "",
+        "ELEVATION": -6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6167,
+          52.1831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109342",
+        "NAME": "VOORTHUIZEN",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5667,
+          52.45
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109344",
+        "NAME": "VROOMSHOOP",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.5831,
+          51.5831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109346",
+        "NAME": "VROUWENPOLDER",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.65,
+          51.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109348",
+        "NAME": "WAGENINGEN (PD)",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0831,
+          52.4331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109350",
+        "NAME": "WAPENVELD",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7,
+          51.25
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109352",
+        "NAME": "WEERT",
+        "STATE": "",
+        "ELEVATION": 32.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9,
+          52.5831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109354",
+        "NAME": "WEST BEEMSTER",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.45,
+          51.5331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109356",
+        "NAME": "WESTKAPELLE",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3167,
+          51.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109358",
+        "NAME": "WIJK BIJ DUURSTEDE",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.05,
+          53.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109360",
+        "NAME": "WINSCHOTEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7331,
+          51.5331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109362",
+        "NAME": "WOLPHAARTSDIJK",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7167,
+          53.2667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109364",
+        "NAME": "WOLTERSUM",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7331,
+          51.9167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109366",
+        "NAME": "WOOLD",
+        "STATE": "",
+        "ELEVATION": 48.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8331,
+          52.4167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109368",
+        "NAME": "ZAANDAM (HEMBRUG)",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2667,
+          51.8
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109370",
+        "NAME": "ZALTBOMMEL",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3667,
+          52.3831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109372",
+        "NAME": "ZEEWOLDE",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4167,
+          52.3
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109374",
+        "NAME": "ZEEWOLDE (SCHILLINKWEG)",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8331,
+          52.1331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109376",
+        "NAME": "ZEGVELD",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7167,
+          51.9331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109378",
+        "NAME": "ZETTEN",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.5331,
+          52.0667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109380",
+        "NAME": "ZOETERMEER",
+        "STATE": "",
+        "ELEVATION": -5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1331,
+          52.5331
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109382",
+        "NAME": "ZWOLLE",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4831,
+          51.4167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00109388",
+        "NAME": "EINDHOVEN-1",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9356,
+          54.3256
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113670",
+        "NAME": "D15-FA-1",
+        "STATE": "",
+        "ELEVATION": 43.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.6278,
+          53.2692
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113676",
+        "NAME": "K14-FA-1C",
+        "STATE": "",
+        "ELEVATION": 42.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8103,
+          55.3992
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113682",
+        "NAME": "A12-CPP",
+        "STATE": "",
+        "ELEVATION": 48.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0119,
+          54.1167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113688",
+        "NAME": "F16-A",
+        "STATE": "",
+        "ELEVATION": 43.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9603,
+          53.6142
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113694",
+        "NAME": "L9-FF-1",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9417,
+          53.4917
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113700",
+        "NAME": "AWG-1",
+        "STATE": "",
+        "ELEVATION": 41.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9453,
+          53.8242
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113706",
+        "NAME": "J6-A",
+        "STATE": "",
+        "ELEVATION": 46.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1503,
+          52.9181
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113712",
+        "NAME": "HOORN-A",
+        "STATE": "",
+        "ELEVATION": 51.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2203,
+          53.2178
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113724",
+        "NAME": "K13",
+        "STATE": "",
+        "ELEVATION": 38.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.67,
+          51.9256
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113730",
+        "NAME": "LICHTEILAND_GOEREE",
+        "STATE": "",
+        "ELEVATION": 23.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.275,
+          51.9978
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113736",
+        "NAME": "EUROPLATFORM",
+        "STATE": "",
+        "ELEVATION": 19.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3125,
+          51.8917
+        ]
+      },
+      "properties": {
+        "ID": "NLE00113742",
+        "NAME": "ROTTERDAM-GEULHAVEN",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6331,
+          51.9667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00141789",
+        "NAME": "WAGENINGEN - HAARWEG",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6217,
+          51.9814
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152462",
+        "NAME": "WAGENINGEN - VEENKAMPEN",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7808,
+          52.9267
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152468",
+        "NAME": "DE KOOY",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5844,
+          53.1233
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152470",
+        "NAME": "EELDE",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8875,
+          52.7017
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152473",
+        "NAME": "MARKNESSE",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1992,
+          53.4117
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152474",
+        "NAME": "LAUWERSOOG",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6031,
+          52.5053
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152475",
+        "NAME": "WIJK AAN ZEE",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9256,
+          51.9692
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152476",
+        "NAME": "CABAUW",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7067,
+          51.6581
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152477",
+        "NAME": "VOLKEL",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9789,
+          52.6428
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152478",
+        "NAME": "BERKHOUT",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2589,
+          52.4342
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152479",
+        "NAME": "HEINO",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.6567,
+          52.0678
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152480",
+        "NAME": "HUPSEL",
+        "STATE": "",
+        "ELEVATION": 29.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1958,
+          51.4969
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152481",
+        "NAME": "ARCEN",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1453,
+          51.8578
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152482",
+        "NAME": "HERWIJNEN",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1492,
+          53.1942
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152483",
+        "NAME": "NIEUW BEERTA",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8833,
+          51.5256
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152484",
+        "NAME": "WILHELMINADORP",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7903,
+          52.3156
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152485",
+        "NAME": "SCHIPHOL",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3456,
+          53.3908
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152486",
+        "NAME": "HOORN TERSCHELLING",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2733,
+          52.1256
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152487",
+        "NAME": "SOESTERBERG",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3831,
+          52.8967
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152488",
+        "NAME": "STAVOREN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5194,
+          52.4569
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152489",
+        "NAME": "LELYSTAD",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4467,
+          51.9606
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152490",
+        "NAME": "ROTTERDAM",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9353,
+          51.565
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152491",
+        "NAME": "GILZE-RIJEN",
+        "STATE": "",
+        "ELEVATION": 11.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7625,
+          51.1967
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152492",
+        "NAME": "ELL",
+        "STATE": "",
+        "ELEVATION": 30.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1217,
+          51.9908
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152494",
+        "NAME": "HOEK VAN HOLLAND",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7517,
+          53.2231
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152495",
+        "NAME": "LEEUWARDEN",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8719,
+          52.055
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152497",
+        "NAME": "DEELEN",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5731,
+          52.7489
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152498",
+        "NAME": "HOOGEVEEN",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3767,
+          51.4494
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152499",
+        "NAME": "EINDHOVEN",
+        "STATE": "",
+        "ELEVATION": 23.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8906,
+          52.2731
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152500",
+        "NAME": "TWENTHE",
+        "STATE": "",
+        "ELEVATION": 33.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4292,
+          52.1703
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152501",
+        "NAME": "VALKENBURG",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.8608,
+          51.2244
+        ]
+      },
+      "properties": {
+        "ID": "NLE00152502",
+        "NAME": "WESTDORPE",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4364,
+          52.1394
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155389",
+        "NAME": "VOORSCHOTEN",
+        "STATE": "",
+        "ELEVATION": -1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9731,
+          53.2567
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155415",
+        "NAME": "VLIELAND_1",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3581,
+          52.8856
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155417",
+        "NAME": "STAVOREN_1",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7542,
+          53.2206
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155419",
+        "NAME": "LEEUWARDEN_1",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6142,
+          52.4931
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155421",
+        "NAME": "WIJK_AAN_ZEE_1",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.89,
+          52.7042
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155423",
+        "NAME": "MARKNESSE_1",
+        "STATE": "",
+        "ELEVATION": -3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2631,
+          52.4367
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155425",
+        "NAME": "HEINO_1",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5281,
+          52.4531
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155427",
+        "NAME": "LELYSTAD_(EENDENWEG)",
+        "STATE": "",
+        "ELEVATION": -4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.4231,
+          51.8931
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155429",
+        "NAME": "RDAM-WAALHAVEN",
+        "STATE": "",
+        "ELEVATION": 4.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.1481,
+          51.9853
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155431",
+        "NAME": "HOEK_VAN_HOLLAND_1",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.6156,
+          51.8958
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155433",
+        "NAME": "KRIMPEN_AAN_DE_LEK",
+        "STATE": "",
+        "ELEVATION": -2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.64,
+          52.0681
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155435",
+        "NAME": "HUPSEL_1",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1525,
+          51.8228
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155437",
+        "NAME": "HERWIJNEN_1",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.9331,
+          51.5678
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155439",
+        "NAME": "GILZE-RIJEN_1",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7064,
+          51.6581
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155441",
+        "NAME": "VOLKEL_1",
+        "STATE": "",
+        "ELEVATION": 21.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1839,
+          51.4831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155443",
+        "NAME": "ARCEN_1",
+        "STATE": "",
+        "ELEVATION": 19.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.48,
+          51.4167
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155445",
+        "NAME": "WAALRE",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0167,
+          51.2831
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155447",
+        "NAME": "KESSEL-EIK",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.35,
+          52.3667
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155454",
+        "NAME": "P11-B",
+        "STATE": "",
+        "ELEVATION": 24.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.7275,
+          54.8539
+        ]
+      },
+      "properties": {
+        "ID": "NLE00155464",
+        "NAME": "F3-FB-1",
+        "STATE": "",
+        "ELEVATION": 0.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           0.3667,
           53.7667
         ]
