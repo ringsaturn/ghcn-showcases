@@ -6998,6 +6998,1659 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          95.34,
+          5.874
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096001",
+        "NAME": "MAIMUN SALEH",
+        "STATE": "",
+        "ELEVATION": 113.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96001"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.95,
+          5.227
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096009",
+        "NAME": "MALIKUS SALEH",
+        "STATE": "",
+        "ELEVATION": 27.4,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.42,
+          5.524
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096011",
+        "NAME": "SULTAN ISKANDARMUDA",
+        "STATE": "",
+        "ELEVATION": 19.8,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.117,
+          4.25
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096015",
+        "NAME": "MEULABOH/CUT NYAK",
+        "STATE": "",
+        "ELEVATION": 90.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96015"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.7,
+          3.8
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096033",
+        "NAME": "MEDAN/BELAWAN",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96033"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.672,
+          3.558
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096035",
+        "NAME": "POLONIA",
+        "STATE": "",
+        "ELEVATION": 34.7,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96035"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.705,
+          1.166
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096075",
+        "NAME": "BINAKA",
+        "STATE": "",
+        "ELEVATION": 6.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.117,
+          1.117
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096087",
+        "NAME": "BATAM/HANG NADIM",
+        "STATE": "",
+        "ELEVATION": 24.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96087"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.532,
+          0.923
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096091",
+        "NAME": "KIJANG",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96091"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.445,
+          0.461
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096109",
+        "NAME": "SULTAN SYARIF KASIM II",
+        "STATE": "",
+        "ELEVATION": 31.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96109"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.335,
+          -0.353
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096171",
+        "NAME": "JAPURA",
+        "STATE": "",
+        "ELEVATION": 18.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96171"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.579,
+          -0.479
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096179",
+        "NAME": "DABO",
+        "STATE": "",
+        "ELEVATION": 30.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96179"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.644,
+          -1.638
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096195",
+        "NAME": "SULTAN THAHA",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96195"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.367,
+          -2.767
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096207",
+        "NAME": "KERINCI/DEPATI PARB",
+        "STATE": "",
+        "ELEVATION": 782.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96207"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.701,
+          -2.898
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096221",
+        "NAME": "SULTAN MAHMUD BADARUDDIN II",
+        "STATE": "",
+        "ELEVATION": 14.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96221"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.13,
+          -2.17
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096237",
+        "NAME": "PANGKALPINANG",
+        "STATE": "",
+        "ELEVATION": 34.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96237"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.755,
+          -2.746
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096249",
+        "NAME": "H AS HANANDJOEDDIN",
+        "STATE": "",
+        "ELEVATION": 51.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96249"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.339,
+          -3.864
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096253",
+        "NAME": "FATMAWATI SOEKARNO",
+        "STATE": "",
+        "ELEVATION": 15.2,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96253"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.179,
+          -5.242
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096295",
+        "NAME": "RADIN INTEN II",
+        "STATE": "",
+        "ELEVATION": 88.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96295"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.566,
+          3.327
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096509",
+        "NAME": "JUWATA",
+        "STATE": "",
+        "ELEVATION": 6.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96509"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.333,
+          2.85
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096525",
+        "NAME": "TANJUNG SELOR",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96525"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.432,
+          2.155
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096529",
+        "NAME": "KALIMARU",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96529"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.3,
+          1.767
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096535",
+        "NAME": "PALOH",
+        "STATE": "",
+        "ELEVATION": 15.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96535"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.473,
+          0.064
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096559",
+        "NAME": "SUSILO",
+        "STATE": "",
+        "ELEVATION": 29.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96559"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.404,
+          -0.151
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096581",
+        "NAME": "SUPADIO",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96581"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.9,
+          -0.95
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096595",
+        "NAME": "MUARATEWE/BERINGIN",
+        "STATE": "",
+        "ELEVATION": 60.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96595"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.157,
+          -0.485
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096607",
+        "NAME": "TEMINDUNG",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96607"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.963,
+          -1.817
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096615",
+        "NAME": "RAHADI USMAN",
+        "STATE": "",
+        "ELEVATION": 14.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96615"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.894,
+          -1.268
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096633",
+        "NAME": "SEPINGGAN",
+        "STATE": "",
+        "ELEVATION": 3.7,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96633"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.673,
+          -2.705
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096645",
+        "NAME": "ISKANDAR",
+        "STATE": "",
+        "ELEVATION": 25.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96645"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.943,
+          -2.225
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096655",
+        "NAME": "TJILIK RIWUT",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96655"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.763,
+          -3.442
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096685",
+        "NAME": "SYAMSUDIN NOOR",
+        "STATE": "",
+        "ELEVATION": 20.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96685"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.217,
+          -3.4
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096695",
+        "NAME": "KOTABARU/SETAGEN",
+        "STATE": "",
+        "ELEVATION": 18.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96695"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.133,
+          -6.117
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096737",
+        "NAME": "SERANG",
+        "STATE": "",
+        "ELEVATION": 40.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96737"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.57,
+          -6.293
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096739",
+        "NAME": "BUDIARTO",
+        "STATE": "",
+        "ELEVATION": 47.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96739"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.867,
+          -6.1
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096741",
+        "NAME": "JAKARTA/TANJUNG PRIOK",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96741"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.656,
+          -6.126
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096749",
+        "NAME": "SOEKARNO HATTA INTL",
+        "STATE": "",
+        "ELEVATION": 10.4,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96749"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.933,
+          -6.7
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096751",
+        "NAME": "BOGOR/CITEKO",
+        "STATE": "",
+        "ELEVATION": -999.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96751"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.75,
+          -6.5
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096753",
+        "NAME": "BOGOR/DERMAGA",
+        "STATE": "",
+        "ELEVATION": 250.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96753"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.267,
+          -6.75
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096791",
+        "NAME": "CIREBON/JATIWANGI",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96791"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.15,
+          -6.85
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096797",
+        "NAME": "TEGAL",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96797"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.417,
+          -6.967
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096837",
+        "NAME": "SEMARANG",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96837"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.375,
+          -6.973
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096839",
+        "NAME": "ACHMAD YANI",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96839"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.717,
+          -7.217
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096933",
+        "NAME": "SURABAYA/PERAK",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96933"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.787,
+          -7.38
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096935",
+        "NAME": "SURABAYA JUANDA",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96935"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.717,
+          -7.217
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096937",
+        "NAME": "SURABAYA/GEDANGAN",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96937"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.967,
+          -7.05
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096973",
+        "NAME": "KALIANGET (MADURA IS)",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96973"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.383,
+          -8.217
+        ]
+      },
+      "properties": {
+        "ID": "IDM00096987",
+        "NAME": "BANYUWANGI",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "96987"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.528,
+          3.683
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097008",
+        "NAME": "NAHA",
+        "STATE": "",
+        "ELEVATION": 4.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97008"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.183,
+          1.433
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097016",
+        "NAME": "BITUNG",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8,
+          1.017
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097028",
+        "NAME": "TOLI-TOLI/LALOS",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97028"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.85,
+          0.637
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097048",
+        "NAME": "JALALUDDIN",
+        "STATE": "",
+        "ELEVATION": 32.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97048"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.91,
+          -0.919
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097072",
+        "NAME": "MUTIARA",
+        "STATE": "",
+        "ELEVATION": 86.6,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97072"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.772,
+          -1.039
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097086",
+        "NAME": "BUBUNG",
+        "STATE": "",
+        "ELEVATION": 17.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97086"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.658,
+          -1.417
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097096",
+        "NAME": "KASIGUNCU",
+        "STATE": "",
+        "ELEVATION": 53.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97096"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.0,
+          -2.5
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097120",
+        "NAME": "MAJENE",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97120"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.367,
+          -2.55
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097126",
+        "NAME": "MASAMBA/ANDI JEMMA",
+        "STATE": "",
+        "ELEVATION": 50.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97126"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.554,
+          -5.062
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097180",
+        "NAME": "HASANUDDIN",
+        "STATE": "",
+        "ELEVATION": 14.3,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97180"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.55,
+          -5.067
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097182",
+        "NAME": "UJANG PANDANG/PAOTERE",
+        "STATE": "",
+        "ELEVATION": -999.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97182"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.617,
+          -5.467
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097192",
+        "NAME": "BAU-BAU/BETO AMBIRI",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97192"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.167,
+          -8.749
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097230",
+        "NAME": "DENPASAR NGURAH RAI",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97230"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.267,
+          -8.75
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097240",
+        "NAME": "MATARAM-LOMBOK INTL AIRPORT",
+        "STATE": "",
+        "ELEVATION": 96.0,
+        "GSN_FLAG": "GSN",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97240"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.412,
+          -8.489
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097260",
+        "NAME": "SUMBAWA BESAR",
+        "STATE": "",
+        "ELEVATION": 5.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97260"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.687,
+          -8.54
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097270",
+        "NAME": "MUHAMMAD SALAHUDDIN",
+        "STATE": "",
+        "ELEVATION": 22.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97270"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.237,
+          -8.641
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097300",
+        "NAME": "WAI OTI",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97300"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.967,
+          -8.267
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097310",
+        "NAME": "LARANTUKA/GEWAYENTA",
+        "STATE": "",
+        "ELEVATION": 9.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97310"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.567,
+          -8.217
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097320",
+        "NAME": "ALOR/MALI/KALABAHI",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97320"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.067,
+          -10.733
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097378",
+        "NAME": "ROTE/BAA/LEKUNIK",
+        "STATE": "",
+        "ELEVATION": 1.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97378"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.833,
+          -10.5
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097380",
+        "NAME": "SABU/TARDAMU",
+        "STATE": "",
+        "ELEVATION": 26.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97380"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.833,
+          1.817
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097406",
+        "NAME": "GALELA/GAMARMALAMU",
+        "STATE": "",
+        "ELEVATION": 8.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97406"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.381,
+          0.831
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097430",
+        "NAME": "BABULLAH",
+        "STATE": "",
+        "ELEVATION": 14.9,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97430"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.55,
+          -1.617
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097460",
+        "NAME": "LABUHA/TALIABU",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97460"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.049,
+          -0.892
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097530",
+        "NAME": "RENDANI",
+        "STATE": "",
+        "ELEVATION": 7.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97530"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.233,
+          -1.867
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097570",
+        "NAME": "SERUI/YENDOSA",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97570"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.717,
+          -1.833
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097580",
+        "NAME": "SARMI/ORAI",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97580"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.0,
+          -2.083
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097600",
+        "NAME": "SANANA",
+        "STATE": "",
+        "ELEVATION": 2.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97600"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.25,
+          -2.883
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097630",
+        "NAME": "FAK-FAK/TOREA",
+        "STATE": "",
+        "ELEVATION": 130.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97630"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.496,
+          -3.368
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097682",
+        "NAME": "NABIRE",
+        "STATE": "",
+        "ELEVATION": 6.1,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97682"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.717,
+          -2.367
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097698",
+        "NAME": "JAYAPURA/DOK II",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97698"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.083,
+          -3.25
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097700",
+        "NAME": "NAMLEA/BURU ISLAND",
+        "STATE": "",
+        "ELEVATION": 20.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97700"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.883,
+          -3.35
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097722",
+        "NAME": "AMAHAI",
+        "STATE": "",
+        "ELEVATION": 10.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97722"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.833,
+          -3.8
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097748",
+        "NAME": "GESER",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97748"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.696,
+          -3.645
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097760",
+        "NAME": "KAIMANA",
+        "STATE": "",
+        "ELEVATION": 5.8,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97760"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.367,
+          -3.917
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097780",
+        "NAME": "ENAROTALI",
+        "STATE": "",
+        "ELEVATION": 1770.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97780"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.433,
+          -4.717
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097796",
+        "NAME": "KOKONAO/TIMUKA",
+        "STATE": "",
+        "ELEVATION": 3.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97796"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.75,
+          -5.683
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097810",
+        "NAME": "TUAL/DUMATUBUN",
+        "STATE": "",
+        "ELEVATION": 12.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97810"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3,
+          -6.1
+        ]
+      },
+      "properties": {
+        "ID": "IDM00097876",
+        "NAME": "TANAH MERAH",
+        "STATE": "",
+        "ELEVATION": 16.0,
+        "GSN_FLAG": "",
+        "HCN_CRN_FLAG": "",
+        "WMO_ID": "97876"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           141.683,
           45.417
         ]
