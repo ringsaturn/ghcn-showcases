@@ -52,6 +52,9 @@ def ploat_station(
         .sort("DAY")
         .collect()
     )
+    if agg_df.is_empty():
+        print(f"{station_id} has no data after 1970, skip.")
+        return
     # save to csv for debug
     agg_df.write_csv(saved_fp.with_suffix(".csv"))
     if csv_only:

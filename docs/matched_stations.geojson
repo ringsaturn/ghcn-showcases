@@ -12198,7 +12198,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12238,7 +12238,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12258,7 +12258,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12278,7 +12278,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12378,7 +12378,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12398,7 +12398,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "47931",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12418,7 +12418,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12438,7 +12438,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12498,7 +12498,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12538,7 +12538,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12558,7 +12558,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12598,7 +12598,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12618,7 +12618,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12638,7 +12638,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12658,7 +12658,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12678,7 +12678,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12698,7 +12698,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12718,7 +12718,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12738,7 +12738,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "47642",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12758,7 +12758,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12778,7 +12778,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12798,7 +12798,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12818,7 +12818,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12838,7 +12838,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "47573",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12878,7 +12878,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12898,7 +12898,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "47661",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -12918,7 +12918,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -13078,7 +13078,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
@@ -13118,7 +13118,7 @@
         "GSN_FLAG": "",
         "HCN_CRN_FLAG": "",
         "WMO_ID": "",
-        "MISSING": false
+        "MISSING": true
       }
     },
     {
