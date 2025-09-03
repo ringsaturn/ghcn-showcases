@@ -169,6 +169,26 @@
   font-weight: bold;
 }
 
+/* Copy link button in popup */
+.copy-link-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.copy-link-btn:hover {
+  background-color: #1976d2;
+}
+
+.add-to-compare:hover {
+  background-color: #45a049;
+}
+
 /* Comparison toggle button */
 #toggleComparePanel {
   position: fixed;

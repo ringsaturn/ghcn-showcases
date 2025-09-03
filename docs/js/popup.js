@@ -16,7 +16,10 @@ class PopupManager {
           <p style="margin: 5px 0"><strong>${t.latitude}:</strong> ${coordinates[1].toFixed(2)}°</p>
           <p style="margin: 5px 0"><strong>${t.elevation}:</strong> ${properties.ELEVATION}${t.meters}</p>
         </div>
-        <button class="add-to-compare" onclick="addStationToCompare('${stationId}', '${properties.NAME}')">${t.compareBtn}</button>
+        <div style="margin-bottom: 15px; display: flex; gap: 10px;">
+          <button class="add-to-compare" onclick="addStationToCompare('${stationId}', '${properties.NAME}')">${t.compareBtn}</button>
+          <button class="copy-link-btn" onclick="copyStationLink('${stationId}')">${t.copyLinkBtn}</button>
+        </div>
         <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 20px;">
           <div>
             <h4 style="margin: 0 0 10px;">${t.dailyChart}</h4>
@@ -38,3 +41,94 @@ class PopupManager {
 
 // Create global popup manager instance
 window.popupManager = new PopupManager();
+
+// Copy station link function
+function copyStationLink(stationId) {
+  const url = `${window.location.origin}${window.location.pathname}?station_id=${stationId}`;
+  
+  if (navigator.clipboard && window.isSecureContext) {
+    // Modern clipboard API
+    navigator.clipboard.writeText(url).then(() => {
+      showCopySuccess();
+    }).catch(err => {
+      console.error('Failed to copy link: ', err);
+      fallbackCopyToClipboard(url);
+    });
+  } else {
+    // Fallback for older browsers or non-secure contexts
+    fallbackCopyToClipboard(url);
+  }
+}
+
+// Fallback copy method for older browsers
+function fallbackCopyToClipboard(text) {
+  const textArea = document.createElement('textarea');
+  textArea.value = text;
+  textArea.style.position = 'fixed';
+  textArea.style.left = '-999999px';
+  textArea.style.top = '-999999px';
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  
+  try {
+    document.execCommand('copy');
+    showCopySuccess();
+  } catch (err) {
+    console.error('Fallback: Could not copy text: ', err);
+  }
+  
+  document.body.removeChild(textArea);
+}
+
+// Show copy success message
+function showCopySuccess() {
+  const t = window.languageManager.getTranslations();
+  
+  // Create toast notification
+  const toast = document.createElement('div');
+  toast.textContent = t.copyLinkSuccess;
+  toast.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    z-index: 10000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    animation: slideIn 0.3s ease-out;
+  `;
+  
+  // Add animation keyframes if not already added
+  if (!document.getElementById('toast-animation-style')) {
+    const style = document.createElement('style');
+    style.id = 'toast-animation-style';
+    style.textContent = `
+      @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+  
+  document.body.appendChild(toast);
+  
+  // Remove toast after 3 seconds
+  setTimeout(() => {
+    toast.style.animation = 'slideOut 0.3s ease-in';
+    setTimeout(() => {
+      if (toast.parentNode) {
+        document.body.removeChild(toast);
+      }
+    }, 300);
+  }, 3000);
+}
