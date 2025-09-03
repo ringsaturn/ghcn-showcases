@@ -99,7 +99,23 @@ def process_plot(input_df: pl.DataFrame) -> None:
 
 def dump_matched_as_geojson(input_df: pl.DataFrame) -> None:
     features = []
+    plots_dir = Path("docs/plots")
+    
     for row in input_df.iter_rows(named=True):
+        station_id = row["ID"]
+        
+        # Check if plot data files exist for this station
+        prefix = station_id[:3]
+        if prefix.endswith("0"):
+            prefix = prefix[:-1]
+        station_dir = plots_dir / prefix / station_id
+        if not station_dir.exists():
+            missing_data = True
+        else:
+            daily_plot = station_dir / f"{station_id}-daily.csv"
+            monthly_plot = station_dir / f"{station_id}-monthly.csv"
+            missing_data = not (daily_plot.exists() and monthly_plot.exists())
+        
         feature = {
             "type": "Feature",
             "geometry": {
@@ -114,6 +130,7 @@ def dump_matched_as_geojson(input_df: pl.DataFrame) -> None:
                 "GSN_FLAG": row["GSN_FLAG"],
                 "HCN_CRN_FLAG": row["HCN_CRN_FLAG"],
                 "WMO_ID": row["WMO_ID"],
+                "MISSING": missing_data,
             },
         }
         features.append(feature)

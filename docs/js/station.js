@@ -48,6 +48,11 @@ class StationManager {
 
       // Add only markers in current view
       this.stationFeatures.forEach((feature) => {
+        // Skip stations with MISSING property set to true
+        if (feature.properties.MISSING === true) {
+          return;
+        }
+        
         const coords = feature.geometry.coordinates;
         if (this.isPointInBounds(coords, bounds)) {
           markersToShow.add(feature.properties.ID);
@@ -96,10 +101,12 @@ class StationManager {
     } else {
       // Show heatmap, hide markers
       if (!this.heatmapLayer) {
-        const heatData = this.stationFeatures.map((feature) => {
-          const coords = feature.geometry.coordinates;
-          return [coords[1], coords[0], 1]; // lat, lng, intensity
-        });
+        const heatData = this.stationFeatures
+          .filter((feature) => feature.properties.MISSING !== true) // Filter out stations with MISSING = true
+          .map((feature) => {
+            const coords = feature.geometry.coordinates;
+            return [coords[1], coords[0], 1]; // lat, lng, intensity
+          });
         this.heatmapLayer = L.heatLayer(heatData, {
           radius: 10, // Reduce heat point radius
           blur: 10, // Increase blur effect
