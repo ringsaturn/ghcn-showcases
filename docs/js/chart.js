@@ -139,21 +139,37 @@ class ChartManager {
 
   // Reload current charts
   reloadCurrentCharts() {
-    // Find all chart containers and reload them
+    // Find all chart containers and get unique station IDs
     const dailyCharts = document.querySelectorAll('[id^="dailyChart-"]');
     const monthlyCharts = document.querySelectorAll('[id^="monthlyChart-"]');
+    const stationIds = new Set();
 
+    // Collect station IDs and destroy existing charts
     dailyCharts.forEach((chart) => {
       const stationId = chart.id.replace("dailyChart-", "");
       if (stationId) {
-        // Destroy existing chart
+        stationIds.add(stationId);
         const chartInstance = Chart.getChart(chart);
         if (chartInstance) {
           chartInstance.destroy();
         }
-        // Reload chart data
-        this.loadChartData(stationId);
       }
+    });
+
+    monthlyCharts.forEach((chart) => {
+      const stationId = chart.id.replace("monthlyChart-", "");
+      if (stationId) {
+        stationIds.add(stationId);
+        const chartInstance = Chart.getChart(chart);
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
+      }
+    });
+
+    // Reload chart data for each unique station
+    stationIds.forEach((stationId) => {
+      this.loadChartData(stationId);
     });
   }
 
