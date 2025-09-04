@@ -8,6 +8,10 @@ class LanguageManager {
   init() {
     document.addEventListener("DOMContentLoaded", () => {
       this.updateLanguageDisplay();
+      // Initial data type display setup
+      setTimeout(() => {
+        this.updateDataTypeDisplay();
+      }, 100);
     });
   }
 
@@ -26,6 +30,16 @@ class LanguageManager {
     if (dsEl) {
       dsEl.innerHTML =
         window.GHCNConfig.translations[this.currentLang].dataSource || "";
+    }
+    // Update data type display
+    this.updateDataTypeDisplay();
+  }
+
+  updateDataTypeDisplay() {
+    const dataTypeEl = document.getElementById("dataTypeText");
+    if (dataTypeEl && window.chartManager) {
+      const labels = window.chartManager.getCurrentLabels();
+      dataTypeEl.textContent = labels.dataType;
     }
   }
 
@@ -69,6 +83,9 @@ class LanguageManager {
     if (window.comparisonManager) {
       window.comparisonManager.updateTranslations();
     }
+
+    // Update data type display
+    this.updateDataTypeDisplay();
   }
 
   getCurrentLang() {
@@ -86,4 +103,17 @@ window.languageManager = new LanguageManager();
 // Global toggle language function (for HTML calls)
 function toggleLanguage() {
   window.languageManager.toggleLanguage();
+}
+
+// Global toggle data type function (for HTML calls)
+function toggleDataType() {
+  if (window.chartManager) {
+    window.chartManager.toggleDataType();
+  }
+  if (window.comparisonManager) {
+    window.comparisonManager.toggleDataType();
+  }
+  if (window.languageManager) {
+    window.languageManager.updateDataTypeDisplay();
+  }
 }

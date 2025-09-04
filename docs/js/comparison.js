@@ -5,6 +5,7 @@ class ComparisonManager {
     this.compareChart = null;
     this.allStationData = {};
     this.activeCompareTab = "temperature";
+    this.useExtremeData = true; // Default to extreme data (min/max)
     this.init();
   }
 
@@ -55,6 +56,32 @@ class ComparisonManager {
       t.comparePrecipitation;
     document.getElementById("noStationsMessage").textContent =
       t.noStationSelected;
+  }
+
+  // Toggle between extreme and percentile data
+  toggleDataType() {
+    this.useExtremeData = !this.useExtremeData;
+    if (this.compareChart) {
+      this.renderComparisonChart();
+    }
+  }
+
+  // Get current data type labels
+  getCurrentLabels() {
+    const t = window.languageManager.getTranslations();
+    if (this.useExtremeData) {
+      return {
+        maxTemp: t.maxTempExtreme,
+        minTemp: t.minTempExtreme,
+        dataType: t.dataTypeExtreme
+      };
+    } else {
+      return {
+        maxTemp: t.maxTemp,
+        minTemp: t.minTemp,
+        dataType: t.dataTypePercentile
+      };
+    }
   }
 
   toggleComparePanel() {
@@ -164,12 +191,15 @@ class ComparisonManager {
           return {
             month: month,
             x: new Date(baseDate.getFullYear(), month - 1, 1),
+            tmax_max: parseFloat(row.TMAX_MAX),
+            tmin_min: parseFloat(row.TMIN_MIN),
             tmax_p90: parseFloat(row.TMAX_P90),
             tmin_p10: parseFloat(row.TMIN_P10),
             prcp_sum: parseFloat(row.PRCP_SUM) || 0,
           };
         })
-        .filter((point) => !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
+        .filter((point) => !isNaN(point.tmax_max) && !isNaN(point.tmin_min) && 
+                           !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
 
       // Store data
       this.allStationData[stationId] = {
@@ -229,6 +259,7 @@ class ComparisonManager {
   renderComparisonChart() {
     const ctx = document.getElementById("compareChart").getContext("2d");
     const t = window.languageManager.getTranslations();
+    const labels = this.getCurrentLabels();
     const currentLang = window.languageManager.getCurrentLang();
 
     if (this.compareChart) {
@@ -247,10 +278,10 @@ class ComparisonManager {
       if (this.activeCompareTab === "temperature") {
         // Add max temperature dataset
         datasets.push({
-          label: `${station.name} - ${t.maxTemp}`,
+          label: `${station.name} - ${labels.maxTemp}`,
           data: stationData.monthly.map((point) => ({
             x: point.x,
-            y: point.tmax_p90,
+            y: this.useExtremeData ? point.tmax_max : point.tmax_p90,
           })),
           borderColor: color,
           backgroundColor: color + "33", // Add transparency
@@ -262,10 +293,10 @@ class ComparisonManager {
 
         // Add min temperature dataset
         datasets.push({
-          label: `${station.name} - ${t.minTemp}`,
+          label: `${station.name} - ${labels.minTemp}`,
           data: stationData.monthly.map((point) => ({
             x: point.x,
-            y: point.tmin_p10,
+            y: this.useExtremeData ? point.tmin_min : point.tmin_p10,
           })),
           borderColor: color,
           backgroundColor: "transparent",

@@ -2,6 +2,7 @@
 class ChartManager {
   constructor() {
     this.chartDefaults = null;
+    this.useExtremeData = true; // Default to extreme data (min/max)
     this.updateChartDefaults();
   }
 
@@ -128,6 +129,52 @@ class ChartManager {
     };
   }
 
+  // Toggle between extreme and percentile data
+  toggleDataType() {
+    this.useExtremeData = !this.useExtremeData;
+    this.updateChartDefaults();
+    // Reload current charts if any station is selected
+    this.reloadCurrentCharts();
+  }
+
+  // Reload current charts
+  reloadCurrentCharts() {
+    // Find all chart containers and reload them
+    const dailyCharts = document.querySelectorAll('[id^="dailyChart-"]');
+    const monthlyCharts = document.querySelectorAll('[id^="monthlyChart-"]');
+    
+    dailyCharts.forEach(chart => {
+      const stationId = chart.id.replace('dailyChart-', '');
+      if (stationId) {
+        // Destroy existing chart
+        const chartInstance = Chart.getChart(chart);
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
+        // Reload chart data
+        this.loadChartData(stationId);
+      }
+    });
+  }
+
+  // Get current data type labels
+  getCurrentLabels() {
+    const t = window.languageManager.getTranslations();
+    if (this.useExtremeData) {
+      return {
+        maxTemp: t.maxTempExtreme,
+        minTemp: t.minTempExtreme,
+        dataType: t.dataTypeExtreme
+      };
+    } else {
+      return {
+        maxTemp: t.maxTemp,
+        minTemp: t.minTemp,
+        dataType: t.dataTypePercentile
+      };
+    }
+  }
+
   // Generate CSV file path
   getStationCsvPath(stationId, type) {
     let prefix = stationId.substring(0, 3);
@@ -160,8 +207,10 @@ class ChartManager {
               const day = parseInt(row.DAY_OF_MONTH);
               return {
                 x: new Date(baseDate.getFullYear(), month - 1, day),
-                y_max: parseFloat(row.TMAX_P90),
-                y_min: parseFloat(row.TMIN_P10),
+                tmax_max: parseFloat(row.TMAX_MAX),
+                tmin_min: parseFloat(row.TMIN_MIN),
+                tmax_p90: parseFloat(row.TMAX_P90),
+                tmin_p10: parseFloat(row.TMIN_P10),
                 y_prcp: parseFloat(row.PRCP_SUM) || 0,
                 month: month,
                 day: day,
@@ -170,12 +219,14 @@ class ChartManager {
                   : month + "-" + day,
               };
             })
-            .filter((point) => !isNaN(point.y_max) && !isNaN(point.y_min));
+            .filter((point) => !isNaN(point.tmax_max) && !isNaN(point.tmin_min) && 
+                               !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
 
-          // Calculate temperature range
+          // Calculate temperature range based on current data type
+          const labels = this.getCurrentLabels();
           const temperatures = chartData.flatMap((point) => [
-            point.y_max,
-            point.y_min,
+            this.useExtremeData ? point.tmax_max : point.tmax_p90,
+            this.useExtremeData ? point.tmin_min : point.tmin_p10,
           ]);
           const minTemp = Math.floor(Math.min(...temperatures));
           const maxTemp = Math.ceil(Math.max(...temperatures));
@@ -185,10 +236,10 @@ class ChartManager {
             data: {
               datasets: [
                 {
-                  label: t.maxTemp,
+                  label: labels.maxTemp,
                   data: chartData.map((point) => ({
                     x: point.x,
-                    y: point.y_max,
+                    y: this.useExtremeData ? point.tmax_max : point.tmax_p90,
                   })),
                   borderColor: "rgba(255, 99, 132, 0.8)",
                   backgroundColor: "rgba(255, 99, 132, 0.1)",
@@ -199,10 +250,10 @@ class ChartManager {
                   yAxisID: "y",
                 },
                 {
-                  label: t.minTemp,
+                  label: labels.minTemp,
                   data: chartData.map((point) => ({
                     x: point.x,
-                    y: point.y_min,
+                    y: this.useExtremeData ? point.tmin_min : point.tmin_p10,
                   })),
                   borderColor: "rgba(54, 162, 235, 0.8)",
                   backgroundColor: "rgba(54, 162, 235, 0.1)",
@@ -259,8 +310,10 @@ class ChartManager {
               const month = parseInt(row.MONTH);
               return {
                 x: new Date(baseDate.getFullYear(), month - 1, 1),
-                y_max: parseFloat(row.TMAX_P90),
-                y_min: parseFloat(row.TMIN_P10),
+                tmax_max: parseFloat(row.TMAX_MAX),
+                tmin_min: parseFloat(row.TMIN_MIN),
+                tmax_p90: parseFloat(row.TMAX_P90),
+                tmin_p10: parseFloat(row.TMIN_P10),
                 y_prcp: parseFloat(row.PRCP_SUM) || 0,
                 month: month,
                 dateStr: currentLang === "zh" || currentLang === "ja"
@@ -268,12 +321,14 @@ class ChartManager {
                   : month.toString(),
               };
             })
-            .filter((point) => !isNaN(point.y_max) && !isNaN(point.y_min));
+            .filter((point) => !isNaN(point.tmax_max) && !isNaN(point.tmin_min) && 
+                               !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
 
-          // Calculate temperature range
+          // Calculate temperature range based on current data type
+          const labels = this.getCurrentLabels();
           const temperatures = chartData.flatMap((point) => [
-            point.y_max,
-            point.y_min,
+            this.useExtremeData ? point.tmax_max : point.tmax_p90,
+            this.useExtremeData ? point.tmin_min : point.tmin_p10,
           ]);
           const minTemp = Math.floor(Math.min(...temperatures));
           const maxTemp = Math.ceil(Math.max(...temperatures));
@@ -283,10 +338,10 @@ class ChartManager {
             data: {
               datasets: [
                 {
-                  label: t.maxTemp,
+                  label: labels.maxTemp,
                   data: chartData.map((point) => ({
                     x: point.x,
-                    y: point.y_max,
+                    y: this.useExtremeData ? point.tmax_max : point.tmax_p90,
                   })),
                   borderColor: "rgba(255, 99, 132, 0.8)",
                   backgroundColor: "rgba(255, 99, 132, 0.1)",
@@ -298,10 +353,10 @@ class ChartManager {
                   yAxisID: "y",
                 },
                 {
-                  label: t.minTemp,
+                  label: labels.minTemp,
                   data: chartData.map((point) => ({
                     x: point.x,
-                    y: point.y_min,
+                    y: this.useExtremeData ? point.tmin_min : point.tmin_p10,
                   })),
                   borderColor: "rgba(54, 162, 235, 0.8)",
                   backgroundColor: "rgba(54, 162, 235, 0.1)",
