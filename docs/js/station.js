@@ -52,7 +52,7 @@ class StationManager {
         if (feature.properties.MISSING === true) {
           return;
         }
-        
+
         const coords = feature.geometry.coordinates;
         if (this.isPointInBounds(coords, bounds)) {
           markersToShow.add(feature.properties.ID);

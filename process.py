@@ -86,12 +86,8 @@ def process_plot(input_df: pl.DataFrame) -> None:
             prefix = prefix[:-1]
         output_dir = Path(f"docs/plots/{prefix}/{station_id}")
         output_dir.mkdir(parents=True, exist_ok=True)
-        p.apply_async(
-            plot_station_monthly_data, args=(station_id, output_dir, False)
-        )
-        p.apply_async(
-            plot_station_daily_data, args=(station_id, output_dir, False)
-        )
+        p.apply_async(plot_station_monthly_data, args=(station_id, output_dir, False))
+        p.apply_async(plot_station_daily_data, args=(station_id, output_dir, False))
 
     p.close()
     p.join()
@@ -100,10 +96,10 @@ def process_plot(input_df: pl.DataFrame) -> None:
 def dump_matched_as_geojson(input_df: pl.DataFrame) -> None:
     features = []
     plots_dir = Path("docs/plots")
-    
+
     for row in input_df.iter_rows(named=True):
         station_id = row["ID"]
-        
+
         # Check if plot data files exist for this station
         prefix = station_id[:3]
         if prefix.endswith("0"):
@@ -115,7 +111,7 @@ def dump_matched_as_geojson(input_df: pl.DataFrame) -> None:
             daily_plot = station_dir / f"{station_id}-daily.csv"
             monthly_plot = station_dir / f"{station_id}-monthly.csv"
             missing_data = not (daily_plot.exists() and monthly_plot.exists())
-        
+
         feature = {
             "type": "Feature",
             "geometry": {

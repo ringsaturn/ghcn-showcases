@@ -142,9 +142,9 @@ class ChartManager {
     // Find all chart containers and reload them
     const dailyCharts = document.querySelectorAll('[id^="dailyChart-"]');
     const monthlyCharts = document.querySelectorAll('[id^="monthlyChart-"]');
-    
-    dailyCharts.forEach(chart => {
-      const stationId = chart.id.replace('dailyChart-', '');
+
+    dailyCharts.forEach((chart) => {
+      const stationId = chart.id.replace("dailyChart-", "");
       if (stationId) {
         // Destroy existing chart
         const chartInstance = Chart.getChart(chart);
@@ -164,13 +164,13 @@ class ChartManager {
       return {
         maxTemp: t.maxTempExtreme,
         minTemp: t.minTempExtreme,
-        dataType: t.dataTypeExtreme
+        dataType: t.dataTypeExtreme,
       };
     } else {
       return {
         maxTemp: t.maxTemp,
         minTemp: t.minTemp,
-        dataType: t.dataTypePercentile
+        dataType: t.dataTypePercentile,
       };
     }
   }
@@ -219,8 +219,10 @@ class ChartManager {
                   : month + "-" + day,
               };
             })
-            .filter((point) => !isNaN(point.tmax_max) && !isNaN(point.tmin_min) && 
-                               !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
+            .filter((point) =>
+              !isNaN(point.tmax_max) && !isNaN(point.tmin_min) &&
+              !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10)
+            );
 
           // Calculate temperature range based on current data type
           const labels = this.getCurrentLabels();
@@ -321,8 +323,10 @@ class ChartManager {
                   : month.toString(),
               };
             })
-            .filter((point) => !isNaN(point.tmax_max) && !isNaN(point.tmin_min) && 
-                               !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
+            .filter((point) =>
+              !isNaN(point.tmax_max) && !isNaN(point.tmin_min) &&
+              !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10)
+            );
 
           // Calculate temperature range based on current data type
           const labels = this.getCurrentLabels();

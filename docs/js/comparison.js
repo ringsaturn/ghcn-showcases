@@ -73,13 +73,13 @@ class ComparisonManager {
       return {
         maxTemp: t.maxTempExtreme,
         minTemp: t.minTempExtreme,
-        dataType: t.dataTypeExtreme
+        dataType: t.dataTypeExtreme,
       };
     } else {
       return {
         maxTemp: t.maxTemp,
         minTemp: t.minTemp,
-        dataType: t.dataTypePercentile
+        dataType: t.dataTypePercentile,
       };
     }
   }
@@ -198,8 +198,10 @@ class ComparisonManager {
             prcp_sum: parseFloat(row.PRCP_SUM) || 0,
           };
         })
-        .filter((point) => !isNaN(point.tmax_max) && !isNaN(point.tmin_min) && 
-                           !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10));
+        .filter((point) =>
+          !isNaN(point.tmax_max) && !isNaN(point.tmin_min) &&
+          !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10)
+        );
 
       // Store data
       this.allStationData[stationId] = {

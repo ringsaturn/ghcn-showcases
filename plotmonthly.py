@@ -46,7 +46,7 @@ def ploat_station(
         .sort("MONTH")
         .collect()
     )
-    
+
     # check if contains data
     if agg_df.is_empty():
         print(f"{station_id} has no data after 1970, skip.")
