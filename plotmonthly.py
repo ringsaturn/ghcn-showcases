@@ -38,6 +38,8 @@ def ploat_station(
             [
                 pl.col("TMIN_P10").mean().alias("TMIN_P10"),
                 pl.col("TMAX_P90").mean().alias("TMAX_P90"),
+                pl.col("TMIN_MIN").min().alias("TMIN_MIN"),
+                pl.col("TMAX_MAX").max().alias("TMAX_MAX"),
                 pl.col("PRCP_SUM").mean().alias("PRCP_SUM"),
             ]
         )
