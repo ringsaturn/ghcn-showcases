@@ -1,0 +1,3 @@
+[submodule "tw/weather_station_list"]
+	path = tw/weather_station_list
+	url = https://github.com/Raingel/weather_station_list
