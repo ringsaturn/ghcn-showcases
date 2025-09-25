@@ -111,6 +111,7 @@ def process_station_data(
     tmin_data = None
     tmax_data = None
     prcp_data = None
+    raw_entry_counts: dict[str, int] = {}
 
     for element in elements:
         try:
@@ -118,7 +119,17 @@ def process_station_data(
             df = pl.scan_parquet(f"data/merged/{element}.parquet").filter(
                 pl.col("ID") == station_id
             )
-            
+
+            # Count raw records that contribute to statistics
+            raw_count = (
+                df.filter(pl.col("DATE").dt.year() >= 1970)
+                .filter(pl.col("DATA_VALUE").is_not_null())
+                .select(pl.len().alias("row_count"))
+                .collect()
+                .item()
+            )
+            raw_entry_counts[element] = raw_count
+
             # Only TMIN and TMAX need to be divided by 10 for unit conversion
             if element in ["TMIN", "TMAX"]:
                 df = df.with_columns(pl.col("DATA_VALUE") / 10)
@@ -204,10 +215,9 @@ def process_station_data(
                 output_dir.mkdir(parents=True, exist_ok=True)
                 # Generate JSON summary of counts
                 stats_summary = {
-                    "TMIN_count": 0 if tmin_data is None else tmin_data.height,
-                    "TMAX_count": 0 if tmax_data is None else tmax_data.height,
-                    "PRCP_count": 0 if prcp_data is None else prcp_data.height,
-                    "combined_count": len(combined_df),
+                    "TMIN_raw_count": raw_entry_counts.get("TMIN", 0),
+                    "TMAX_raw_count": raw_entry_counts.get("TMAX", 0),
+                    "PRCP_raw_count": raw_entry_counts.get("PRCP", 0),
                 }
                 summary_file = output_dir / f"{station_id}-{period}-stats.json"
                 with open(summary_file, "w") as sf:
