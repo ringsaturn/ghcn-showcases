@@ -37,6 +37,15 @@ class PopupManager {
               <canvas id="monthlyChart-${stationId}" style="width: 100%; height: 250px;"></canvas>
             </div>
           </div>
+          <div>
+            <h4 style="margin: 0 0 10px;">${t.monthlyHistoryChart}</h4>
+            <div style="width: 100%; background: #f8f9fa; padding: 10px; border-radius: 4px; box-sizing: border-box;">
+              <div id="monthlyHistoryPlaceholder-${stationId}" style="text-align: center; color: #666; font-size: 14px; padding: 20px 0;">
+                ${t.historyLoading}
+              </div>
+              <canvas id="monthlyHistoryChart-${stationId}" style="width: 100%; height: 250px; display: none;"></canvas>
+            </div>
+          </div>
         </div>
       </div>
     `;
