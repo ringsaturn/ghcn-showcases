@@ -63,7 +63,6 @@ def filter_stations(df: pl.DataFrame) -> pl.DataFrame:
         | pl.col("ID").str.starts_with("UKE")
         | pl.col("ID").str.starts_with("IDM")
         | pl.col("ID").str.starts_with("MXM")
-        # | pl.col("ID").str.starts_with("NLE")
     )
 
 
@@ -80,8 +79,8 @@ def process_data(input_df: pl.DataFrame) -> None:
         daily_dir.mkdir(parents=True, exist_ok=True)
         monthly_dir.mkdir(parents=True, exist_ok=True)
 
-        p.apply_async(process_station_data, args=(station_id, "1mo", monthly_dir, False))
-        p.apply_async(process_station_data, args=(station_id, "1d", daily_dir, False))
+        p.apply_async(process_station_data, args=(station_id, "1mo", monthly_dir, True))
+        p.apply_async(process_station_data, args=(station_id, "1d", daily_dir, True))
 
     p.close()
     p.join()
