@@ -1,6 +1,5 @@
 {
-  "TMIN_count": 278,
-  "TMAX_count": 310,
-  "PRCP_count": 290,
-  "combined_count": 319
+  "TMIN_raw_count": 405,
+  "TMAX_raw_count": 493,
+  "PRCP_raw_count": 419
 }
