@@ -1,14 +1,10 @@
-from multiprocessing import Pool, freeze_support
+import json
+from multiprocessing import Pool
 from pathlib import Path
 
 import polars as pl
 
-from daily2dailystatics import process_station_daily_data
-from daily2monthly import process_station_monthly_data
-from plotdaily import ploat_station as plot_station_daily_data  # noqa
-from plotmonthly import ploat_station as plot_station_monthly_data  # noqa
-
-fp: str = "data/ghcnd-stations.txt"
+from stats_processor import process_station_data
 
 SCHEMA: dict[str, pl.Any] = {
     "ID": pl.Utf8,
@@ -23,79 +19,78 @@ SCHEMA: dict[str, pl.Any] = {
 }
 
 
-with open(fp, "r") as f:
-    lines = []
-    for line in f:
-        if len(line.strip()) > 0:  # Skip empty lines
-            id = line[0:11].strip()
-            latitude = line[12:20].strip()
-            longitude = line[21:30].strip()
-            elevation = line[31:37].strip()
-            state = line[38:40].strip()
-            name = line[41:71].strip()
-            gsn_flag = line[72:75].strip()
-            hcn_crn_flag = line[76:79].strip()
-            wmo_id = line[80:85].strip() if len(line) > 80 else ""
-            lines.append(
-                [
-                    id,
-                    latitude,
-                    longitude,
-                    elevation,
-                    state,
-                    name,
-                    gsn_flag,
-                    hcn_crn_flag,
-                    wmo_id,
-                ]
-            )
+def read_stations() -> pl.DataFrame:
+    """Read and parse stations data from ghcnd-stations.txt"""
+    fp: str = "data/ghcnd-stations.txt"
+    with open(fp, "r") as f:
+        lines = []
+        for line in f:
+            if len(line.strip()) > 0:  # Skip empty lines
+                id = line[0:11].strip()
+                latitude = line[12:20].strip()
+                longitude = line[21:30].strip()
+                elevation = line[31:37].strip()
+                state = line[38:40].strip()
+                name = line[41:71].strip()
+                gsn_flag = line[72:75].strip()
+                hcn_crn_flag = line[76:79].strip()
+                wmo_id = line[80:85].strip() if len(line) > 80 else ""
+                lines.append(
+                    [
+                        id,
+                        latitude,
+                        longitude,
+                        elevation,
+                        state,
+                        name,
+                        gsn_flag,
+                        hcn_crn_flag,
+                        wmo_id,
+                    ]
+                )
 
-df = pl.DataFrame(
-    lines,
-    schema=SCHEMA,
-)
+    return pl.DataFrame(lines, schema=SCHEMA)
 
-matched = df.filter(
-    pl.col("ID").str.starts_with("CHM")
-    | pl.col("ID").str.starts_with("JA")
-    | pl.col("ID").str.starts_with("KSM")
-    | pl.col("ID").str.starts_with("FRE")
-    | pl.col("ID").str.starts_with("GMM")
-    | pl.col("ID").str.starts_with("UKE")
-    | pl.col("ID").str.starts_with("IDM")
-    | pl.col("ID").str.starts_with("MXM")
-    | pl.col("ID").str.starts_with("NLE")
-)
+
+def filter_stations(df: pl.DataFrame) -> pl.DataFrame:
+    """Filter stations based on predefined prefixes"""
+    return df.filter(
+        pl.col("ID").str.starts_with("CHM")
+        | pl.col("ID").str.starts_with("JA")
+        | pl.col("ID").str.starts_with("KSM")
+        | pl.col("ID").str.starts_with("FRE")
+        | pl.col("ID").str.starts_with("GMM")
+        | pl.col("ID").str.starts_with("UKE")
+        | pl.col("ID").str.starts_with("IDM")
+        | pl.col("ID").str.starts_with("MXM")
+        | pl.col("ID").str.starts_with("NLE")
+    )
 
 
 def process_data(input_df: pl.DataFrame) -> None:
-    p = Pool(8)
-    for station_id in input_df["ID"]:
-        p.apply_async(process_station_monthly_data, args=(station_id,))
-        p.apply_async(process_station_daily_data, args=(station_id,))
-
-    p.close()
-    p.join()
-
-
-def process_plot(input_df: pl.DataFrame) -> None:
+    """Process both daily and monthly data for all stations in parallel"""
     p = Pool(8)
     for station_id in input_df["ID"]:
         prefix = station_id[:3]
         if prefix.endswith("0"):
             prefix = prefix[:-1]
-        output_dir = Path(f"docs/plots/{prefix}/{station_id}")
-        output_dir.mkdir(parents=True, exist_ok=True)
-        p.apply_async(plot_station_monthly_data, args=(station_id, output_dir, False))
-        p.apply_async(plot_station_daily_data, args=(station_id, output_dir, False))
+
+        daily_dir = Path(f"docs/plots/{prefix}/{station_id}")
+        monthly_dir = Path(f"docs/plots/{prefix}/{station_id}")
+        daily_dir.mkdir(parents=True, exist_ok=True)
+        monthly_dir.mkdir(parents=True, exist_ok=True)
+
+        p.apply_async(process_station_data, args=(station_id, "1mo", monthly_dir, False))
+        p.apply_async(process_station_data, args=(station_id, "1d", daily_dir, False))
 
     p.close()
     p.join()
 
 
 def dump_matched_as_geojson(input_df: pl.DataFrame) -> None:
-    features = []
+    """Convert matched stations data to GeoJSON format"""
     plots_dir = Path("docs/plots")
+    features = []
 
     for row in input_df.iter_rows(named=True):
         station_id = row["ID"]
@@ -136,15 +131,20 @@ def dump_matched_as_geojson(input_df: pl.DataFrame) -> None:
         "features": features,
     }
 
-    import json
-
     with open("docs/matched_stations.geojson", "w") as f:
         json.dump(geojson, f, indent=2)
 
 
-if __name__ == "__main__":
-    freeze_support()
+def main() -> None:
+    """Main entry point"""
+    # Read and filter stations
+    stations_df = read_stations()
+    matched_stations = filter_stations(stations_df)
 
-    process_data(matched)
-    process_plot(matched)
-    dump_matched_as_geojson(matched)
+    # Process data
+    process_data(matched_stations)
+    dump_matched_as_geojson(matched_stations)
+
+
+if __name__ == "__main__":
+    main()
