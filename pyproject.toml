@@ -6,11 +6,12 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "matplotlib>=3.10.6",
-    "polars>=1.32.3",
+    "polars>=1.33.1",
     "xlsxwriter>=3.2.5",
 ]
 
 [dependency-groups]
 dev = [
+    "jupyterlab>=4.4.7",
     "ruff>=0.12.11",
 ]
