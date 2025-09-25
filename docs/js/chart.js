@@ -577,6 +577,99 @@ class ChartManager {
             const minTemp = Math.floor(Math.min(...temperatureSeries));
             const maxTemp = Math.ceil(Math.max(...temperatureSeries));
 
+            const formatHistoryAxisLabel = (dateObj) => {
+              const month = dateObj.getMonth() + 1;
+              if (currentLang === "zh") {
+                return `${dateObj.getFullYear()}年${month}${t.month}`;
+              }
+              if (currentLang === "ja") {
+                return `${dateObj.getFullYear()}年${month}${t.month}`;
+              }
+              return `${dateObj.getFullYear()}-${String(month).padStart(2, "0")}`;
+            };
+
+            const historyDisplayFormat =
+              currentLang === "zh" || currentLang === "ja"
+                ? "yyyy年MM月"
+                : "yyyy-MM";
+
+            const historyXAxis = {
+              ...this.chartDefaults.scales.x,
+              time: {
+                ...this.chartDefaults.scales.x.time,
+                unit: "month",
+                tooltipFormat: historyDisplayFormat,
+                displayFormats: {
+                  ...this.chartDefaults.scales.x.time.displayFormats,
+                  month: historyDisplayFormat,
+                },
+              },
+              ticks: {
+                ...this.chartDefaults.scales.x.ticks,
+                maxRotation: 0,
+                autoSkip: true,
+                maxTicksLimit: 12,
+                callback: (value) => {
+                  const date = new Date(value);
+                  if (Number.isNaN(date.getTime())) {
+                    return value;
+                  }
+                  return formatHistoryAxisLabel(date);
+                },
+              },
+            };
+
+            const historyOptions = {
+              ...this.chartDefaults,
+              interaction: {
+                intersect: false,
+                mode: "index",
+                axis: "x",
+              },
+              scales: {
+                ...this.chartDefaults.scales,
+                x: historyXAxis,
+                y: {
+                  ...this.chartDefaults.scales.y,
+                  min: minTemp - 2,
+                  max: maxTemp + 2,
+                  ticks: {
+                    ...this.chartDefaults.scales.y.ticks,
+                    stepSize: 5,
+                  },
+                },
+                y1: {
+                  ...this.chartDefaults.scales.y1,
+                  position: "right",
+                  grid: {
+                    drawOnChartArea: false,
+                  },
+                },
+              },
+              plugins: {
+                ...this.chartDefaults.plugins,
+                tooltip: {
+                  ...this.chartDefaults.plugins.tooltip,
+                  callbacks: {
+                    ...this.chartDefaults.plugins.tooltip.callbacks,
+                    label: (item) => {
+                      if (!item) return "";
+                      const isPrecip = item.dataset.metaKey === "PRCP";
+                      const unit = isPrecip ? "mm" : "°C";
+                      const value = item.parsed.y;
+                      const baseLabel = `${item.dataset.label}: ${value.toFixed(1)}${unit}`;
+                      const entryCounts = item.raw && item.raw.entryCounts;
+                      if (entryCounts && item.dataset.metaKey) {
+                        const entryValue = entryCounts[item.dataset.metaKey] || 0;
+                        return `${baseLabel} (${t.entries}: ${entryValue})`;
+                      }
+                      return baseLabel;
+                    },
+                  },
+                },
+              },
+            };
+
             if (historyPlaceholder) {
               historyPlaceholder.style.display = "none";
             }
@@ -639,64 +732,7 @@ class ChartManager {
                   },
                 ],
               },
-              options: {
-                ...this.chartDefaults,
-                interaction: {
-                  intersect: false,
-                  mode: "index",
-                  axis: "x",
-                },
-                scales: {
-                  ...this.chartDefaults.scales,
-                  x: {
-                    ...this.chartDefaults.scales.x,
-                    ticks: {
-                      ...this.chartDefaults.scales.x.ticks,
-                      maxRotation: 0,
-                      autoSkip: true,
-                      maxTicksLimit: 12,
-                    },
-                  },
-                  y: {
-                    ...this.chartDefaults.scales.y,
-                    min: minTemp - 2,
-                    max: maxTemp + 2,
-                    ticks: {
-                      ...this.chartDefaults.scales.y.ticks,
-                      stepSize: 5,
-                    },
-                  },
-                  y1: {
-                    ...this.chartDefaults.scales.y1,
-                    position: "right",
-                    grid: {
-                      drawOnChartArea: false,
-                    },
-                  },
-                },
-                plugins: {
-                  ...this.chartDefaults.plugins,
-                  tooltip: {
-                    ...this.chartDefaults.plugins.tooltip,
-                    callbacks: {
-                      ...this.chartDefaults.plugins.tooltip.callbacks,
-                      label: (item) => {
-                        if (!item) return "";
-                        const isPrecip = item.dataset.metaKey === "PRCP";
-                        const unit = isPrecip ? "mm" : "°C";
-                        const value = item.parsed.y;
-                        const baseLabel = `${item.dataset.label}: ${value.toFixed(1)}${unit}`;
-                        const entryCounts = item.raw && item.raw.entryCounts;
-                        if (entryCounts && item.dataset.metaKey) {
-                          const entryValue = entryCounts[item.dataset.metaKey] || 0;
-                          return `${baseLabel} (${t.entries}: ${entryValue})`;
-                        }
-                        return baseLabel;
-                      },
-                    },
-                  },
-                },
-              },
+              options: historyOptions,
             });
           })
           .catch((error) => {
