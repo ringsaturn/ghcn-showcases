@@ -1,5 +1,6 @@
 {
   "TMIN_raw_count": 19376,
   "TMAX_raw_count": 20246,
-  "PRCP_raw_count": 18438
+  "PRCP_raw_count": 18438,
+  "monthly_history_rows": 668
 }

@@ -46,17 +46,29 @@ def calculate_daily_statistics(df: pl.LazyFrame, element: str) -> pl.DataFrame:
     )
 
 
-def calculate_monthly_statistics(df: pl.LazyFrame, element: str) -> pl.DataFrame:
-    """Calculate monthly statistics matching the required format."""
-    return (
+def calculate_monthly_statistics(
+    df: pl.LazyFrame, element: str
+) -> tuple[pl.DataFrame, pl.DataFrame]:
+    """Calculate monthly statistics and provide the full month-by-month history.
+
+    Returns:
+        A tuple of (monthly_climatology, monthly_history) where:
+            - monthly_climatology contains 12 rows (one per calendar month) with
+              aggregated statistics across all available years.
+            - monthly_history contains one row per year-month from 1970 onwards
+              with the same statistics as the climatology, plus entry counts and
+              the period start date.
+    """
+
+    monthly_summary = (
         df.filter(pl.col("DATE").dt.year() >= 1970)
+        .filter(pl.col("DATA_VALUE").is_not_null())
         .with_columns(
             [
                 pl.col("DATE").dt.month().alias("MONTH"),
                 pl.col("DATE").dt.year().alias("YEAR"),
             ]
         )
-        # First group by year and month to get annual values
         .group_by(["YEAR", "MONTH"])
         .agg(
             [
@@ -65,22 +77,65 @@ def calculate_monthly_statistics(df: pl.LazyFrame, element: str) -> pl.DataFrame
                 pl.col("DATA_VALUE").min().alias(f"ANNUAL_{element}_MIN"),
                 pl.col("DATA_VALUE").max().alias(f"ANNUAL_{element}_MAX"),
                 pl.col("DATA_VALUE").sum().alias(f"ANNUAL_{element}_SUM"),
+                pl.len().alias("ENTRY_COUNT"),
             ]
         )
-        # Then group by month to get multi-year averages
+        .with_columns(
+            pl.datetime(
+                year=pl.col("YEAR"),
+                month=pl.col("MONTH"),
+                day=pl.lit(1),
+            )
+            .dt.date()
+            .alias("PERIOD_START")
+        )
+        .sort(["YEAR", "MONTH"])
+        .collect()
+    )
+
+    rename_map = {
+        f"ANNUAL_{element}_P10": f"{element}_P10",
+        f"ANNUAL_{element}_P90": f"{element}_P90",
+        f"ANNUAL_{element}_MIN": f"{element}_MIN",
+        f"ANNUAL_{element}_MAX": f"{element}_MAX",
+        f"ANNUAL_{element}_SUM": f"{element}_SUM",
+        "ENTRY_COUNT": f"{element}_ENTRY_COUNT",
+    }
+
+    monthly_history = (
+        monthly_summary.rename(rename_map)
+        .select(
+            [
+                "YEAR",
+                "MONTH",
+                "PERIOD_START",
+                f"{element}_P10",
+                f"{element}_P90",
+                f"{element}_MIN",
+                f"{element}_MAX",
+                f"{element}_SUM",
+                f"{element}_ENTRY_COUNT",
+            ]
+        )
+    )
+
+    monthly_climatology = (
+        monthly_history.lazy()
         .group_by("MONTH")
         .agg(
             [
-                pl.col(f"ANNUAL_{element}_P10").mean().alias(f"{element}_P10"),
-                pl.col(f"ANNUAL_{element}_P90").mean().alias(f"{element}_P90"),
-                pl.col(f"ANNUAL_{element}_MIN").min().alias(f"{element}_MIN"),
-                pl.col(f"ANNUAL_{element}_MAX").max().alias(f"{element}_MAX"),
-                pl.col(f"ANNUAL_{element}_SUM").mean().alias(f"{element}_SUM"),
+                pl.col(f"{element}_P10").mean().alias(f"{element}_P10"),
+                pl.col(f"{element}_P90").mean().alias(f"{element}_P90"),
+                pl.col(f"{element}_MIN").min().alias(f"{element}_MIN"),
+                pl.col(f"{element}_MAX").max().alias(f"{element}_MAX"),
+                pl.col(f"{element}_SUM").mean().alias(f"{element}_SUM"),
             ]
         )
         .sort("MONTH")
         .collect()
     )
+
+    return monthly_climatology, monthly_history
 
 
 def process_station_data(
@@ -111,6 +166,9 @@ def process_station_data(
     tmin_data = None
     tmax_data = None
     prcp_data = None
+    tmin_history = None
+    tmax_history = None
+    prcp_history = None
     raw_entry_counts: dict[str, int] = {}
 
     for element in elements:
@@ -144,13 +202,16 @@ def process_station_data(
                 else:  # PRCP
                     prcp_data = stats_df
             else:  # "1mo"
-                stats_df = calculate_monthly_statistics(df, element)
+                climatology_df, history_df = calculate_monthly_statistics(df, element)
                 if element == "TMIN":
-                    tmin_data = stats_df
+                    tmin_data = climatology_df
+                    tmin_history = history_df
                 elif element == "TMAX":
-                    tmax_data = stats_df
+                    tmax_data = climatology_df
+                    tmax_history = history_df
                 else:  # PRCP
-                    prcp_data = stats_df
+                    prcp_data = climatology_df
+                    prcp_history = history_df
                     
             print(f"Processed {element} data for {station_id}")
 
@@ -159,11 +220,10 @@ def process_station_data(
             continue
 
     # Combine the data
+    monthly_history_df = None
     try:
-        # Combine data only if at least one element has stats
         if any([tmin_data is not None, tmax_data is not None, prcp_data is not None]):
             if time_window == "1d":
-                # Build complete calendar of month/day and assign new DAY index
                 key_frames = []
                 for df in [tmin_data, tmax_data, prcp_data]:
                     if df is not None:
@@ -171,21 +231,43 @@ def process_station_data(
                 keys_df = key_frames[0]
                 for kdf in key_frames[1:]:
                     keys_df = keys_df.vstack(kdf)
-                keys_df = keys_df.unique().sort(["MONTH", "DAY_OF_MONTH"]).with_row_count("DAY", offset=1)
-                # Left join stats to calendar
+                keys_df = (
+                    keys_df.unique()
+                    .sort(["MONTH", "DAY_OF_MONTH"])
+                    .with_row_count("DAY", offset=1)
+                )
                 combined_df = keys_df
                 if tmin_data is not None:
-                    combined_df = combined_df.join(tmin_data.drop("DAY"), on=["MONTH", "DAY_OF_MONTH"], how="left")
+                    combined_df = combined_df.join(
+                        tmin_data.drop("DAY"),
+                        on=["MONTH", "DAY_OF_MONTH"],
+                        how="left",
+                    )
                 if tmax_data is not None:
-                    combined_df = combined_df.join(tmax_data.drop("DAY"), on=["MONTH", "DAY_OF_MONTH"], how="left")
+                    combined_df = combined_df.join(
+                        tmax_data.drop("DAY"),
+                        on=["MONTH", "DAY_OF_MONTH"],
+                        how="left",
+                    )
                 if prcp_data is not None:
-                    combined_df = combined_df.join(prcp_data.drop("DAY"), on=["MONTH", "DAY_OF_MONTH"], how="left")
-                # Select columns in the correct order
-                combined_df = combined_df.select([
-                    "DAY", "TMIN_P10", "TMAX_P90", "TMIN_MIN", "TMAX_MAX", "PRCP_SUM", "MONTH", "DAY_OF_MONTH"
-                ])
+                    combined_df = combined_df.join(
+                        prcp_data.drop("DAY"),
+                        on=["MONTH", "DAY_OF_MONTH"],
+                        how="left",
+                    )
+                combined_df = combined_df.select(
+                    [
+                        "DAY",
+                        pl.col("TMIN_P10").round(2).alias("TMIN_P10"),
+                        pl.col("TMAX_P90").round(2).alias("TMAX_P90"),
+                        pl.col("TMIN_MIN").round(2).alias("TMIN_MIN"),
+                        pl.col("TMAX_MAX").round(2).alias("TMAX_MAX"),
+                        pl.col("PRCP_SUM").round(2).alias("PRCP_SUM"),
+                        "MONTH",
+                        "DAY_OF_MONTH",
+                    ]
+                )
             else:
-                # Combine monthly data: build union of months and left join stats
                 month_keys = []
                 for df in [tmin_data, tmax_data, prcp_data]:
                     if df is not None:
@@ -201,36 +283,121 @@ def process_station_data(
                     combined_df = combined_df.join(tmax_data, on="MONTH", how="left")
                 if prcp_data is not None:
                     combined_df = combined_df.join(prcp_data, on="MONTH", how="left")
-                combined_df = combined_df.select([
-                    "MONTH", 
-                    pl.col("TMIN_P10").round(2), 
-                    pl.col("TMAX_P90").round(2), 
-                    pl.col("TMIN_MIN").round(2), 
-                    pl.col("TMAX_MAX").round(2), 
-                    pl.col("PRCP_SUM").round(2)
-                ])
-                
-            # Write to CSV file if there is any combined data, else skip saving
+                combined_df = combined_df.select(
+                    [
+                        "MONTH",
+                        pl.col("TMIN_P10").round(2).alias("TMIN_P10"),
+                        pl.col("TMAX_P90").round(2).alias("TMAX_P90"),
+                        pl.col("TMIN_MIN").round(2).alias("TMIN_MIN"),
+                        pl.col("TMAX_MAX").round(2).alias("TMAX_MAX"),
+                        pl.col("PRCP_SUM").round(2).alias("PRCP_SUM"),
+                    ]
+                )
+
+                history_sources = [tmin_history, tmax_history, prcp_history]
+                non_empty_history = [
+                    df for df in history_sources if df is not None and not df.is_empty()
+                ]
+                if non_empty_history:
+                    history_keys = non_empty_history[0].select(
+                        ["YEAR", "MONTH", "PERIOD_START"]
+                    )
+                    for hist in non_empty_history[1:]:
+                        history_keys = history_keys.vstack(
+                            hist.select(["YEAR", "MONTH", "PERIOD_START"])
+                        )
+                    history_keys = (
+                        history_keys.lazy()
+                        .group_by(["YEAR", "MONTH"])
+                        .agg(pl.col("PERIOD_START").min().alias("PERIOD_START"))
+                        .sort(["YEAR", "MONTH"])
+                        .collect()
+                    )
+
+                    monthly_history_df = history_keys
+                    if tmin_history is not None:
+                        monthly_history_df = monthly_history_df.join(
+                            tmin_history.drop(["PERIOD_START"]),
+                            on=["YEAR", "MONTH"],
+                            how="left",
+                        )
+                    if tmax_history is not None:
+                        monthly_history_df = monthly_history_df.join(
+                            tmax_history.drop(["PERIOD_START"]),
+                            on=["YEAR", "MONTH"],
+                            how="left",
+                        )
+                    if prcp_history is not None:
+                        monthly_history_df = monthly_history_df.join(
+                            prcp_history.drop(["PERIOD_START"]),
+                            on=["YEAR", "MONTH"],
+                            how="left",
+                        )
+
+                    value_columns = [
+                        f"{element}_{suffix}"
+                        for element in ["TMIN", "TMAX", "PRCP"]
+                        for suffix in ["P10", "P90", "MIN", "MAX", "SUM"]
+                    ]
+                    existing_value_columns = [
+                        col
+                        for col in value_columns
+                        if col in monthly_history_df.columns
+                    ]
+                    entry_columns = [
+                        col
+                        for col in [
+                            "TMIN_ENTRY_COUNT",
+                            "TMAX_ENTRY_COUNT",
+                            "PRCP_ENTRY_COUNT",
+                        ]
+                        if col in monthly_history_df.columns
+                    ]
+                    monthly_history_df = (
+                        monthly_history_df.with_columns(
+                            [pl.col(col).round(2) for col in existing_value_columns]
+                        )
+                        .select(
+                            [
+                                "PERIOD_START",
+                                "YEAR",
+                                "MONTH",
+                                *existing_value_columns,
+                                *entry_columns,
+                            ]
+                        )
+                        .sort(["YEAR", "MONTH"])
+                    )
+
             if len(combined_df) > 0:
                 output_dir.mkdir(parents=True, exist_ok=True)
-                # Generate JSON summary of counts
                 stats_summary = {
                     "TMIN_raw_count": raw_entry_counts.get("TMIN", 0),
                     "TMAX_raw_count": raw_entry_counts.get("TMAX", 0),
                     "PRCP_raw_count": raw_entry_counts.get("PRCP", 0),
                 }
+                if time_window == "1mo" and monthly_history_df is not None:
+                    stats_summary["monthly_history_rows"] = len(monthly_history_df)
+
                 summary_file = output_dir / f"{station_id}-{period}-stats.json"
                 with open(summary_file, "w") as sf:
                     json.dump(stats_summary, sf, indent=2)
-                # Write CSV
-                combined_df.write_csv(output_file)
+
+                combined_df.write_csv(output_file, float_precision=2)
+                if monthly_history_df is not None:
+                    history_output = output_dir / f"{station_id}-monthly-history.csv"
+                    monthly_history_df.write_csv(history_output, float_precision=2)
+                    print(f"Monthly history saved to: {history_output}")
+
                 print(f"{period.capitalize()} statistics saved to: {output_file}")
                 print(f"Summary JSON saved to: {summary_file}")
                 print(f"Total records: {len(combined_df)}")
             else:
-                print(f"No data for station {station_id}, skipping file creation: {output_file}")
+                print(
+                    f"No data for station {station_id}, skipping file creation: {output_file}"
+                )
         else:
             print(f"Missing data for station {station_id}, cannot create output file")
-            
+
     except Exception as e:
         print(f"Error combining data: {e}")

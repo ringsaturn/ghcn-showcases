@@ -142,6 +142,7 @@ class ChartManager {
     // Find all chart containers and get unique station IDs
     const dailyCharts = document.querySelectorAll('[id^="dailyChart-"]');
     const monthlyCharts = document.querySelectorAll('[id^="monthlyChart-"]');
+    const monthlyHistoryCharts = document.querySelectorAll('[id^="monthlyHistoryChart-"]');
     const stationIds = new Set();
 
     // Collect station IDs and destroy existing charts
@@ -158,6 +159,17 @@ class ChartManager {
 
     monthlyCharts.forEach((chart) => {
       const stationId = chart.id.replace("monthlyChart-", "");
+      if (stationId) {
+        stationIds.add(stationId);
+        const chartInstance = Chart.getChart(chart);
+        if (chartInstance) {
+          chartInstance.destroy();
+        }
+      }
+    });
+
+    monthlyHistoryCharts.forEach((chart) => {
+      const stationId = chart.id.replace("monthlyHistoryChart-", "");
       if (stationId) {
         stationIds.add(stationId);
         const chartInstance = Chart.getChart(chart);
@@ -207,7 +219,26 @@ class ChartManager {
     const t = window.languageManager.getTranslations();
 
     // Load and draw charts
-    await Promise.all([
+    const labels = this.getCurrentLabels();
+    const historyCanvas = document.getElementById(`monthlyHistoryChart-${stationId}`);
+    const historyPlaceholder = document.getElementById(`monthlyHistoryPlaceholder-${stationId}`);
+
+    if (historyPlaceholder) {
+      historyPlaceholder.style.display = "block";
+      historyPlaceholder.textContent = t.historyLoading;
+    }
+
+    if (historyCanvas) {
+      const historyChartInstance = Chart.getChart(historyCanvas);
+      if (historyChartInstance) {
+        historyChartInstance.destroy();
+      }
+      historyCanvas.style.display = "none";
+    }
+
+    const tasks = [];
+
+    tasks.push(
       fetch(this.getStationCsvPath(stationId, "daily"))
         .then((response) => response.text())
         .then((csvData) => {
@@ -232,16 +263,18 @@ class ChartManager {
                 day: day,
                 dateStr: currentLang === "zh" || currentLang === "ja"
                   ? month + t.month + day + t.day
-                  : month + "-" + day,
+                  : `${month}-${day}`,
               };
             })
             .filter((point) =>
-              !isNaN(point.tmax_max) && !isNaN(point.tmin_min) &&
-              !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10)
+              Number.isFinite(point.tmax_max) && Number.isFinite(point.tmin_min) &&
+              Number.isFinite(point.tmax_p90) && Number.isFinite(point.tmin_p10)
             );
 
-          // Calculate temperature range based on current data type
-          const labels = this.getCurrentLabels();
+          if (!chartData.length) {
+            return;
+          }
+
           const temperatures = chartData.flatMap((point) => [
             this.useExtremeData ? point.tmax_max : point.tmax_p90,
             this.useExtremeData ? point.tmin_min : point.tmin_p10,
@@ -249,7 +282,7 @@ class ChartManager {
           const minTemp = Math.floor(Math.min(...temperatures));
           const maxTemp = Math.ceil(Math.max(...temperatures));
 
-          new Chart(document.getElementById("dailyChart-" + stationId), {
+          new Chart(document.getElementById(`dailyChart-${stationId}`), {
             type: "line",
             data: {
               datasets: [
@@ -258,6 +291,7 @@ class ChartManager {
                   data: chartData.map((point) => ({
                     x: point.x,
                     y: this.useExtremeData ? point.tmax_max : point.tmax_p90,
+                    dateStr: point.dateStr,
                   })),
                   borderColor: "rgba(255, 99, 132, 0.8)",
                   backgroundColor: "rgba(255, 99, 132, 0.1)",
@@ -272,6 +306,7 @@ class ChartManager {
                   data: chartData.map((point) => ({
                     x: point.x,
                     y: this.useExtremeData ? point.tmin_min : point.tmin_p10,
+                    dateStr: point.dateStr,
                   })),
                   borderColor: "rgba(54, 162, 235, 0.8)",
                   backgroundColor: "rgba(54, 162, 235, 0.1)",
@@ -286,6 +321,7 @@ class ChartManager {
                   data: chartData.map((point) => ({
                     x: point.x,
                     y: point.y_prcp,
+                    dateStr: point.dateStr,
                   })),
                   borderColor: "rgba(75, 192, 192, 0.8)",
                   backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -312,8 +348,10 @@ class ChartManager {
               },
             },
           });
-        }),
+        })
+    );
 
+    tasks.push(
       fetch(this.getStationCsvPath(stationId, "monthly"))
         .then((response) => response.text())
         .then((csvData) => {
@@ -340,12 +378,14 @@ class ChartManager {
               };
             })
             .filter((point) =>
-              !isNaN(point.tmax_max) && !isNaN(point.tmin_min) &&
-              !isNaN(point.tmax_p90) && !isNaN(point.tmin_p10)
+              Number.isFinite(point.tmax_max) && Number.isFinite(point.tmin_min) &&
+              Number.isFinite(point.tmax_p90) && Number.isFinite(point.tmin_p10)
             );
 
-          // Calculate temperature range based on current data type
-          const labels = this.getCurrentLabels();
+          if (!chartData.length) {
+            return;
+          }
+
           const temperatures = chartData.flatMap((point) => [
             this.useExtremeData ? point.tmax_max : point.tmax_p90,
             this.useExtremeData ? point.tmin_min : point.tmin_p10,
@@ -353,7 +393,7 @@ class ChartManager {
           const minTemp = Math.floor(Math.min(...temperatures));
           const maxTemp = Math.ceil(Math.max(...temperatures));
 
-          new Chart(document.getElementById("monthlyChart-" + stationId), {
+          new Chart(document.getElementById(`monthlyChart-${stationId}`), {
             type: "line",
             data: {
               datasets: [
@@ -362,6 +402,7 @@ class ChartManager {
                   data: chartData.map((point) => ({
                     x: point.x,
                     y: this.useExtremeData ? point.tmax_max : point.tmax_p90,
+                    dateStr: point.dateStr,
                   })),
                   borderColor: "rgba(255, 99, 132, 0.8)",
                   backgroundColor: "rgba(255, 99, 132, 0.1)",
@@ -377,6 +418,7 @@ class ChartManager {
                   data: chartData.map((point) => ({
                     x: point.x,
                     y: this.useExtremeData ? point.tmin_min : point.tmin_p10,
+                    dateStr: point.dateStr,
                   })),
                   borderColor: "rgba(54, 162, 235, 0.8)",
                   backgroundColor: "rgba(54, 162, 235, 0.1)",
@@ -392,6 +434,7 @@ class ChartManager {
                   data: chartData.map((point) => ({
                     x: point.x,
                     y: point.y_prcp,
+                    dateStr: point.dateStr,
                   })),
                   borderColor: "rgba(75, 192, 192, 0.8)",
                   backgroundColor: "rgba(75, 192, 192, 0.2)",
@@ -439,8 +482,238 @@ class ChartManager {
               },
             },
           });
-        }),
-    ]);
+        })
+    );
+
+    if (historyCanvas) {
+      tasks.push(
+        fetch(this.getStationCsvPath(stationId, "monthly-history"))
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("History data not available");
+            }
+            return response.text();
+          })
+          .then((csvData) => {
+            const results = Papa.parse(csvData, { header: true });
+            const rows = results.data.filter((row) =>
+              row && row.PERIOD_START && row.PERIOD_START.trim() !== ""
+            );
+
+            const historyData = rows
+              .map((row) => {
+                const periodStart = row.PERIOD_START;
+                const date = new Date(periodStart);
+                if (Number.isNaN(date.getTime())) {
+                  return null;
+                }
+
+                const month = parseInt(row.MONTH);
+                const year = parseInt(row.YEAR);
+                const monthLabel = month.toString().padStart(2, "0");
+                let dateLabel;
+                if (currentLang === "zh" || currentLang === "ja") {
+                  dateLabel = `${year}年${month}${t.month}`;
+                } else {
+                  dateLabel = `${year}-${monthLabel}`;
+                }
+
+                const tmaxMax = parseFloat(row.TMAX_MAX);
+                const tminMin = parseFloat(row.TMIN_MIN);
+                const tmaxP90 = parseFloat(row.TMAX_P90);
+                const tminP10 = parseFloat(row.TMIN_P10);
+                const prcpSum = parseFloat(row.PRCP_SUM);
+
+                return {
+                  x: date,
+                  month,
+                  year,
+                  tmax_max: tmaxMax,
+                  tmin_min: tminMin,
+                  tmax_p90: tmaxP90,
+                  tmin_p10: tminP10,
+                  y_prcp: Number.isFinite(prcpSum) ? prcpSum : 0,
+                  dateStr: dateLabel,
+                  entryCounts: {
+                    TMIN: parseInt(row.TMIN_ENTRY_COUNT || "0", 10) || 0,
+                    TMAX: parseInt(row.TMAX_ENTRY_COUNT || "0", 10) || 0,
+                    PRCP: parseInt(row.PRCP_ENTRY_COUNT || "0", 10) || 0,
+                  },
+                };
+              })
+              .filter((point) => point !== null)
+              .filter((point) =>
+                Number.isFinite(point.tmax_max) &&
+                Number.isFinite(point.tmin_min) &&
+                Number.isFinite(point.tmax_p90) &&
+                Number.isFinite(point.tmin_p10)
+              );
+
+            if (!historyData.length) {
+              if (historyPlaceholder) {
+                historyPlaceholder.style.display = "block";
+                historyPlaceholder.textContent = t.historyNoData;
+              }
+              historyCanvas.style.display = "none";
+              return;
+            }
+
+            const temperatureSeries = historyData
+              .flatMap((point) => [
+                this.useExtremeData ? point.tmax_max : point.tmax_p90,
+                this.useExtremeData ? point.tmin_min : point.tmin_p10,
+              ])
+              .filter((value) => Number.isFinite(value));
+
+            if (!temperatureSeries.length) {
+              if (historyPlaceholder) {
+                historyPlaceholder.style.display = "block";
+                historyPlaceholder.textContent = t.historyNoData;
+              }
+              historyCanvas.style.display = "none";
+              return;
+            }
+
+            const minTemp = Math.floor(Math.min(...temperatureSeries));
+            const maxTemp = Math.ceil(Math.max(...temperatureSeries));
+
+            if (historyPlaceholder) {
+              historyPlaceholder.style.display = "none";
+            }
+            historyCanvas.style.display = "block";
+
+            new Chart(historyCanvas, {
+              type: "line",
+              data: {
+                datasets: [
+                  {
+                    label: labels.maxTemp,
+                    data: historyData.map((point) => ({
+                      x: point.x,
+                      y: this.useExtremeData ? point.tmax_max : point.tmax_p90,
+                      dateStr: point.dateStr,
+                      entryCounts: point.entryCounts,
+                    })),
+                    borderColor: "rgba(255, 99, 132, 0.6)",
+                    backgroundColor: "rgba(255, 99, 132, 0.1)",
+                    borderWidth: 1.2,
+                    pointRadius: 1.5,
+                    fill: false,
+                    tension: 0.15,
+                    yAxisID: "y",
+                    metaKey: "TMAX",
+                  },
+                  {
+                    label: labels.minTemp,
+                    data: historyData.map((point) => ({
+                      x: point.x,
+                      y: this.useExtremeData ? point.tmin_min : point.tmin_p10,
+                      dateStr: point.dateStr,
+                      entryCounts: point.entryCounts,
+                    })),
+                    borderColor: "rgba(54, 162, 235, 0.6)",
+                    backgroundColor: "rgba(54, 162, 235, 0.1)",
+                    borderWidth: 1.2,
+                    pointRadius: 1.5,
+                    fill: false,
+                    tension: 0.15,
+                    yAxisID: "y",
+                    metaKey: "TMIN",
+                  },
+                  {
+                    type: "bar",
+                    label: t.precip,
+                    data: historyData.map((point) => ({
+                      x: point.x,
+                      y: point.y_prcp,
+                      dateStr: point.dateStr,
+                      entryCounts: point.entryCounts,
+                    })),
+                    backgroundColor: "rgba(75, 192, 192, 0.25)",
+                    borderColor: "rgba(75, 192, 192, 0.8)",
+                    borderWidth: 1,
+                    yAxisID: "y1",
+                    metaKey: "PRCP",
+                    barPercentage: 0.9,
+                    categoryPercentage: 0.9,
+                  },
+                ],
+              },
+              options: {
+                ...this.chartDefaults,
+                interaction: {
+                  intersect: false,
+                  mode: "index",
+                  axis: "x",
+                },
+                scales: {
+                  ...this.chartDefaults.scales,
+                  x: {
+                    ...this.chartDefaults.scales.x,
+                    ticks: {
+                      ...this.chartDefaults.scales.x.ticks,
+                      maxRotation: 0,
+                      autoSkip: true,
+                      maxTicksLimit: 12,
+                    },
+                  },
+                  y: {
+                    ...this.chartDefaults.scales.y,
+                    min: minTemp - 2,
+                    max: maxTemp + 2,
+                    ticks: {
+                      ...this.chartDefaults.scales.y.ticks,
+                      stepSize: 5,
+                    },
+                  },
+                  y1: {
+                    ...this.chartDefaults.scales.y1,
+                    position: "right",
+                    grid: {
+                      drawOnChartArea: false,
+                    },
+                  },
+                },
+                plugins: {
+                  ...this.chartDefaults.plugins,
+                  tooltip: {
+                    ...this.chartDefaults.plugins.tooltip,
+                    callbacks: {
+                      ...this.chartDefaults.plugins.tooltip.callbacks,
+                      label: (item) => {
+                        if (!item) return "";
+                        const isPrecip = item.dataset.metaKey === "PRCP";
+                        const unit = isPrecip ? "mm" : "°C";
+                        const value = item.parsed.y;
+                        const baseLabel = `${item.dataset.label}: ${value.toFixed(1)}${unit}`;
+                        const entryCounts = item.raw && item.raw.entryCounts;
+                        if (entryCounts && item.dataset.metaKey) {
+                          const entryValue = entryCounts[item.dataset.metaKey] || 0;
+                          return `${baseLabel} (${t.entries}: ${entryValue})`;
+                        }
+                        return baseLabel;
+                      },
+                    },
+                  },
+                },
+              },
+            });
+          })
+          .catch((error) => {
+            if (historyPlaceholder) {
+              historyPlaceholder.style.display = "block";
+              historyPlaceholder.textContent = t.historyNoData;
+            }
+            if (historyCanvas) {
+              historyCanvas.style.display = "none";
+            }
+            console.warn(`History data load failed for ${stationId}:`, error);
+            return null;
+          })
+      );
+    }
+
+    await Promise.all(tasks);
   }
 }
 

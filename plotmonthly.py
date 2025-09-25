@@ -53,7 +53,7 @@ def ploat_station(
         return
 
     # save to csv for debug
-    agg_df.write_csv(saved_fp.with_suffix(".csv"))
+    agg_df.write_csv(saved_fp.with_suffix(".csv"), float_precision=2)
     if csv_only:
         print(f"Saved CSV only to {saved_fp.with_suffix('.csv')}, skip plotting.")
         return
