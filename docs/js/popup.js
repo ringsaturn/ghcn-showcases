@@ -7,9 +7,10 @@ class PopupManager {
     const stationId = properties.ID;
 
     return `
-      <div style="width: 80vw; max-width: 800px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); box-sizing: border-box;">
-        <h3 style="margin-top: 0; margin-bottom: 10px;">${t.stationInfo}</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px">
+      <div style="width: 80vw; max-width: 820px; background: white; padding: 15px; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.15); box-sizing: border-box; max-height: 80vh; overflow-y: auto; display: flex; flex-direction: column; gap: 20px;">
+        <div style="position: sticky; top: 0; background: white; padding-bottom: 10px; border-bottom: 1px solid #f0f0f0; z-index: 5;">
+          <h3 style="margin: 0 0 10px;">${t.stationInfo}</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
           <p style="margin: 5px 0"><strong>${t.stationId}:</strong> ${properties.ID}</p>
           <p style="margin: 5px 0"><strong>${t.name}:</strong> ${properties.NAME}</p>
           <p style="margin: 5px 0"><strong>${t.longitude}:</strong> ${
@@ -19,31 +20,32 @@ class PopupManager {
       coordinates[1].toFixed(2)
     }°</p>
           <p style="margin: 5px 0"><strong>${t.elevation}:</strong> ${properties.ELEVATION}${t.meters}</p>
-        </div>
-        <div style="margin-bottom: 15px; display: flex; gap: 10px;">
+          </div>
+          <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 10px;">
           <button class="add-to-compare" onclick="addStationToCompare('${stationId}', '${properties.NAME}')">${t.compareBtn}</button>
           <button class="copy-link-btn" onclick="copyStationLink('${stationId}')">${t.copyLinkBtn}</button>
+          </div>
         </div>
-        <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 10px;">
           <div>
             <h4 style="margin: 0 0 10px;">${t.dailyChart}</h4>
-            <div style="width: 100%; margin-bottom: 0; background: #f8f9fa; padding: 10px; border-radius: 4px; box-sizing: border-box;">
-              <canvas id="dailyChart-${stationId}" style="width: 100%; height: 250px;"></canvas>
+            <div style="width: 100%; margin-bottom: 0; background: #f8f9fa; padding: 10px; border-radius: 8px; box-sizing: border-box;">
+              <canvas id="dailyChart-${stationId}" style="width: 100%; height: 220px;"></canvas>
             </div>
           </div>
           <div>
             <h4 style="margin: 0 0 10px;">${t.monthlyChart}</h4>
-            <div style="width: 100%; background: #f8f9fa; padding: 10px; border-radius: 4px; box-sizing: border-box;">
-              <canvas id="monthlyChart-${stationId}" style="width: 100%; height: 250px;"></canvas>
+            <div style="width: 100%; background: #f8f9fa; padding: 10px; border-radius: 8px; box-sizing: border-box;">
+              <canvas id="monthlyChart-${stationId}" style="width: 100%; height: 220px;"></canvas>
             </div>
           </div>
           <div>
             <h4 style="margin: 0 0 10px;">${t.monthlyHistoryChart}</h4>
-            <div style="width: 100%; background: #f8f9fa; padding: 10px; border-radius: 4px; box-sizing: border-box;">
-              <div id="monthlyHistoryPlaceholder-${stationId}" style="text-align: center; color: #666; font-size: 14px; padding: 20px 0;">
+            <div style="width: 100%; background: #f8f9fa; padding: 10px; border-radius: 8px; box-sizing: border-box;">
+              <div id="monthlyHistoryPlaceholder-${stationId}" style="text-align: center; color: #666; font-size: 14px; padding: 18px 0;">
                 ${t.historyLoading}
               </div>
-              <canvas id="monthlyHistoryChart-${stationId}" style="width: 100%; height: 250px; display: none;"></canvas>
+              <canvas id="monthlyHistoryChart-${stationId}" style="width: 100%; height: 240px; display: none;"></canvas>
             </div>
           </div>
         </div>
