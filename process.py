@@ -63,7 +63,7 @@ def filter_stations(df: pl.DataFrame) -> pl.DataFrame:
         | pl.col("ID").str.starts_with("UKE")
         | pl.col("ID").str.starts_with("IDM")
         | pl.col("ID").str.starts_with("MXM")
-        | pl.col("ID").str.starts_with("NLE")
+        # | pl.col("ID").str.starts_with("NLE")
     )
 
 
