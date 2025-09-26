@@ -1,12 +1,12 @@
 import json
 from multiprocessing import Pool
 from pathlib import Path
-
+from typing import Any
 import polars as pl
 
 from stats_processor import process_station_data
 
-SCHEMA: dict[str, pl.Any] = {
+SCHEMA: dict[str, Any] = {
     "ID": pl.Utf8,
     "LATITUDE": pl.Float64,
     "LONGITUDE": pl.Float64,
