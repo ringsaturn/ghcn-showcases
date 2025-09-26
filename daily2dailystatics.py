@@ -13,7 +13,7 @@ def process_station_daily_data(station_id: str, overwrite: bool = False) -> None
     prefix = station_id[:3]
     if prefix.endswith("0"):
         prefix = prefix[:-1]
-    
+
     output_dir = Path(f"docs/plots/{prefix}/{station_id}")
     output_dir.mkdir(parents=True, exist_ok=True)
     process_station_data(station_id, "1d", output_dir, overwrite)
