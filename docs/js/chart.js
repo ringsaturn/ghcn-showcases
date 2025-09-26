@@ -412,6 +412,17 @@ class ChartManager {
                   fill: false,
                   tension: 0.3,
                   yAxisID: "y",
+                  segment: {
+                    borderColor: ctx => {
+                      const p0 = ctx.p0.parsed;
+                      const p1 = ctx.p1.parsed;
+                      if (!p0 || !p1) return "rgba(255, 99, 132, 0.8)";
+                      const d0 = new Date(p0.x);
+                      const d1 = new Date(p1.x);
+                      const monthDiff = (d1.getFullYear() - d0.getFullYear()) * 12 + d1.getMonth() - d0.getMonth();
+                      return monthDiff > 1 ? 'transparent' : "rgba(255, 99, 132, 0.8)";
+                    }
+                  },
                 },
                 {
                   label: labels.minTemp,
@@ -428,6 +439,17 @@ class ChartManager {
                   fill: false,
                   tension: 0.3,
                   yAxisID: "y",
+                  segment: {
+                    borderColor: ctx => {
+                      const p0 = ctx.p0.parsed;
+                      const p1 = ctx.p1.parsed;
+                      if (!p0 || !p1) return "rgba(54, 162, 235, 0.8)";
+                      const d0 = new Date(p0.x);
+                      const d1 = new Date(p1.x);
+                      const monthDiff = (d1.getFullYear() - d0.getFullYear()) * 12 + d1.getMonth() - d0.getMonth();
+                      return monthDiff > 1 ? 'transparent' : "rgba(54, 162, 235, 0.8)";
+                    }
+                  },
                 },
                 {
                   label: t.precip,
@@ -444,6 +466,17 @@ class ChartManager {
                   fill: true,
                   tension: 0.3,
                   yAxisID: "y1",
+                  segment: {
+                    borderColor: ctx => {
+                      const p0 = ctx.p0.parsed;
+                      const p1 = ctx.p1.parsed;
+                      if (!p0 || !p1) return "rgba(75, 192, 192, 0.8)";
+                      const d0 = new Date(p0.x);
+                      const d1 = new Date(p1.x);
+                      const monthDiff = (d1.getFullYear() - d0.getFullYear()) * 12 + d1.getMonth() - d0.getMonth();
+                      return monthDiff > 1 ? 'transparent' : "rgba(75, 192, 192, 0.8)";
+                    }
+                  },
                 },
               ],
             },
@@ -695,6 +728,17 @@ class ChartManager {
                     tension: 0.15,
                     yAxisID: "y",
                     metaKey: "TMAX",
+                    segment: {
+                      borderColor: ctx => {
+                        const p0 = ctx.p0.parsed;
+                        const p1 = ctx.p1.parsed;
+                        if (!p0 || !p1) return "rgba(255, 99, 132, 0.6)";
+                        const d0 = new Date(p0.x);
+                        const d1 = new Date(p1.x);
+                        const monthDiff = (d1.getFullYear() - d0.getFullYear()) * 12 + d1.getMonth() - d0.getMonth();
+                        return Math.abs(monthDiff) > 1 ? 'transparent' : "rgba(255, 99, 132, 0.6)";
+                      }
+                    },
                   },
                   {
                     label: labels.minTemp,
@@ -712,6 +756,17 @@ class ChartManager {
                     tension: 0.15,
                     yAxisID: "y",
                     metaKey: "TMIN",
+                    segment: {
+                      borderColor: ctx => {
+                        const p0 = ctx.p0.parsed;
+                        const p1 = ctx.p1.parsed;
+                        if (!p0 || !p1) return "rgba(54, 162, 235, 0.6)";
+                        const d0 = new Date(p0.x);
+                        const d1 = new Date(p1.x);
+                        const monthDiff = (d1.getFullYear() - d0.getFullYear()) * 12 + d1.getMonth() - d0.getMonth();
+                        return Math.abs(monthDiff) > 1 ? 'transparent' : "rgba(54, 162, 235, 0.6)";
+                      }
+                    },
                   },
                   {
                     type: "bar",
