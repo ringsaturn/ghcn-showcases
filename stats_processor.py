@@ -4,8 +4,6 @@ from typing import Literal
 import polars as pl
 import json
 
-from data_quality import check_data_quality
-
 
 def calculate_daily_statistics(df: pl.LazyFrame, element: str) -> pl.DataFrame:
     """Calculate daily statistics matching the required format."""
@@ -62,54 +60,26 @@ def calculate_monthly_statistics(
               the period start date.
     """
 
-    # First, calculate the total days in each month and valid observations
     monthly_summary = (
         df.filter(pl.col("DATE").dt.year() >= 1970)
+        .filter(pl.col("DATA_VALUE").is_not_null())
         .with_columns(
             [
                 pl.col("DATE").dt.month().alias("MONTH"),
                 pl.col("DATE").dt.year().alias("YEAR"),
-                pl.col("DATE").dt.days_in_month().alias("DAYS_IN_MONTH"),
-                pl.col("DATA_VALUE").is_not_null().alias("IS_VALID"),
             ]
         )
         .group_by(["YEAR", "MONTH"])
         .agg(
             [
-                # Calculate valid data ratio and entry count
-                pl.col("IS_VALID").sum().alias("VALID_COUNT"),
-                pl.len().alias("ENTRY_COUNT"),  # Keep original ENTRY_COUNT for frontend
-                pl.col("DAYS_IN_MONTH").first().alias("DAYS_IN_MONTH"),
-                # Only calculate statistics on valid data
-                pl.col("DATA_VALUE")
-                .filter(pl.col("DATA_VALUE").is_not_null())
-                .quantile(0.1)
-                .alias(f"ANNUAL_{element}_P10"),
-                pl.col("DATA_VALUE")
-                .filter(pl.col("DATA_VALUE").is_not_null())
-                .quantile(0.9)
-                .alias(f"ANNUAL_{element}_P90"),
-                pl.col("DATA_VALUE")
-                .filter(pl.col("DATA_VALUE").is_not_null())
-                .min()
-                .alias(f"ANNUAL_{element}_MIN"),
-                pl.col("DATA_VALUE")
-                .filter(pl.col("DATA_VALUE").is_not_null())
-                .max()
-                .alias(f"ANNUAL_{element}_MAX"),
-                pl.col("DATA_VALUE")
-                .filter(pl.col("DATA_VALUE").is_not_null())
-                .sum()
-                .alias(f"ANNUAL_{element}_SUM"),
+                pl.col("DATA_VALUE").quantile(0.1).alias(f"ANNUAL_{element}_P10"),
+                pl.col("DATA_VALUE").quantile(0.9).alias(f"ANNUAL_{element}_P90"),
+                pl.col("DATA_VALUE").min().alias(f"ANNUAL_{element}_MIN"),
+                pl.col("DATA_VALUE").max().alias(f"ANNUAL_{element}_MAX"),
+                pl.col("DATA_VALUE").sum().alias(f"ANNUAL_{element}_SUM"),
+                pl.len().alias("ENTRY_COUNT"),
             ]
         )
-        # Calculate completeness ratio and filter out months with insufficient data
-        .with_columns(
-            (pl.col("VALID_COUNT") / pl.col("DAYS_IN_MONTH")).alias(
-                "COMPLETENESS_RATIO"
-            )
-        )
-        .filter(pl.col("COMPLETENESS_RATIO") >= 0.7)
         .with_columns(
             pl.datetime(
                 year=pl.col("YEAR"),
@@ -129,21 +99,24 @@ def calculate_monthly_statistics(
         f"ANNUAL_{element}_MIN": f"{element}_MIN",
         f"ANNUAL_{element}_MAX": f"{element}_MAX",
         f"ANNUAL_{element}_SUM": f"{element}_SUM",
-        "ENTRY_COUNT": f"{element}_ENTRY_COUNT",  # Keep original ENTRY_COUNT for frontend
+        "ENTRY_COUNT": f"{element}_ENTRY_COUNT",
     }
 
-    monthly_history = monthly_summary.rename(rename_map).select(
-        [
-            "YEAR",
-            "MONTH",
-            "PERIOD_START",
-            f"{element}_P10",
-            f"{element}_P90",
-            f"{element}_MIN",
-            f"{element}_MAX",
-            f"{element}_SUM",
-            f"{element}_ENTRY_COUNT",  # Keep original ENTRY_COUNT for frontend
-        ]
+    monthly_history = (
+        monthly_summary.rename(rename_map)
+        .select(
+            [
+                "YEAR",
+                "MONTH",
+                "PERIOD_START",
+                f"{element}_P10",
+                f"{element}_P90",
+                f"{element}_MIN",
+                f"{element}_MAX",
+                f"{element}_SUM",
+                f"{element}_ENTRY_COUNT",
+            ]
+        )
     )
 
     monthly_climatology = (
@@ -197,7 +170,6 @@ def process_station_data(
     tmax_history = None
     prcp_history = None
     raw_entry_counts: dict[str, int] = {}
-    data_quality: dict[str, tuple[bool, float]] = {}
 
     for element in elements:
         try:
@@ -205,16 +177,6 @@ def process_station_data(
             df = pl.scan_parquet(f"data/merged/{element}.parquet").filter(
                 pl.col("ID") == station_id
             )
-
-            # Check data quality
-            is_quality_good, completeness_ratio = check_data_quality(df)
-            data_quality[element] = (is_quality_good, completeness_ratio)
-
-            if not is_quality_good:
-                print(
-                    f"Warning: Station {station_id} has poor data quality for {element} (completeness: {completeness_ratio:.2%})"
-                )
-                return
 
             # Count raw records that contribute to statistics
             raw_count = (
@@ -250,7 +212,7 @@ def process_station_data(
                 else:  # PRCP
                     prcp_data = climatology_df
                     prcp_history = history_df
-
+                    
             print(f"Processed {element} data for {station_id}")
 
         except Exception as e:
